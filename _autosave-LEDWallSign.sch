@@ -1,0 +1,4882 @@
+EESchema Schematic File Version 4
+LIBS:LEDWallSign-cache
+EELAYER 29 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LEDWallSign-rescue:ATmega328-AU-MCU_Microchip_ATmega U1
+U 1 1 5D461EEF
+P 2250 5650
+F 0 "U1" H 1700 4100 50  0000 C CNN
+F 1 "ATmega328-AU" H 1700 4000 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 2250 5650 50  0001 C CIN
+F 3 "ATMEGA328-AU-ND" H 2250 5650 50  0001 C CNN
+	1    2250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:Conn_02x03_Odd_Even-Connector_Generic J1
+U 1 1 5D462027
+P 2100 8500
+F 0 "J1" H 2150 8817 50  0000 C CNN
+F 1 "ISP Header" H 2150 8726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 2100 8500 50  0001 C CNN
+F 3 "609-3210-ND" H 2100 8500 50  0001 C CNN
+	1    2100 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 8400 2650 8400
+Wire Wire Line
+	2650 8400 2650 8250
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0101
+U 1 1 5D4620E5
+P 2650 8250
+F 0 "#PWR0101" H 2650 8100 50  0001 C CNN
+F 1 "+5V" H 2665 8423 50  0000 C CNN
+F 2 "" H 2650 8250 50  0001 C CNN
+F 3 "" H 2650 8250 50  0001 C CNN
+	1    2650 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0102
+U 1 1 5D462120
+P 2650 8800
+F 0 "#PWR0102" H 2650 8550 50  0001 C CNN
+F 1 "GND" H 2655 8627 50  0000 C CNN
+F 2 "" H 2650 8800 50  0001 C CNN
+F 3 "" H 2650 8800 50  0001 C CNN
+	1    2650 8800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 8600 2650 8600
+Wire Wire Line
+	2650 8600 2650 8800
+Wire Wire Line
+	2400 8500 2650 8500
+Text Label 2650 8500 2    50   ~ 0
+MOSI
+Wire Wire Line
+	1900 8400 1600 8400
+Wire Wire Line
+	1900 8500 1600 8500
+Wire Wire Line
+	1900 8600 1600 8600
+Text Label 1600 8400 0    50   ~ 0
+MISO
+Text Label 1600 8500 0    50   ~ 0
+SCK
+Text Label 1600 8600 0    50   ~ 0
+~RESET
+$Comp
+L LEDWallSign-rescue:Crystal-Device Y1
+U 1 1 5D462314
+P 2050 9600
+F 0 "Y1" H 2050 9868 50  0000 C CNN
+F 1 "8MHz" H 2050 9777 50  0000 C CNN
+F 2 "ledWallSign-master:ECS-23G" H 2050 9600 50  0001 C CNN
+F 3 "XC2340CT-ND" H 2050 9600 50  0001 C CNN
+	1    2050 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 9600 1750 9600
+Wire Wire Line
+	2200 9600 2300 9600
+$Comp
+L LEDWallSign-rescue:C_Small-Device C8
+U 1 1 5D462477
+P 1750 9800
+F 0 "C8" H 1842 9846 50  0000 L CNN
+F 1 "18pF" H 1842 9755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1750 9800 50  0001 C CNN
+F 3 "490-9716-1-ND" H 1750 9800 50  0001 C CNN
+	1    1750 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 9700 1750 9600
+Connection ~ 1750 9600
+Wire Wire Line
+	1750 9600 1600 9600
+Connection ~ 2300 9600
+Wire Wire Line
+	2300 9600 2550 9600
+Wire Wire Line
+	2300 9700 2300 9600
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0103
+U 1 1 5D4627F9
+P 2050 10050
+F 0 "#PWR0103" H 2050 9800 50  0001 C CNN
+F 1 "GND" H 2055 9877 50  0000 C CNN
+F 2 "" H 2050 10050 50  0001 C CNN
+F 3 "" H 2050 10050 50  0001 C CNN
+	1    2050 10050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 9900 1750 10000
+Wire Wire Line
+	1750 10000 2050 10000
+Wire Wire Line
+	2050 10000 2050 10050
+Wire Wire Line
+	2050 10000 2300 10000
+Wire Wire Line
+	2300 10000 2300 9900
+Connection ~ 2050 10000
+Text Label 1600 9600 0    50   ~ 0
+XTAL_IN
+Text Label 2550 9600 2    50   ~ 0
+XTAL_OUT
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0104
+U 1 1 5D462D7A
+P 2250 7300
+F 0 "#PWR0104" H 2250 7050 50  0001 C CNN
+F 1 "GND" H 2255 7127 50  0000 C CNN
+F 2 "" H 2250 7300 50  0001 C CNN
+F 3 "" H 2250 7300 50  0001 C CNN
+	1    2250 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 7300 2250 7150
+Wire Wire Line
+	2850 4950 3250 4950
+Text Label 3250 4950 2    50   ~ 0
+SCK
+Wire Wire Line
+	2850 4850 3250 4850
+Text Label 3250 4850 2    50   ~ 0
+MISO
+Wire Wire Line
+	2850 4750 3250 4750
+Text Label 3250 4750 2    50   ~ 0
+MOSI
+Text Label 3150 5950 2    50   ~ 0
+~RESET
+$Comp
+L LEDWallSign-rescue:SW_SPST-Switch SW1
+U 1 1 5D463E1F
+P 3650 8450
+F 0 "SW1" H 3650 8685 50  0000 C CNN
+F 1 "KSR251GLFS" H 3650 8594 50  0000 C CNN
+F 2 "ledWallSign-master:KSR251GLFS" H 3650 8450 50  0001 C CNN
+F 3 "401-1707-1-ND" H 3650 8450 50  0001 C CNN
+	1    3650 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 8450 3350 8450
+Wire Wire Line
+	3350 8450 3350 8250
+Wire Wire Line
+	3350 8450 3050 8450
+Connection ~ 3350 8450
+Wire Wire Line
+	3850 8450 4000 8450
+Wire Wire Line
+	4000 8450 4000 8750
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0105
+U 1 1 5D46482C
+P 4000 8750
+F 0 "#PWR0105" H 4000 8500 50  0001 C CNN
+F 1 "GND" H 4005 8577 50  0000 C CNN
+F 2 "" H 4000 8750 50  0001 C CNN
+F 3 "" H 4000 8750 50  0001 C CNN
+	1    4000 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 7950 3350 7900
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0106
+U 1 1 5D464B8A
+P 3350 7850
+F 0 "#PWR0106" H 3350 7700 50  0001 C CNN
+F 1 "+5V" H 3365 8023 50  0000 C CNN
+F 2 "" H 3350 7850 50  0001 C CNN
+F 3 "" H 3350 7850 50  0001 C CNN
+	1    3350 7850
+	1    0    0    -1  
+$EndComp
+Text Label 3050 8450 0    50   ~ 0
+~RESET
+Wire Wire Line
+	2850 5050 3250 5050
+Wire Wire Line
+	2850 5150 3250 5150
+Text Label 3250 5050 2    50   ~ 0
+XTAL_IN
+Text Label 3250 5150 2    50   ~ 0
+XTAL_OUT
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0107
+U 1 1 5D466CF6
+P 3700 10200
+F 0 "#PWR0107" H 3700 9950 50  0001 C CNN
+F 1 "GND" H 3705 10027 50  0000 C CNN
+F 2 "" H 3700 10200 50  0001 C CNN
+F 3 "" H 3700 10200 50  0001 C CNN
+	1    3700 10200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 10200 3700 10100
+Wire Wire Line
+	3700 9200 3500 9200
+Text Label 3500 9200 0    50   ~ 0
+blinky
+Text Label 3150 6450 2    50   ~ 0
+blinky
+Wire Wire Line
+	2850 6450 3150 6450
+Wire Wire Line
+	2850 4450 3250 4450
+Text Label 3250 4450 2    50   ~ 0
+dataPin
+Wire Wire Line
+	2850 6650 3150 6650
+Text Label 3150 6650 2    50   ~ 0
+clockPin
+Wire Wire Line
+	2850 6750 3150 6750
+Text Label 3150 6750 2    50   ~ 0
+latch1
+Wire Wire Line
+	2850 6850 3150 6850
+Text Label 3150 6850 2    50   ~ 0
+latch2
+Wire Wire Line
+	2850 6150 3150 6150
+Text Label 3150 6150 2    50   ~ 0
+latch3
+Wire Wire Line
+	2850 6250 3150 6250
+Text Label 3150 6250 2    50   ~ 0
+latch4
+$Comp
+L LEDWallSign-rescue:TLC6C598-Q1-ledWallSign U100
+U 1 1 5D46D2B2
+P 9900 2050
+F 0 "U100" H 10125 2625 50  0000 C CNN
+F 1 "TLC6C598-Q1" H 10125 2534 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 9900 2050 50  0001 C CNN
+F 3 "296-36199-1-ND" H 9900 2050 50  0001 C CNN
+	1    9900 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 1800 9150 1800
+Text Label 9150 1800 0    50   ~ 0
+dataPin
+Wire Wire Line
+	10700 1800 11000 1800
+Text Label 11000 1800 2    50   ~ 0
+clockPin
+Text Label 11000 2300 2    50   ~ 0
+latch1
+Wire Wire Line
+	8950 2500 8950 2400
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0108
+U 1 1 5D47008C
+P 8950 2950
+F 0 "#PWR0108" H 8950 2700 50  0001 C CNN
+F 1 "GND" H 8955 2777 50  0000 C CNN
+F 2 "" H 8950 2950 50  0001 C CNN
+F 3 "" H 8950 2950 50  0001 C CNN
+	1    8950 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8950 2950 8950 2800
+Wire Wire Line
+	8700 2500 8700 2300
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0109
+U 1 1 5D471421
+P 8700 2950
+F 0 "#PWR0109" H 8700 2700 50  0001 C CNN
+F 1 "GND" H 8705 2777 50  0000 C CNN
+F 2 "" H 8700 2950 50  0001 C CNN
+F 3 "" H 8700 2950 50  0001 C CNN
+	1    8700 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2950 8700 2800
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0110
+U 1 1 5D472A23
+P 8700 1350
+F 0 "#PWR0110" H 8700 1200 50  0001 C CNN
+F 1 "+5V" H 8715 1523 50  0000 C CNN
+F 2 "" H 8700 1350 50  0001 C CNN
+F 3 "" H 8700 1350 50  0001 C CNN
+	1    8700 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 1700 10850 1700
+Wire Wire Line
+	10850 1700 10850 1350
+Wire Wire Line
+	10850 1350 11050 1350
+Wire Wire Line
+	11050 1350 11050 1400
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0111
+U 1 1 5D4736C6
+P 11050 1400
+F 0 "#PWR0111" H 11050 1150 50  0001 C CNN
+F 1 "GND" H 11055 1227 50  0000 C CNN
+F 2 "" H 11050 1400 50  0001 C CNN
+F 3 "" H 11050 1400 50  0001 C CNN
+	1    11050 1400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10700 2400
+Wire Wire Line
+	8950 2400 9550 2400
+Wire Wire Line
+	8700 2300 9550 2300
+Wire Wire Line
+	8700 1700 8950 1700
+Wire Wire Line
+	8700 1350 8700 1400
+Wire Wire Line
+	8950 2400 8950 2100
+Connection ~ 8950 2400
+Wire Wire Line
+	8950 1800 8950 1700
+Connection ~ 8950 1700
+Wire Wire Line
+	8950 1700 9550 1700
+$Comp
+L LEDWallSign-rescue:R-Device R190
+U 1 1 5D47B3F4
+P 8700 1900
+F 0 "R190" H 8450 1900 50  0000 L CNN
+F 1 "10k" H 8500 1800 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8630 1900 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8700 1900 50  0001 C CNN
+	1    8700 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 2300 8700 2050
+Connection ~ 8700 2300
+Wire Wire Line
+	8700 1750 8700 1700
+Connection ~ 8700 1700
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0112
+U 1 1 5D47DB5F
+P 12750 1350
+F 0 "#PWR0112" H 12750 1200 50  0001 C CNN
+F 1 "+5V" H 12765 1523 50  0000 C CNN
+F 2 "" H 12750 1350 50  0001 C CNN
+F 3 "" H 12750 1350 50  0001 C CNN
+	1    12750 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R100
+U 1 1 5D4850F4
+P 11800 1700
+F 0 "R100" H 11800 1850 50  0000 L CNN
+F 1 "1k" H 11850 1750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11730 1700 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 11800 1700 50  0001 C CNN
+	1    11800 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D100
+U 1 1 5D4850FB
+P 11800 2150
+F 0 "D100" V 12000 2150 50  0000 R CNN
+F 1 "LED" V 11900 2150 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 11800 2150 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 11800 2150 50  0001 C CNN
+	1    11800 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11800 2000 11800 1850
+Wire Wire Line
+	11800 2300 11800 2500
+Text Label 11800 2500 1    50   ~ 0
+led0
+Wire Wire Line
+	12100 2300 12100 2500
+Text Label 12100 2500 1    50   ~ 0
+led1
+Wire Wire Line
+	12350 2300 12350 2500
+Text Label 12350 2500 1    50   ~ 0
+led2
+Wire Wire Line
+	12600 2300 12600 2500
+Text Label 12600 2500 1    50   ~ 0
+led3
+Wire Wire Line
+	12850 2300 12850 2500
+Text Label 12850 2500 1    50   ~ 0
+led4
+Wire Wire Line
+	13150 2300 13150 2500
+Wire Wire Line
+	13400 2300 13400 2500
+Wire Wire Line
+	13650 2300 13650 2500
+Text Label 13150 2500 1    50   ~ 0
+led5
+Text Label 13400 2500 1    50   ~ 0
+led6
+Text Label 13650 2500 1    50   ~ 0
+led7
+Wire Wire Line
+	11800 1550 11800 1400
+Wire Wire Line
+	12750 1400 12750 1350
+Connection ~ 12750 1400
+Wire Wire Line
+	9550 1900 9300 1900
+Wire Wire Line
+	9550 2000 9300 2000
+Wire Wire Line
+	9550 2100 9300 2100
+Wire Wire Line
+	9550 2200 9300 2200
+Text Label 9300 1900 0    50   ~ 0
+led0
+Text Label 9300 2000 0    50   ~ 0
+led1
+Text Label 9300 2100 0    50   ~ 0
+led2
+Text Label 9300 2200 0    50   ~ 0
+led3
+Wire Wire Line
+	10700 1900 11000 1900
+Wire Wire Line
+	10700 2000 11000 2000
+Wire Wire Line
+	10700 2100 11000 2100
+Wire Wire Line
+	10700 2200 11000 2200
+Wire Wire Line
+	10700 2300 11000 2300
+Text Label 11000 2200 2    50   ~ 0
+led4
+Text Label 11000 2100 2    50   ~ 0
+led5
+Text Label 11000 2000 2    50   ~ 0
+led6
+Text Label 11000 1900 2    50   ~ 0
+led7
+$Comp
+L LEDWallSign-rescue:C_Small-Device C191
+U 1 1 5D4B87A0
+P 8300 1600
+F 0 "C191" H 8392 1646 50  0000 L CNN
+F 1 "100nF" H 8392 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8300 1600 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 8300 1600 50  0001 C CNN
+	1    8300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C190
+U 1 1 5D4B8886
+P 7950 1600
+F 0 "C190" H 8042 1646 50  0000 L CNN
+F 1 "1uF" H 8042 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7950 1600 50  0001 C CNN
+F 3 "1276-1182-1-ND" H 7950 1600 50  0001 C CNN
+	1    7950 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1500 7950 1400
+Wire Wire Line
+	7950 1400 8300 1400
+Connection ~ 8700 1400
+Wire Wire Line
+	8700 1400 8700 1700
+Wire Wire Line
+	8300 1500 8300 1400
+Connection ~ 8300 1400
+Wire Wire Line
+	8300 1400 8700 1400
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0113
+U 1 1 5D4BFCA6
+P 7950 1800
+F 0 "#PWR0113" H 7950 1550 50  0001 C CNN
+F 1 "GND" H 7955 1627 50  0000 C CNN
+F 2 "" H 7950 1800 50  0001 C CNN
+F 3 "" H 7950 1800 50  0001 C CNN
+	1    7950 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0114
+U 1 1 5D4BFCF8
+P 8300 1800
+F 0 "#PWR0114" H 8300 1550 50  0001 C CNN
+F 1 "GND" H 8305 1627 50  0000 C CNN
+F 2 "" H 8300 1800 50  0001 C CNN
+F 3 "" H 8300 1800 50  0001 C CNN
+	1    8300 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1800 7950 1700
+Wire Wire Line
+	8300 1800 8300 1700
+Wire Wire Line
+	9500 4100 9100 4100
+Text Label 9100 4100 0    50   ~ 0
+dataPin
+Wire Wire Line
+	10650 4100 10950 4100
+Text Label 10950 4100 2    50   ~ 0
+clockPin
+Text Label 10950 4600 2    50   ~ 0
+latch2
+Wire Wire Line
+	10650 4000 10800 4000
+Wire Wire Line
+	10800 4000 10800 3650
+Wire Wire Line
+	10800 3650 11000 3650
+Wire Wire Line
+	11000 3650 11000 3700
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0115
+U 1 1 5D4C69E7
+P 11000 3700
+F 0 "#PWR0115" H 11000 3450 50  0001 C CNN
+F 1 "GND" H 11005 3527 50  0000 C CNN
+F 2 "" H 11000 3700 50  0001 C CNN
+F 3 "" H 11000 3700 50  0001 C CNN
+	1    11000 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10650 4700
+Wire Wire Line
+	11750 4600 11750 4800
+Text Label 11750 4800 1    50   ~ 0
+led8
+Wire Wire Line
+	12050 4600 12050 4800
+Text Label 12050 4800 1    50   ~ 0
+led9
+Wire Wire Line
+	12300 4600 12300 4800
+Text Label 12300 4800 1    50   ~ 0
+led10
+Wire Wire Line
+	12550 4600 12550 4800
+Text Label 12550 4800 1    50   ~ 0
+led11
+Wire Wire Line
+	12800 4600 12800 4800
+Text Label 12800 4800 1    50   ~ 0
+led12
+Wire Wire Line
+	13100 4600 13100 4800
+Wire Wire Line
+	13350 4600 13350 4800
+Wire Wire Line
+	13600 4600 13600 4800
+Text Label 13100 4800 1    50   ~ 0
+led13
+Text Label 13350 4800 1    50   ~ 0
+led14
+Text Label 13600 4800 1    50   ~ 0
+led15
+Wire Wire Line
+	9500 4200 9250 4200
+Wire Wire Line
+	9500 4300 9250 4300
+Wire Wire Line
+	9500 4400 9250 4400
+Wire Wire Line
+	9500 4500 9250 4500
+Text Label 9250 4200 0    50   ~ 0
+led8
+Text Label 9250 4300 0    50   ~ 0
+led9
+Text Label 9250 4400 0    50   ~ 0
+led10
+Text Label 9250 4500 0    50   ~ 0
+led11
+Wire Wire Line
+	10650 4200 10950 4200
+Wire Wire Line
+	10650 4300 10950 4300
+Wire Wire Line
+	10650 4400 10950 4400
+Wire Wire Line
+	10650 4500 10950 4500
+Wire Wire Line
+	10650 4600 10950 4600
+Text Label 10950 4500 2    50   ~ 0
+led12
+Text Label 10950 4400 2    50   ~ 0
+led13
+Text Label 10950 4300 2    50   ~ 0
+led14
+Text Label 10950 4200 2    50   ~ 0
+led15
+Wire Wire Line
+	9450 6350 9050 6350
+Text Label 9050 6350 0    50   ~ 0
+dataPin
+Wire Wire Line
+	10600 6350 10900 6350
+Text Label 10900 6350 2    50   ~ 0
+clockPin
+Text Label 10900 6850 2    50   ~ 0
+latch3
+Wire Wire Line
+	10600 6250 10750 6250
+Wire Wire Line
+	10750 6250 10750 5900
+Wire Wire Line
+	10750 5900 10950 5900
+Wire Wire Line
+	10950 5900 10950 5950
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0116
+U 1 1 5D4F7846
+P 10950 5950
+F 0 "#PWR0116" H 10950 5700 50  0001 C CNN
+F 1 "GND" H 10955 5777 50  0000 C CNN
+F 2 "" H 10950 5950 50  0001 C CNN
+F 3 "" H 10950 5950 50  0001 C CNN
+	1    10950 5950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10600 6950
+Wire Wire Line
+	11700 6850 11700 7050
+Text Label 11700 7050 1    50   ~ 0
+led16
+Wire Wire Line
+	12000 6850 12000 7050
+Text Label 12000 7050 1    50   ~ 0
+led17
+Wire Wire Line
+	12250 6850 12250 7050
+Text Label 12250 7050 1    50   ~ 0
+led18
+Wire Wire Line
+	12500 6850 12500 7050
+Text Label 12500 7050 1    50   ~ 0
+led19
+Wire Wire Line
+	12750 6850 12750 7050
+Text Label 12750 7050 1    50   ~ 0
+led20
+Wire Wire Line
+	13050 6850 13050 7050
+Wire Wire Line
+	13300 6850 13300 7050
+Wire Wire Line
+	13550 6850 13550 7050
+Text Label 13050 7050 1    50   ~ 0
+led21
+Text Label 13300 7050 1    50   ~ 0
+led22
+Text Label 13550 7050 1    50   ~ 0
+led23
+Wire Wire Line
+	9450 6450 9200 6450
+Wire Wire Line
+	9450 6550 9200 6550
+Wire Wire Line
+	9450 6650 9200 6650
+Wire Wire Line
+	9450 6750 9200 6750
+Text Label 9200 6450 0    50   ~ 0
+led16
+Text Label 9200 6550 0    50   ~ 0
+led17
+Text Label 9200 6650 0    50   ~ 0
+led18
+Text Label 9200 6750 0    50   ~ 0
+led19
+Wire Wire Line
+	10600 6450 10900 6450
+Wire Wire Line
+	10600 6550 10900 6550
+Wire Wire Line
+	10600 6650 10900 6650
+Wire Wire Line
+	10600 6750 10900 6750
+Wire Wire Line
+	10600 6850 10900 6850
+Text Label 10900 6750 2    50   ~ 0
+led20
+Text Label 10900 6650 2    50   ~ 0
+led21
+Text Label 10900 6550 2    50   ~ 0
+led22
+Text Label 10900 6450 2    50   ~ 0
+led23
+Wire Wire Line
+	9450 8500 9050 8500
+Text Label 9050 8500 0    50   ~ 0
+dataPin
+Wire Wire Line
+	10600 8500 10900 8500
+Text Label 10900 8500 2    50   ~ 0
+clockPin
+Text Label 10900 9000 2    50   ~ 0
+latch4
+Wire Wire Line
+	10600 8400 10750 8400
+Wire Wire Line
+	10750 8400 10750 8050
+Wire Wire Line
+	10750 8050 10950 8050
+Wire Wire Line
+	10950 8050 10950 8100
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0117
+U 1 1 5D516EC5
+P 10950 8100
+F 0 "#PWR0117" H 10950 7850 50  0001 C CNN
+F 1 "GND" H 10955 7927 50  0000 C CNN
+F 2 "" H 10950 8100 50  0001 C CNN
+F 3 "" H 10950 8100 50  0001 C CNN
+	1    10950 8100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10600 9100
+Wire Wire Line
+	11700 9000 11700 9200
+Text Label 11700 9200 1    50   ~ 0
+led24
+Wire Wire Line
+	12000 9000 12000 9200
+Text Label 12000 9200 1    50   ~ 0
+led25
+Wire Wire Line
+	12250 9000 12250 9200
+Text Label 12250 9200 1    50   ~ 0
+led26
+Wire Wire Line
+	12500 9000 12500 9200
+Text Label 12500 9200 1    50   ~ 0
+led27
+Wire Wire Line
+	12750 9000 12750 9200
+Text Label 12750 9200 1    50   ~ 0
+led28
+Wire Wire Line
+	13050 9000 13050 9200
+Wire Wire Line
+	13300 9000 13300 9200
+Wire Wire Line
+	13550 9000 13550 9200
+Text Label 13050 9200 1    50   ~ 0
+led29
+Text Label 13300 9200 1    50   ~ 0
+led30
+Text Label 13550 9200 1    50   ~ 0
+led31
+Wire Wire Line
+	9450 8600 9200 8600
+Wire Wire Line
+	9450 8700 9200 8700
+Wire Wire Line
+	9450 8800 9200 8800
+Wire Wire Line
+	9450 8900 9200 8900
+Text Label 9200 8600 0    50   ~ 0
+led24
+Text Label 9200 8700 0    50   ~ 0
+led25
+Text Label 9200 8800 0    50   ~ 0
+led26
+Text Label 9200 8900 0    50   ~ 0
+led27
+Wire Wire Line
+	10600 8600 10900 8600
+Wire Wire Line
+	10600 8700 10900 8700
+Wire Wire Line
+	10600 8800 10900 8800
+Wire Wire Line
+	10600 8900 10900 8900
+Wire Wire Line
+	10600 9000 10900 9000
+Text Label 10900 8900 2    50   ~ 0
+led28
+Text Label 10900 8800 2    50   ~ 0
+led29
+Text Label 10900 8700 2    50   ~ 0
+led30
+Text Label 10900 8600 2    50   ~ 0
+led31
+Wire Wire Line
+	18050 1950 17650 1950
+Text Label 17650 1950 0    50   ~ 0
+dataPin
+Wire Wire Line
+	19200 1950 19500 1950
+Text Label 19500 1950 2    50   ~ 0
+clockPin
+Text Label 19500 2450 2    50   ~ 0
+latch5
+Wire Wire Line
+	19200 1850 19350 1850
+Wire Wire Line
+	19350 1850 19350 1500
+Wire Wire Line
+	19350 1500 19550 1500
+Wire Wire Line
+	19550 1500 19550 1550
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0118
+U 1 1 5D532CC2
+P 19550 1550
+F 0 "#PWR0118" H 19550 1300 50  0001 C CNN
+F 1 "GND" H 19555 1377 50  0000 C CNN
+F 2 "" H 19550 1550 50  0001 C CNN
+F 3 "" H 19550 1550 50  0001 C CNN
+	1    19550 1550
+	1    0    0    -1  
+$EndComp
+NoConn ~ 19200 2550
+Wire Wire Line
+	20300 2450 20300 2650
+Text Label 20300 2650 1    50   ~ 0
+led32
+Wire Wire Line
+	20600 2450 20600 2650
+Text Label 20600 2650 1    50   ~ 0
+led33
+Wire Wire Line
+	20850 2450 20850 2650
+Text Label 20850 2650 1    50   ~ 0
+led34
+Wire Wire Line
+	21100 2450 21100 2650
+Text Label 21100 2650 1    50   ~ 0
+led35
+Wire Wire Line
+	21350 2450 21350 2650
+Text Label 21350 2650 1    50   ~ 0
+led36
+Wire Wire Line
+	21650 2450 21650 2650
+Wire Wire Line
+	21900 2450 21900 2650
+Wire Wire Line
+	22150 2450 22150 2650
+Text Label 21650 2650 1    50   ~ 0
+led37
+Text Label 21900 2650 1    50   ~ 0
+led38
+Text Label 22150 2650 1    50   ~ 0
+led39
+Wire Wire Line
+	18050 2050 17800 2050
+Wire Wire Line
+	18050 2150 17800 2150
+Wire Wire Line
+	18050 2250 17800 2250
+Wire Wire Line
+	18050 2350 17800 2350
+Text Label 17800 2050 0    50   ~ 0
+led32
+Text Label 17800 2150 0    50   ~ 0
+led33
+Text Label 17800 2250 0    50   ~ 0
+led34
+Text Label 17800 2350 0    50   ~ 0
+led35
+Wire Wire Line
+	19200 2050 19500 2050
+Wire Wire Line
+	19200 2150 19500 2150
+Wire Wire Line
+	19200 2250 19500 2250
+Wire Wire Line
+	19200 2350 19500 2350
+Wire Wire Line
+	19200 2450 19500 2450
+Text Label 19500 2350 2    50   ~ 0
+led36
+Text Label 19500 2250 2    50   ~ 0
+led37
+Text Label 19500 2150 2    50   ~ 0
+led38
+Text Label 19500 2050 2    50   ~ 0
+led39
+Wire Wire Line
+	18000 4250 17600 4250
+Text Label 17600 4250 0    50   ~ 0
+dataPin
+Wire Wire Line
+	19150 4250 19450 4250
+Text Label 19450 4250 2    50   ~ 0
+clockPin
+Text Label 19450 4750 2    50   ~ 0
+latch6
+Wire Wire Line
+	19150 4150 19300 4150
+Wire Wire Line
+	19300 4150 19300 3800
+Wire Wire Line
+	19300 3800 19500 3800
+Wire Wire Line
+	19500 3800 19500 3850
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0119
+U 1 1 5D532DF2
+P 19500 3850
+F 0 "#PWR0119" H 19500 3600 50  0001 C CNN
+F 1 "GND" H 19505 3677 50  0000 C CNN
+F 2 "" H 19500 3850 50  0001 C CNN
+F 3 "" H 19500 3850 50  0001 C CNN
+	1    19500 3850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 19150 4850
+Wire Wire Line
+	20250 4750 20250 4950
+Text Label 20250 4950 1    50   ~ 0
+led40
+Wire Wire Line
+	20550 4750 20550 4950
+Text Label 20550 4950 1    50   ~ 0
+led41
+Wire Wire Line
+	20800 4750 20800 4950
+Text Label 20800 4950 1    50   ~ 0
+led42
+Wire Wire Line
+	21050 4750 21050 4950
+Text Label 21050 4950 1    50   ~ 0
+led43
+Wire Wire Line
+	21300 4750 21300 4950
+Text Label 21300 4950 1    50   ~ 0
+led44
+Wire Wire Line
+	21600 4750 21600 4950
+Wire Wire Line
+	21850 4750 21850 4950
+Wire Wire Line
+	22100 4750 22100 4950
+Text Label 21600 4950 1    50   ~ 0
+led45
+Text Label 21850 4950 1    50   ~ 0
+led46
+Text Label 22100 4950 1    50   ~ 0
+led47
+Wire Wire Line
+	18000 4350 17750 4350
+Wire Wire Line
+	18000 4450 17750 4450
+Wire Wire Line
+	18000 4550 17750 4550
+Wire Wire Line
+	18000 4650 17750 4650
+Text Label 17750 4350 0    50   ~ 0
+led40
+Text Label 17750 4450 0    50   ~ 0
+led41
+Text Label 17750 4550 0    50   ~ 0
+led42
+Text Label 17750 4650 0    50   ~ 0
+led43
+Wire Wire Line
+	19150 4350 19450 4350
+Wire Wire Line
+	19150 4450 19450 4450
+Wire Wire Line
+	19150 4550 19450 4550
+Wire Wire Line
+	19150 4650 19450 4650
+Wire Wire Line
+	19150 4750 19450 4750
+Text Label 19450 4650 2    50   ~ 0
+led44
+Text Label 19450 4550 2    50   ~ 0
+led45
+Text Label 19450 4450 2    50   ~ 0
+led46
+Text Label 19450 4350 2    50   ~ 0
+led47
+Wire Wire Line
+	17950 6500 17550 6500
+Text Label 17550 6500 0    50   ~ 0
+dataPin
+Wire Wire Line
+	19100 6500 19400 6500
+Text Label 19400 6500 2    50   ~ 0
+clockPin
+Text Label 19400 7000 2    50   ~ 0
+latch7
+Wire Wire Line
+	19100 6400 19250 6400
+Wire Wire Line
+	19250 6400 19250 6050
+Wire Wire Line
+	19250 6050 19450 6050
+Wire Wire Line
+	19450 6050 19450 6100
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0120
+U 1 1 5D532F22
+P 19450 6100
+F 0 "#PWR0120" H 19450 5850 50  0001 C CNN
+F 1 "GND" H 19455 5927 50  0000 C CNN
+F 2 "" H 19450 6100 50  0001 C CNN
+F 3 "" H 19450 6100 50  0001 C CNN
+	1    19450 6100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 19100 7100
+Wire Wire Line
+	20200 7000 20200 7200
+Text Label 20200 7200 1    50   ~ 0
+led48
+Wire Wire Line
+	20500 7000 20500 7200
+Text Label 20500 7200 1    50   ~ 0
+led49
+Wire Wire Line
+	20750 7000 20750 7200
+Text Label 20750 7200 1    50   ~ 0
+led50
+Wire Wire Line
+	21000 7000 21000 7200
+Text Label 21000 7200 1    50   ~ 0
+led51
+Wire Wire Line
+	21250 7000 21250 7200
+Text Label 21250 7200 1    50   ~ 0
+led52
+Wire Wire Line
+	21550 7000 21550 7200
+Wire Wire Line
+	21800 7000 21800 7200
+Wire Wire Line
+	22050 7000 22050 7200
+Text Label 21550 7200 1    50   ~ 0
+led53
+Text Label 21800 7200 1    50   ~ 0
+led54
+Text Label 22050 7200 1    50   ~ 0
+led55
+Wire Wire Line
+	17950 6600 17700 6600
+Wire Wire Line
+	17950 6700 17700 6700
+Wire Wire Line
+	17950 6800 17700 6800
+Wire Wire Line
+	17950 6900 17700 6900
+Text Label 17700 6600 0    50   ~ 0
+led48
+Text Label 17700 6700 0    50   ~ 0
+led49
+Text Label 17700 6800 0    50   ~ 0
+led50
+Text Label 17700 6900 0    50   ~ 0
+led51
+Wire Wire Line
+	19100 6600 19400 6600
+Wire Wire Line
+	19100 6700 19400 6700
+Wire Wire Line
+	19100 6800 19400 6800
+Wire Wire Line
+	19100 6900 19400 6900
+Wire Wire Line
+	19100 7000 19400 7000
+Text Label 19400 6900 2    50   ~ 0
+led52
+Text Label 19400 6800 2    50   ~ 0
+led53
+Text Label 19400 6700 2    50   ~ 0
+led54
+Text Label 19400 6600 2    50   ~ 0
+led55
+Wire Wire Line
+	17950 8650 17550 8650
+Text Label 17550 8650 0    50   ~ 0
+dataPin
+Wire Wire Line
+	19100 8650 19400 8650
+Text Label 19400 8650 2    50   ~ 0
+clockPin
+Text Label 19400 9150 2    50   ~ 0
+latch8
+Wire Wire Line
+	19100 8550 19250 8550
+Wire Wire Line
+	19250 8550 19250 8200
+Wire Wire Line
+	19250 8200 19450 8200
+Wire Wire Line
+	19450 8200 19450 8250
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0121
+U 1 1 5D533052
+P 19450 8250
+F 0 "#PWR0121" H 19450 8000 50  0001 C CNN
+F 1 "GND" H 19455 8077 50  0000 C CNN
+F 2 "" H 19450 8250 50  0001 C CNN
+F 3 "" H 19450 8250 50  0001 C CNN
+	1    19450 8250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 19100 9250
+Wire Wire Line
+	20200 9150 20200 9350
+Text Label 20200 9350 1    50   ~ 0
+led56
+Wire Wire Line
+	20500 9150 20500 9350
+Text Label 20500 9350 1    50   ~ 0
+led57
+Wire Wire Line
+	20750 9150 20750 9350
+Text Label 20750 9350 1    50   ~ 0
+led58
+Wire Wire Line
+	21000 9150 21000 9350
+Text Label 21000 9350 1    50   ~ 0
+led59
+Wire Wire Line
+	21250 9150 21250 9350
+Text Label 21250 9350 1    50   ~ 0
+led60
+Wire Wire Line
+	21550 9150 21550 9350
+Wire Wire Line
+	21800 9150 21800 9350
+Wire Wire Line
+	22050 9150 22050 9350
+Text Label 21550 9350 1    50   ~ 0
+led61
+Text Label 21800 9350 1    50   ~ 0
+led62
+Text Label 22050 9350 1    50   ~ 0
+led63
+Wire Wire Line
+	17950 8750 17700 8750
+Wire Wire Line
+	17950 8850 17700 8850
+Wire Wire Line
+	17950 8950 17700 8950
+Wire Wire Line
+	17950 9050 17700 9050
+Text Label 17700 8750 0    50   ~ 0
+led56
+Text Label 17700 8850 0    50   ~ 0
+led57
+Text Label 17700 8950 0    50   ~ 0
+led58
+Text Label 17700 9050 0    50   ~ 0
+led59
+Wire Wire Line
+	19100 8750 19400 8750
+Wire Wire Line
+	19100 8850 19400 8850
+Wire Wire Line
+	19100 8950 19400 8950
+Wire Wire Line
+	19100 9050 19400 9050
+Wire Wire Line
+	19100 9150 19400 9150
+Text Label 19400 9050 2    50   ~ 0
+led60
+Text Label 19400 8950 2    50   ~ 0
+led61
+Text Label 19400 8850 2    50   ~ 0
+led62
+Text Label 19400 8750 2    50   ~ 0
+led63
+Wire Wire Line
+	2850 6350 3150 6350
+Text Label 3150 6350 2    50   ~ 0
+latch5
+Wire Wire Line
+	2850 6550 3150 6550
+Text Label 3150 6550 2    50   ~ 0
+latch6
+Wire Wire Line
+	2850 5350 3250 5350
+Text Label 3250 5350 2    50   ~ 0
+latch7
+Wire Wire Line
+	2850 5450 3250 5450
+Text Label 3250 5450 2    50   ~ 0
+latch8
+$Comp
+L LEDWallSign-rescue:RAC10-05SK-ledWallSign U2
+U 1 1 5D968D68
+P 2400 1550
+F 0 "U2" H 2475 2225 50  0000 C CNN
+F 1 "RAC10-05SK" H 2475 2134 50  0000 C CNN
+F 2 "ledWallSign-master:RAC10-05SK" H 2400 1550 50  0001 C CNN
+F 3 "945-3121-5-ND" H 2400 1550 50  0001 C CNN
+	1    2400 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:Conn_WallPlug-Connector P1
+U 1 1 5D969E55
+P 1150 1250
+F 0 "P1" H 1165 1575 50  0000 C CNN
+F 1 "Conn_WallPlug" H 1165 1484 50  0000 C CNN
+F 2 "ledWallSign-master:Qualtek 770W-X2" H 1550 1250 50  0001 C CNN
+F 3 "Q273-ND" H 1550 1250 50  0001 C CNN
+	1    1150 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1350 1650 1350
+Wire Wire Line
+	1650 1350 1650 1400
+Wire Wire Line
+	1650 1400 1900 1400
+Wire Wire Line
+	1350 1150 1650 1150
+Wire Wire Line
+	1650 1150 1650 1100
+Wire Wire Line
+	1650 1100 1900 1100
+Wire Wire Line
+	3650 1250 3650 900 
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0122
+U 1 1 5DA65058
+P 4750 1100
+F 0 "#PWR0122" H 4750 850 50  0001 C CNN
+F 1 "GND" H 4755 927 50  0000 C CNN
+F 2 "" H 4750 1100 50  0001 C CNN
+F 3 "" H 4750 1100 50  0001 C CNN
+	1    4750 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 900  4750 1100
+Wire Wire Line
+	3650 1400 3650 1850
+Wire Wire Line
+	4750 1850 4750 1650
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0123
+U 1 1 5DB119D2
+P 4750 1650
+F 0 "#PWR0123" H 4750 1500 50  0001 C CNN
+F 1 "+5V" H 4765 1823 50  0000 C CNN
+F 2 "" H 4750 1650 50  0001 C CNN
+F 3 "" H 4750 1650 50  0001 C CNN
+	1    4750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R1
+U 1 1 5DB69345
+P 3200 1250
+F 0 "R1" V 3200 1200 50  0000 C CNN
+F 1 "0" V 3200 1300 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 3130 1250 50  0001 C CNN
+F 3 "RMCF2512ZT0R00CT-ND" H 3200 1250 50  0001 C CNN
+	1    3200 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R2
+U 1 1 5DB695E4
+P 3200 1400
+F 0 "R2" V 3200 1350 50  0000 C CNN
+F 1 "0" V 3200 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 3130 1400 50  0001 C CNN
+F 3 "RMCF2512ZT0R00CT-ND" H 3200 1400 50  0001 C CNN
+	1    3200 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 1250 3650 1250
+Wire Wire Line
+	3350 1400 3650 1400
+$Comp
+L LEDWallSign-rescue:CP1-Device C1
+U 1 1 5DC1BFC5
+P 3800 1350
+F 0 "C1" H 3750 1150 50  0000 R CNN
+F 1 "10u" H 3750 1250 50  0000 R CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 3800 1350 50  0001 C CNN
+F 3 "P19513CT-ND" H 3800 1350 50  0001 C CNN
+	1    3800 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 1500 3800 1850
+Wire Wire Line
+	3800 1200 3800 900 
+Wire Wire Line
+	3650 900  3800 900 
+Wire Wire Line
+	3650 1850 3800 1850
+Connection ~ 3800 900 
+Connection ~ 3800 1850
+Connection ~ 4050 900 
+Connection ~ 4050 1850
+Wire Wire Line
+	3800 900  4050 900 
+Wire Wire Line
+	3800 1850 4050 1850
+Wire Wire Line
+	2850 5950 3150 5950
+$Comp
+L LEDWallSign-rescue:Ferrite_Bead-Device L1
+U 1 1 5E5BA3F3
+P 2250 2700
+F 0 "L1" V 1976 2700 50  0000 C CNN
+F 1 "Ferrite_Bead" V 2067 2700 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2180 2700 50  0001 C CNN
+F 3 "732-1593-1-ND" H 2250 2700 50  0001 C CNN
+	1    2250 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C6
+U 1 1 5E5BA8A3
+P 3000 2900
+F 0 "C6" H 3092 2946 50  0000 L CNN
+F 1 "100pF" H 3092 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3000 2900 50  0001 C CNN
+F 3 "311-1069-1-ND" H 3000 2900 50  0001 C CNN
+	1    3000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0124
+U 1 1 5E6D2694
+P 1650 3250
+F 0 "#PWR0124" H 1650 3000 50  0001 C CNN
+F 1 "GND" H 1655 3077 50  0000 C CNN
+F 2 "" H 1650 3250 50  0001 C CNN
+F 3 "" H 1650 3250 50  0001 C CNN
+	1    1650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2700 1850 2700
+Wire Wire Line
+	1850 2850 1850 2700
+Connection ~ 1850 2700
+Wire Wire Line
+	1850 2700 2100 2700
+Wire Wire Line
+	2400 2700 2600 2700
+Wire Wire Line
+	3000 2700 3000 2800
+Wire Wire Line
+	2600 2800 2600 2700
+Connection ~ 2600 2700
+Wire Wire Line
+	2600 2700 3000 2700
+Wire Wire Line
+	1450 3200 1650 3200
+Wire Wire Line
+	1650 3200 1650 3250
+Wire Wire Line
+	1850 3050 1850 3200
+Wire Wire Line
+	1850 3200 1650 3200
+Connection ~ 1650 3200
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0125
+U 1 1 5E90D8A2
+P 2800 3250
+F 0 "#PWR0125" H 2800 3000 50  0001 C CNN
+F 1 "GND" H 2805 3077 50  0000 C CNN
+F 2 "" H 2800 3250 50  0001 C CNN
+F 3 "" H 2800 3250 50  0001 C CNN
+	1    2800 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3200 2800 3200
+Wire Wire Line
+	2800 3200 2800 3250
+Connection ~ 2800 3200
+Wire Wire Line
+	2800 3200 3000 3200
+Wire Wire Line
+	1450 2700 1250 2700
+Wire Wire Line
+	1250 2700 1250 2600
+Connection ~ 1450 2700
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0126
+U 1 1 5EB6B1B1
+P 1250 2600
+F 0 "#PWR0126" H 1250 2450 50  0001 C CNN
+F 1 "+5V" H 1265 2773 50  0000 C CNN
+F 2 "" H 1250 2600 50  0001 C CNN
+F 3 "" H 1250 2600 50  0001 C CNN
+	1    1250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 2700 3200 2700
+Wire Wire Line
+	3200 2700 3200 2550
+Connection ~ 3000 2700
+$Comp
+L LEDWallSign-rescue:+5VA-power #PWR0127
+U 1 1 5EBD211A
+P 3200 2550
+F 0 "#PWR0127" H 3200 2400 50  0001 C CNN
+F 1 "+5VA" H 3215 2723 50  0000 C CNN
+F 2 "" H 3200 2550 50  0001 C CNN
+F 3 "" H 3200 2550 50  0001 C CNN
+	1    3200 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3000 2600 3200
+Wire Wire Line
+	3000 3000 3000 3200
+Wire Wire Line
+	2250 4150 2250 3950
+Wire Wire Line
+	2350 4150 2350 3950
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0128
+U 1 1 5EF081A9
+P 2250 3950
+F 0 "#PWR0128" H 2250 3800 50  0001 C CNN
+F 1 "+5V" H 2150 4100 50  0000 C CNN
+F 2 "" H 2250 3950 50  0001 C CNN
+F 3 "" H 2250 3950 50  0001 C CNN
+	1    2250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:+5VA-power #PWR0129
+U 1 1 5EF08398
+P 2350 3950
+F 0 "#PWR0129" H 2350 3800 50  0001 C CNN
+F 1 "+5VA" H 2400 4100 50  0000 C CNN
+F 2 "" H 2350 3950 50  0001 C CNN
+F 3 "" H 2350 3950 50  0001 C CNN
+	1    2350 3950
+	1    0    0    -1  
+$EndComp
+Text Notes 6600 1750 0    118  ~ 0
+LEDs 0-7\nLatch 1
+Text Notes 6450 4400 0    118  ~ 0
+LEDs 8-15\nLatch 2\n
+Text Notes 6450 6550 0    118  ~ 0
+LEDs 16-23\nLatch 3\n\n
+Text Notes 6500 8600 0    118  ~ 0
+LEDs 24-31\nLatch 4\n\n
+Text Notes 15100 2100 0    118  ~ 0
+LEDs 32-39\nLatch 5\n\n
+Text Notes 15100 4400 0    118  ~ 0
+LEDs 40-47\nLatch 6\n\n
+Text Notes 15050 6600 0    118  ~ 0
+LEDs 48-55\nLatch 7\n\n
+Text Notes 15050 8900 0    118  ~ 0
+LEDs 56-63\nLatch 8\n\n\n
+$Comp
+L LEDWallSign-rescue:TLC6C598-Q1-ledWallSign U200
+U 1 1 5D556D45
+P 9850 4350
+F 0 "U200" H 10075 4925 50  0000 C CNN
+F 1 "TLC6C598-Q1" H 10075 4834 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 9850 4350 50  0001 C CNN
+F 3 "296-36199-1-ND" H 9850 4350 50  0001 C CNN
+	1    9850 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:TLC6C598-Q1-ledWallSign U300
+U 1 1 5D556F41
+P 9800 6600
+F 0 "U300" H 10025 7175 50  0000 C CNN
+F 1 "TLC6C598-Q1" H 10025 7084 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 9800 6600 50  0001 C CNN
+F 3 "296-36199-1-ND" H 9800 6600 50  0001 C CNN
+	1    9800 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:TLC6C598-Q1-ledWallSign U400
+U 1 1 5D557145
+P 9800 8750
+F 0 "U400" H 10025 9325 50  0000 C CNN
+F 1 "TLC6C598-Q1" H 10025 9234 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 9800 8750 50  0001 C CNN
+F 3 "296-36199-1-ND" H 9800 8750 50  0001 C CNN
+	1    9800 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:TLC6C598-Q1-ledWallSign U500
+U 1 1 5D55B4D7
+P 18400 2200
+F 0 "U500" H 18625 2775 50  0000 C CNN
+F 1 "TLC6C598-Q1" H 18625 2684 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 18400 2200 50  0001 C CNN
+F 3 "296-36199-1-ND" H 18400 2200 50  0001 C CNN
+	1    18400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:TLC6C598-Q1-ledWallSign U600
+U 1 1 5D55BCFD
+P 18350 4500
+F 0 "U600" H 18575 5075 50  0000 C CNN
+F 1 "TLC6C598-Q1" H 18575 4984 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 18350 4500 50  0001 C CNN
+F 3 "296-36199-1-ND" H 18350 4500 50  0001 C CNN
+	1    18350 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:TLC6C598-Q1-ledWallSign U700
+U 1 1 5D55BF09
+P 18300 6750
+F 0 "U700" H 18525 7325 50  0000 C CNN
+F 1 "TLC6C598-Q1" H 18525 7234 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 18300 6750 50  0001 C CNN
+F 3 "296-36199-1-ND" H 18300 6750 50  0001 C CNN
+	1    18300 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:TLC6C598-Q1-ledWallSign U800
+U 1 1 5D55C9E0
+P 18300 8900
+F 0 "U800" H 18525 9475 50  0000 C CNN
+F 1 "TLC6C598-Q1" H 18525 9384 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 18300 8900 50  0001 C CNN
+F 3 "296-36199-1-ND" H 18300 8900 50  0001 C CNN
+	1    18300 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R193
+U 1 1 5D564D2C
+P 8950 2650
+F 0 "R193" H 9020 2696 50  0000 L CNN
+F 1 "10k" H 9020 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8880 2650 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8950 2650 50  0001 C CNN
+	1    8950 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R191
+U 1 1 5D5652A5
+P 8950 1950
+F 0 "R191" H 9020 1996 50  0000 L CNN
+F 1 "DNP" H 9020 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8880 1950 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8950 1950 50  0001 C CNN
+	1    8950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R192
+U 1 1 5D565614
+P 8700 2650
+F 0 "R192" H 8450 2650 50  0000 L CNN
+F 1 "DNP" H 8500 2550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8630 2650 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8700 2650 50  0001 C CNN
+	1    8700 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 4800 8900 4700
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0130
+U 1 1 5D568206
+P 8900 5250
+F 0 "#PWR0130" H 8900 5000 50  0001 C CNN
+F 1 "GND" H 8905 5077 50  0000 C CNN
+F 2 "" H 8900 5250 50  0001 C CNN
+F 3 "" H 8900 5250 50  0001 C CNN
+	1    8900 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 5250 8900 5100
+Wire Wire Line
+	8650 4800 8650 4600
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0131
+U 1 1 5D56820E
+P 8650 5250
+F 0 "#PWR0131" H 8650 5000 50  0001 C CNN
+F 1 "GND" H 8655 5077 50  0000 C CNN
+F 2 "" H 8650 5250 50  0001 C CNN
+F 3 "" H 8650 5250 50  0001 C CNN
+	1    8650 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5250 8650 5100
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0132
+U 1 1 5D568215
+P 8650 3650
+F 0 "#PWR0132" H 8650 3500 50  0001 C CNN
+F 1 "+5V" H 8665 3823 50  0000 C CNN
+F 2 "" H 8650 3650 50  0001 C CNN
+F 3 "" H 8650 3650 50  0001 C CNN
+	1    8650 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 4700 9500 4700
+Wire Wire Line
+	8650 4600 9500 4600
+Wire Wire Line
+	8650 4000 8900 4000
+Wire Wire Line
+	8650 3650 8650 3700
+Wire Wire Line
+	8900 4700 8900 4400
+Connection ~ 8900 4700
+Wire Wire Line
+	8900 4100 8900 4000
+Connection ~ 8900 4000
+Wire Wire Line
+	8900 4000 9500 4000
+$Comp
+L LEDWallSign-rescue:R-Device R290
+U 1 1 5D568224
+P 8650 4200
+F 0 "R290" H 8400 4250 50  0000 L CNN
+F 1 "10k" H 8450 4150 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8580 4200 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8650 4200 50  0001 C CNN
+	1    8650 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 4600 8650 4350
+Connection ~ 8650 4600
+Wire Wire Line
+	8650 4050 8650 4000
+Connection ~ 8650 4000
+$Comp
+L LEDWallSign-rescue:C_Small-Device C291
+U 1 1 5D56822F
+P 8250 3900
+F 0 "C291" H 8342 3946 50  0000 L CNN
+F 1 "100nF" H 8342 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8250 3900 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 8250 3900 50  0001 C CNN
+	1    8250 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C290
+U 1 1 5D568236
+P 7900 3900
+F 0 "C290" H 7992 3946 50  0000 L CNN
+F 1 "1uF" H 7992 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7900 3900 50  0001 C CNN
+F 3 "1276-1182-1-ND" H 7900 3900 50  0001 C CNN
+	1    7900 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 3800 7900 3700
+Wire Wire Line
+	7900 3700 8250 3700
+Connection ~ 8650 3700
+Wire Wire Line
+	8650 3700 8650 4000
+Wire Wire Line
+	8250 3800 8250 3700
+Connection ~ 8250 3700
+Wire Wire Line
+	8250 3700 8650 3700
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0133
+U 1 1 5D568244
+P 7900 4100
+F 0 "#PWR0133" H 7900 3850 50  0001 C CNN
+F 1 "GND" H 7905 3927 50  0000 C CNN
+F 2 "" H 7900 4100 50  0001 C CNN
+F 3 "" H 7900 4100 50  0001 C CNN
+	1    7900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0134
+U 1 1 5D56824A
+P 8250 4100
+F 0 "#PWR0134" H 8250 3850 50  0001 C CNN
+F 1 "GND" H 8255 3927 50  0000 C CNN
+F 2 "" H 8250 4100 50  0001 C CNN
+F 3 "" H 8250 4100 50  0001 C CNN
+	1    8250 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 4100 7900 4000
+Wire Wire Line
+	8250 4100 8250 4000
+$Comp
+L LEDWallSign-rescue:R-Device R293
+U 1 1 5D568252
+P 8900 4950
+F 0 "R293" H 8970 4996 50  0000 L CNN
+F 1 "10k" H 8970 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8830 4950 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8900 4950 50  0001 C CNN
+	1    8900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R291
+U 1 1 5D568259
+P 8900 4250
+F 0 "R291" H 8970 4296 50  0000 L CNN
+F 1 "DNP" H 8970 4205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8830 4250 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8900 4250 50  0001 C CNN
+	1    8900 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R292
+U 1 1 5D568260
+P 8650 4950
+F 0 "R292" H 8400 4950 50  0000 L CNN
+F 1 "DNP" H 8450 4850 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8580 4950 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8650 4950 50  0001 C CNN
+	1    8650 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 7050 8850 6950
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0135
+U 1 1 5D7E2C15
+P 8850 7500
+F 0 "#PWR0135" H 8850 7250 50  0001 C CNN
+F 1 "GND" H 8855 7327 50  0000 C CNN
+F 2 "" H 8850 7500 50  0001 C CNN
+F 3 "" H 8850 7500 50  0001 C CNN
+	1    8850 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 7500 8850 7350
+Wire Wire Line
+	8600 7050 8600 6850
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0136
+U 1 1 5D7E2C1D
+P 8600 7500
+F 0 "#PWR0136" H 8600 7250 50  0001 C CNN
+F 1 "GND" H 8605 7327 50  0000 C CNN
+F 2 "" H 8600 7500 50  0001 C CNN
+F 3 "" H 8600 7500 50  0001 C CNN
+	1    8600 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 7500 8600 7350
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0137
+U 1 1 5D7E2C24
+P 8600 5900
+F 0 "#PWR0137" H 8600 5750 50  0001 C CNN
+F 1 "+5V" H 8615 6073 50  0000 C CNN
+F 2 "" H 8600 5900 50  0001 C CNN
+F 3 "" H 8600 5900 50  0001 C CNN
+	1    8600 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 6950 9450 6950
+Wire Wire Line
+	8600 6850 9450 6850
+Wire Wire Line
+	8600 6250 8850 6250
+Wire Wire Line
+	8600 5900 8600 5950
+Wire Wire Line
+	8850 6950 8850 6650
+Connection ~ 8850 6950
+Wire Wire Line
+	8850 6350 8850 6250
+Connection ~ 8850 6250
+Wire Wire Line
+	8850 6250 9450 6250
+$Comp
+L LEDWallSign-rescue:R-Device R390
+U 1 1 5D7E2C33
+P 8600 6450
+F 0 "R390" H 8350 6500 50  0000 L CNN
+F 1 "10k" H 8400 6400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8530 6450 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8600 6450 50  0001 C CNN
+	1    8600 6450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 6850 8600 6600
+Connection ~ 8600 6850
+Wire Wire Line
+	8600 6300 8600 6250
+Connection ~ 8600 6250
+$Comp
+L LEDWallSign-rescue:C_Small-Device C391
+U 1 1 5D7E2C3E
+P 8200 6150
+F 0 "C391" H 8292 6196 50  0000 L CNN
+F 1 "100nF" H 8292 6105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8200 6150 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 8200 6150 50  0001 C CNN
+	1    8200 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C390
+U 1 1 5D7E2C45
+P 7850 6150
+F 0 "C390" H 7942 6196 50  0000 L CNN
+F 1 "1uF" H 7942 6105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7850 6150 50  0001 C CNN
+F 3 "1276-1182-1-ND" H 7850 6150 50  0001 C CNN
+	1    7850 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 6050 7850 5950
+Wire Wire Line
+	7850 5950 8200 5950
+Connection ~ 8600 5950
+Wire Wire Line
+	8600 5950 8600 6250
+Wire Wire Line
+	8200 6050 8200 5950
+Connection ~ 8200 5950
+Wire Wire Line
+	8200 5950 8600 5950
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0138
+U 1 1 5D7E2C53
+P 7850 6350
+F 0 "#PWR0138" H 7850 6100 50  0001 C CNN
+F 1 "GND" H 7855 6177 50  0000 C CNN
+F 2 "" H 7850 6350 50  0001 C CNN
+F 3 "" H 7850 6350 50  0001 C CNN
+	1    7850 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0139
+U 1 1 5D7E2C59
+P 8200 6350
+F 0 "#PWR0139" H 8200 6100 50  0001 C CNN
+F 1 "GND" H 8205 6177 50  0000 C CNN
+F 2 "" H 8200 6350 50  0001 C CNN
+F 3 "" H 8200 6350 50  0001 C CNN
+	1    8200 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 6350 7850 6250
+Wire Wire Line
+	8200 6350 8200 6250
+$Comp
+L LEDWallSign-rescue:R-Device R393
+U 1 1 5D7E2C61
+P 8850 7200
+F 0 "R393" H 8920 7246 50  0000 L CNN
+F 1 "10k" H 8920 7155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8780 7200 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8850 7200 50  0001 C CNN
+	1    8850 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R391
+U 1 1 5D7E2C68
+P 8850 6500
+F 0 "R391" H 8920 6546 50  0000 L CNN
+F 1 "DNP" H 8920 6455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8780 6500 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8850 6500 50  0001 C CNN
+	1    8850 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R392
+U 1 1 5D7E2C6F
+P 8600 7200
+F 0 "R392" H 8350 7200 50  0000 L CNN
+F 1 "DNP" H 8400 7100 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8530 7200 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8600 7200 50  0001 C CNN
+	1    8600 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 9200 8850 9100
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0140
+U 1 1 5D91B01B
+P 8850 9650
+F 0 "#PWR0140" H 8850 9400 50  0001 C CNN
+F 1 "GND" H 8855 9477 50  0000 C CNN
+F 2 "" H 8850 9650 50  0001 C CNN
+F 3 "" H 8850 9650 50  0001 C CNN
+	1    8850 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 9650 8850 9500
+Wire Wire Line
+	8600 9200 8600 9000
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0141
+U 1 1 5D91B023
+P 8600 9650
+F 0 "#PWR0141" H 8600 9400 50  0001 C CNN
+F 1 "GND" H 8605 9477 50  0000 C CNN
+F 2 "" H 8600 9650 50  0001 C CNN
+F 3 "" H 8600 9650 50  0001 C CNN
+	1    8600 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 9650 8600 9500
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0142
+U 1 1 5D91B02A
+P 8600 8050
+F 0 "#PWR0142" H 8600 7900 50  0001 C CNN
+F 1 "+5V" H 8615 8223 50  0000 C CNN
+F 2 "" H 8600 8050 50  0001 C CNN
+F 3 "" H 8600 8050 50  0001 C CNN
+	1    8600 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 9100 9450 9100
+Wire Wire Line
+	8600 9000 9450 9000
+Wire Wire Line
+	8600 8400 8850 8400
+Wire Wire Line
+	8600 8050 8600 8100
+Wire Wire Line
+	8850 9100 8850 8800
+Connection ~ 8850 9100
+Wire Wire Line
+	8850 8500 8850 8400
+Connection ~ 8850 8400
+Wire Wire Line
+	8850 8400 9450 8400
+$Comp
+L LEDWallSign-rescue:R-Device R490
+U 1 1 5D91B039
+P 8600 8600
+F 0 "R490" H 8350 8650 50  0000 L CNN
+F 1 "10k" H 8400 8550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8530 8600 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8600 8600 50  0001 C CNN
+	1    8600 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 9000 8600 8750
+Connection ~ 8600 9000
+Wire Wire Line
+	8600 8450 8600 8400
+Connection ~ 8600 8400
+$Comp
+L LEDWallSign-rescue:C_Small-Device C491
+U 1 1 5D91B044
+P 8200 8300
+F 0 "C491" H 8292 8346 50  0000 L CNN
+F 1 "100nF" H 8292 8255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8200 8300 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 8200 8300 50  0001 C CNN
+	1    8200 8300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C490
+U 1 1 5D91B04B
+P 7850 8300
+F 0 "C490" H 7942 8346 50  0000 L CNN
+F 1 "1uF" H 7942 8255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7850 8300 50  0001 C CNN
+F 3 "1276-1182-1-ND" H 7850 8300 50  0001 C CNN
+	1    7850 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 8200 7850 8100
+Wire Wire Line
+	7850 8100 8200 8100
+Connection ~ 8600 8100
+Wire Wire Line
+	8600 8100 8600 8400
+Wire Wire Line
+	8200 8200 8200 8100
+Connection ~ 8200 8100
+Wire Wire Line
+	8200 8100 8600 8100
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0143
+U 1 1 5D91B059
+P 7850 8500
+F 0 "#PWR0143" H 7850 8250 50  0001 C CNN
+F 1 "GND" H 7855 8327 50  0000 C CNN
+F 2 "" H 7850 8500 50  0001 C CNN
+F 3 "" H 7850 8500 50  0001 C CNN
+	1    7850 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0144
+U 1 1 5D91B05F
+P 8200 8500
+F 0 "#PWR0144" H 8200 8250 50  0001 C CNN
+F 1 "GND" H 8205 8327 50  0000 C CNN
+F 2 "" H 8200 8500 50  0001 C CNN
+F 3 "" H 8200 8500 50  0001 C CNN
+	1    8200 8500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 8500 7850 8400
+Wire Wire Line
+	8200 8500 8200 8400
+$Comp
+L LEDWallSign-rescue:R-Device R493
+U 1 1 5D91B067
+P 8850 9350
+F 0 "R493" H 8920 9396 50  0000 L CNN
+F 1 "10k" H 8920 9305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8780 9350 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8850 9350 50  0001 C CNN
+	1    8850 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R491
+U 1 1 5D91B06E
+P 8850 8650
+F 0 "R491" H 8920 8696 50  0000 L CNN
+F 1 "DNP" H 8920 8605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8780 8650 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8850 8650 50  0001 C CNN
+	1    8850 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R492
+U 1 1 5D91B075
+P 8600 9350
+F 0 "R492" H 8350 9350 50  0000 L CNN
+F 1 "DNP" H 8400 9250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8530 9350 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 8600 9350 50  0001 C CNN
+	1    8600 9350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17450 2650 17450 2550
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0145
+U 1 1 5DA5B941
+P 17450 3100
+F 0 "#PWR0145" H 17450 2850 50  0001 C CNN
+F 1 "GND" H 17455 2927 50  0000 C CNN
+F 2 "" H 17450 3100 50  0001 C CNN
+F 3 "" H 17450 3100 50  0001 C CNN
+	1    17450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17450 3100 17450 2950
+Wire Wire Line
+	17200 2650 17200 2450
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0146
+U 1 1 5DA5B949
+P 17200 3100
+F 0 "#PWR0146" H 17200 2850 50  0001 C CNN
+F 1 "GND" H 17205 2927 50  0000 C CNN
+F 2 "" H 17200 3100 50  0001 C CNN
+F 3 "" H 17200 3100 50  0001 C CNN
+	1    17200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17200 3100 17200 2950
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0147
+U 1 1 5DA5B950
+P 17200 1500
+F 0 "#PWR0147" H 17200 1350 50  0001 C CNN
+F 1 "+5V" H 17215 1673 50  0000 C CNN
+F 2 "" H 17200 1500 50  0001 C CNN
+F 3 "" H 17200 1500 50  0001 C CNN
+	1    17200 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17450 2550 18050 2550
+Wire Wire Line
+	17200 2450 18050 2450
+Wire Wire Line
+	17200 1850 17450 1850
+Wire Wire Line
+	17200 1500 17200 1550
+Wire Wire Line
+	17450 2550 17450 2250
+Connection ~ 17450 2550
+Wire Wire Line
+	17450 1950 17450 1850
+Connection ~ 17450 1850
+Wire Wire Line
+	17450 1850 18050 1850
+$Comp
+L LEDWallSign-rescue:R-Device R590
+U 1 1 5DA5B95F
+P 17200 2050
+F 0 "R590" H 16950 2100 50  0000 L CNN
+F 1 "10k" H 17000 2000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17130 2050 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17200 2050 50  0001 C CNN
+	1    17200 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17200 2450 17200 2200
+Connection ~ 17200 2450
+Wire Wire Line
+	17200 1900 17200 1850
+Connection ~ 17200 1850
+$Comp
+L LEDWallSign-rescue:C_Small-Device C591
+U 1 1 5DA5B96A
+P 16800 1750
+F 0 "C591" H 16892 1796 50  0000 L CNN
+F 1 "100nF" H 16892 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 16800 1750 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 16800 1750 50  0001 C CNN
+	1    16800 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C590
+U 1 1 5DA5B971
+P 16450 1750
+F 0 "C590" H 16542 1796 50  0000 L CNN
+F 1 "1uF" H 16542 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 16450 1750 50  0001 C CNN
+F 3 "1276-1182-1-ND" H 16450 1750 50  0001 C CNN
+	1    16450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16450 1650 16450 1550
+Wire Wire Line
+	16450 1550 16800 1550
+Connection ~ 17200 1550
+Wire Wire Line
+	17200 1550 17200 1850
+Wire Wire Line
+	16800 1650 16800 1550
+Connection ~ 16800 1550
+Wire Wire Line
+	16800 1550 17200 1550
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0148
+U 1 1 5DA5B97F
+P 16450 1950
+F 0 "#PWR0148" H 16450 1700 50  0001 C CNN
+F 1 "GND" H 16455 1777 50  0000 C CNN
+F 2 "" H 16450 1950 50  0001 C CNN
+F 3 "" H 16450 1950 50  0001 C CNN
+	1    16450 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0149
+U 1 1 5DA5B985
+P 16800 1950
+F 0 "#PWR0149" H 16800 1700 50  0001 C CNN
+F 1 "GND" H 16805 1777 50  0000 C CNN
+F 2 "" H 16800 1950 50  0001 C CNN
+F 3 "" H 16800 1950 50  0001 C CNN
+	1    16800 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16450 1950 16450 1850
+Wire Wire Line
+	16800 1950 16800 1850
+$Comp
+L LEDWallSign-rescue:R-Device R593
+U 1 1 5DA5B98D
+P 17450 2800
+F 0 "R593" H 17520 2846 50  0000 L CNN
+F 1 "10k" H 17520 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17380 2800 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17450 2800 50  0001 C CNN
+	1    17450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R591
+U 1 1 5DA5B994
+P 17450 2100
+F 0 "R591" H 17520 2146 50  0000 L CNN
+F 1 "DNP" H 17520 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17380 2100 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17450 2100 50  0001 C CNN
+	1    17450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R592
+U 1 1 5DA5B99B
+P 17200 2800
+F 0 "R592" H 16950 2800 50  0000 L CNN
+F 1 "DNP" H 17000 2700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17130 2800 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17200 2800 50  0001 C CNN
+	1    17200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17400 4950 17400 4850
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0150
+U 1 1 5DB9AFE2
+P 17400 5400
+F 0 "#PWR0150" H 17400 5150 50  0001 C CNN
+F 1 "GND" H 17405 5227 50  0000 C CNN
+F 2 "" H 17400 5400 50  0001 C CNN
+F 3 "" H 17400 5400 50  0001 C CNN
+	1    17400 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17400 5400 17400 5250
+Wire Wire Line
+	17150 4950 17150 4750
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0151
+U 1 1 5DB9AFEA
+P 17150 5400
+F 0 "#PWR0151" H 17150 5150 50  0001 C CNN
+F 1 "GND" H 17155 5227 50  0000 C CNN
+F 2 "" H 17150 5400 50  0001 C CNN
+F 3 "" H 17150 5400 50  0001 C CNN
+	1    17150 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17150 5400 17150 5250
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0152
+U 1 1 5DB9AFF1
+P 17150 3800
+F 0 "#PWR0152" H 17150 3650 50  0001 C CNN
+F 1 "+5V" H 17165 3973 50  0000 C CNN
+F 2 "" H 17150 3800 50  0001 C CNN
+F 3 "" H 17150 3800 50  0001 C CNN
+	1    17150 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17400 4850 18000 4850
+Wire Wire Line
+	17150 4750 18000 4750
+Wire Wire Line
+	17150 4150 17400 4150
+Wire Wire Line
+	17150 3800 17150 3850
+Wire Wire Line
+	17400 4850 17400 4550
+Connection ~ 17400 4850
+Wire Wire Line
+	17400 4250 17400 4150
+Connection ~ 17400 4150
+Wire Wire Line
+	17400 4150 18000 4150
+$Comp
+L LEDWallSign-rescue:R-Device R690
+U 1 1 5DB9B000
+P 17150 4350
+F 0 "R690" H 16900 4400 50  0000 L CNN
+F 1 "10k" H 16950 4300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17080 4350 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17150 4350 50  0001 C CNN
+	1    17150 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17150 4750 17150 4500
+Connection ~ 17150 4750
+Wire Wire Line
+	17150 4200 17150 4150
+Connection ~ 17150 4150
+$Comp
+L LEDWallSign-rescue:C_Small-Device C691
+U 1 1 5DB9B00B
+P 16750 4050
+F 0 "C691" H 16842 4096 50  0000 L CNN
+F 1 "100nF" H 16842 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 16750 4050 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 16750 4050 50  0001 C CNN
+	1    16750 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C690
+U 1 1 5DB9B012
+P 16400 4050
+F 0 "C690" H 16492 4096 50  0000 L CNN
+F 1 "1uF" H 16492 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 16400 4050 50  0001 C CNN
+F 3 "1276-1182-1-ND" H 16400 4050 50  0001 C CNN
+	1    16400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16400 3950 16400 3850
+Wire Wire Line
+	16400 3850 16750 3850
+Connection ~ 17150 3850
+Wire Wire Line
+	17150 3850 17150 4150
+Wire Wire Line
+	16750 3950 16750 3850
+Connection ~ 16750 3850
+Wire Wire Line
+	16750 3850 17150 3850
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0153
+U 1 1 5DB9B020
+P 16400 4250
+F 0 "#PWR0153" H 16400 4000 50  0001 C CNN
+F 1 "GND" H 16405 4077 50  0000 C CNN
+F 2 "" H 16400 4250 50  0001 C CNN
+F 3 "" H 16400 4250 50  0001 C CNN
+	1    16400 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0154
+U 1 1 5DB9B026
+P 16750 4250
+F 0 "#PWR0154" H 16750 4000 50  0001 C CNN
+F 1 "GND" H 16755 4077 50  0000 C CNN
+F 2 "" H 16750 4250 50  0001 C CNN
+F 3 "" H 16750 4250 50  0001 C CNN
+	1    16750 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16400 4250 16400 4150
+Wire Wire Line
+	16750 4250 16750 4150
+$Comp
+L LEDWallSign-rescue:R-Device R693
+U 1 1 5DB9B02E
+P 17400 5100
+F 0 "R693" H 17470 5146 50  0000 L CNN
+F 1 "10k" H 17470 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17330 5100 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17400 5100 50  0001 C CNN
+	1    17400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R691
+U 1 1 5DB9B035
+P 17400 4400
+F 0 "R691" H 17470 4446 50  0000 L CNN
+F 1 "DNP" H 17470 4355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17330 4400 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17400 4400 50  0001 C CNN
+	1    17400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R692
+U 1 1 5DB9B03C
+P 17150 5100
+F 0 "R692" H 16900 5100 50  0000 L CNN
+F 1 "DNP" H 16950 5000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17080 5100 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17150 5100 50  0001 C CNN
+	1    17150 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17350 7200 17350 7100
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0155
+U 1 1 5DCDA240
+P 17350 7650
+F 0 "#PWR0155" H 17350 7400 50  0001 C CNN
+F 1 "GND" H 17355 7477 50  0000 C CNN
+F 2 "" H 17350 7650 50  0001 C CNN
+F 3 "" H 17350 7650 50  0001 C CNN
+	1    17350 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17350 7650 17350 7500
+Wire Wire Line
+	17100 7200 17100 7000
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0156
+U 1 1 5DCDA248
+P 17100 7650
+F 0 "#PWR0156" H 17100 7400 50  0001 C CNN
+F 1 "GND" H 17105 7477 50  0000 C CNN
+F 2 "" H 17100 7650 50  0001 C CNN
+F 3 "" H 17100 7650 50  0001 C CNN
+	1    17100 7650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 7650 17100 7500
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0157
+U 1 1 5DCDA24F
+P 17100 6050
+F 0 "#PWR0157" H 17100 5900 50  0001 C CNN
+F 1 "+5V" H 17115 6223 50  0000 C CNN
+F 2 "" H 17100 6050 50  0001 C CNN
+F 3 "" H 17100 6050 50  0001 C CNN
+	1    17100 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17350 7100 17950 7100
+Wire Wire Line
+	17100 7000 17950 7000
+Wire Wire Line
+	17100 6400 17350 6400
+Wire Wire Line
+	17100 6050 17100 6100
+Wire Wire Line
+	17350 7100 17350 6800
+Connection ~ 17350 7100
+Wire Wire Line
+	17350 6500 17350 6400
+Connection ~ 17350 6400
+Wire Wire Line
+	17350 6400 17950 6400
+$Comp
+L LEDWallSign-rescue:R-Device R790
+U 1 1 5DCDA25E
+P 17100 6600
+F 0 "R790" H 16850 6650 50  0000 L CNN
+F 1 "10k" H 16900 6550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17030 6600 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17100 6600 50  0001 C CNN
+	1    17100 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 7000 17100 6750
+Connection ~ 17100 7000
+Wire Wire Line
+	17100 6450 17100 6400
+Connection ~ 17100 6400
+$Comp
+L LEDWallSign-rescue:C_Small-Device C791
+U 1 1 5DCDA269
+P 16700 6300
+F 0 "C791" H 16792 6346 50  0000 L CNN
+F 1 "100nF" H 16792 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 16700 6300 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 16700 6300 50  0001 C CNN
+	1    16700 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C790
+U 1 1 5DCDA270
+P 16350 6300
+F 0 "C790" H 16442 6346 50  0000 L CNN
+F 1 "1uF" H 16442 6255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 16350 6300 50  0001 C CNN
+F 3 "1276-1182-1-ND" H 16350 6300 50  0001 C CNN
+	1    16350 6300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16350 6200 16350 6100
+Wire Wire Line
+	16350 6100 16700 6100
+Connection ~ 17100 6100
+Wire Wire Line
+	17100 6100 17100 6400
+Wire Wire Line
+	16700 6200 16700 6100
+Connection ~ 16700 6100
+Wire Wire Line
+	16700 6100 17100 6100
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0158
+U 1 1 5DCDA27E
+P 16350 6500
+F 0 "#PWR0158" H 16350 6250 50  0001 C CNN
+F 1 "GND" H 16355 6327 50  0000 C CNN
+F 2 "" H 16350 6500 50  0001 C CNN
+F 3 "" H 16350 6500 50  0001 C CNN
+	1    16350 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0159
+U 1 1 5DCDA284
+P 16700 6500
+F 0 "#PWR0159" H 16700 6250 50  0001 C CNN
+F 1 "GND" H 16705 6327 50  0000 C CNN
+F 2 "" H 16700 6500 50  0001 C CNN
+F 3 "" H 16700 6500 50  0001 C CNN
+	1    16700 6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16350 6500 16350 6400
+Wire Wire Line
+	16700 6500 16700 6400
+$Comp
+L LEDWallSign-rescue:R-Device R793
+U 1 1 5DCDA28C
+P 17350 7350
+F 0 "R793" H 17420 7396 50  0000 L CNN
+F 1 "10k" H 17420 7305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17280 7350 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17350 7350 50  0001 C CNN
+	1    17350 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R791
+U 1 1 5DCDA293
+P 17350 6650
+F 0 "R791" H 17420 6696 50  0000 L CNN
+F 1 "DNP" H 17420 6605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17280 6650 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17350 6650 50  0001 C CNN
+	1    17350 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R792
+U 1 1 5DCDA29A
+P 17100 7350
+F 0 "R792" H 16850 7350 50  0000 L CNN
+F 1 "DNP" H 16900 7250 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17030 7350 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17100 7350 50  0001 C CNN
+	1    17100 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17350 9350 17350 9250
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0160
+U 1 1 5DE17011
+P 17350 9800
+F 0 "#PWR0160" H 17350 9550 50  0001 C CNN
+F 1 "GND" H 17355 9627 50  0000 C CNN
+F 2 "" H 17350 9800 50  0001 C CNN
+F 3 "" H 17350 9800 50  0001 C CNN
+	1    17350 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17350 9800 17350 9650
+Wire Wire Line
+	17100 9350 17100 9150
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0161
+U 1 1 5DE17019
+P 17100 9800
+F 0 "#PWR0161" H 17100 9550 50  0001 C CNN
+F 1 "GND" H 17105 9627 50  0000 C CNN
+F 2 "" H 17100 9800 50  0001 C CNN
+F 3 "" H 17100 9800 50  0001 C CNN
+	1    17100 9800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 9800 17100 9650
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0162
+U 1 1 5DE17020
+P 17100 8200
+F 0 "#PWR0162" H 17100 8050 50  0001 C CNN
+F 1 "+5V" H 17115 8373 50  0000 C CNN
+F 2 "" H 17100 8200 50  0001 C CNN
+F 3 "" H 17100 8200 50  0001 C CNN
+	1    17100 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17350 9250 17950 9250
+Wire Wire Line
+	17100 9150 17950 9150
+Wire Wire Line
+	17100 8550 17350 8550
+Wire Wire Line
+	17100 8200 17100 8250
+Wire Wire Line
+	17350 9250 17350 8950
+Connection ~ 17350 9250
+Wire Wire Line
+	17350 8650 17350 8550
+Connection ~ 17350 8550
+Wire Wire Line
+	17350 8550 17950 8550
+$Comp
+L LEDWallSign-rescue:R-Device R890
+U 1 1 5DE1702F
+P 17100 8750
+F 0 "R890" H 16850 8800 50  0000 L CNN
+F 1 "10k" H 16900 8700 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17030 8750 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17100 8750 50  0001 C CNN
+	1    17100 8750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17100 9150 17100 8900
+Connection ~ 17100 9150
+Wire Wire Line
+	17100 8600 17100 8550
+Connection ~ 17100 8550
+$Comp
+L LEDWallSign-rescue:C_Small-Device C891
+U 1 1 5DE1703A
+P 16700 8450
+F 0 "C891" H 16792 8496 50  0000 L CNN
+F 1 "100nF" H 16792 8405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 16700 8450 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 16700 8450 50  0001 C CNN
+	1    16700 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C890
+U 1 1 5DE17041
+P 16350 8450
+F 0 "C890" H 16442 8496 50  0000 L CNN
+F 1 "1uF" H 16442 8405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 16350 8450 50  0001 C CNN
+F 3 "1276-1182-1-ND" H 16350 8450 50  0001 C CNN
+	1    16350 8450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16350 8350 16350 8250
+Wire Wire Line
+	16350 8250 16700 8250
+Connection ~ 17100 8250
+Wire Wire Line
+	17100 8250 17100 8550
+Wire Wire Line
+	16700 8350 16700 8250
+Connection ~ 16700 8250
+Wire Wire Line
+	16700 8250 17100 8250
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0163
+U 1 1 5DE1704F
+P 16350 8650
+F 0 "#PWR0163" H 16350 8400 50  0001 C CNN
+F 1 "GND" H 16355 8477 50  0000 C CNN
+F 2 "" H 16350 8650 50  0001 C CNN
+F 3 "" H 16350 8650 50  0001 C CNN
+	1    16350 8650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:GND-power #PWR0164
+U 1 1 5DE17055
+P 16700 8650
+F 0 "#PWR0164" H 16700 8400 50  0001 C CNN
+F 1 "GND" H 16705 8477 50  0000 C CNN
+F 2 "" H 16700 8650 50  0001 C CNN
+F 3 "" H 16700 8650 50  0001 C CNN
+	1    16700 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	16350 8650 16350 8550
+Wire Wire Line
+	16700 8650 16700 8550
+$Comp
+L LEDWallSign-rescue:R-Device R893
+U 1 1 5DE1705D
+P 17350 9500
+F 0 "R893" H 17420 9546 50  0000 L CNN
+F 1 "10k" H 17420 9455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17280 9500 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17350 9500 50  0001 C CNN
+	1    17350 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R891
+U 1 1 5DE17064
+P 17350 8800
+F 0 "R891" H 17420 8846 50  0000 L CNN
+F 1 "DNP" H 17420 8755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17280 8800 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17350 8800 50  0001 C CNN
+	1    17350 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:R-Device R892
+U 1 1 5DE1706B
+P 17100 9500
+F 0 "R892" H 16850 9500 50  0000 L CNN
+F 1 "DNP" H 16900 9400 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 17030 9500 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 17100 9500 50  0001 C CNN
+	1    17100 9500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11800 1400 12100 1400
+Wire Wire Line
+	12750 1400 12850 1400
+$Comp
+L LEDWallSign-rescue:R-Device R101
+U 1 1 5DEF7F3D
+P 12100 1700
+F 0 "R101" H 12100 1850 50  0000 L CNN
+F 1 "1k" H 12150 1750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12030 1700 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12100 1700 50  0001 C CNN
+	1    12100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D101
+U 1 1 5DEF7F44
+P 12100 2150
+F 0 "D101" V 12300 2150 50  0000 R CNN
+F 1 "LED" V 12200 2150 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12100 2150 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12100 2150 50  0001 C CNN
+	1    12100 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12100 2000 12100 1850
+$Comp
+L LEDWallSign-rescue:R-Device R102
+U 1 1 5DF5FAE1
+P 12350 1700
+F 0 "R102" H 12350 1850 50  0000 L CNN
+F 1 "1k" H 12400 1750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12280 1700 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12350 1700 50  0001 C CNN
+	1    12350 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 2000 12350 1850
+$Comp
+L LEDWallSign-rescue:R-Device R103
+U 1 1 5DFC841F
+P 12600 1700
+F 0 "R103" H 12600 1850 50  0000 L CNN
+F 1 "1k" H 12650 1750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12530 1700 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12600 1700 50  0001 C CNN
+	1    12600 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12600 2000 12600 1850
+$Comp
+L LEDWallSign-rescue:R-Device R104
+U 1 1 5E031AA7
+P 12850 1700
+F 0 "R104" H 12850 1850 50  0000 L CNN
+F 1 "1k" H 12900 1750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12780 1700 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12850 1700 50  0001 C CNN
+	1    12850 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 2000 12850 1850
+$Comp
+L LEDWallSign-rescue:R-Device R105
+U 1 1 5E09BE3D
+P 13150 1700
+F 0 "R105" H 13150 1850 50  0000 L CNN
+F 1 "1k" H 13200 1750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13080 1700 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13150 1700 50  0001 C CNN
+	1    13150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13150 2000 13150 1850
+$Comp
+L LEDWallSign-rescue:R-Device R106
+U 1 1 5E106ECD
+P 13400 1700
+F 0 "R106" H 13400 1850 50  0000 L CNN
+F 1 "1k" H 13450 1750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13330 1700 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13400 1700 50  0001 C CNN
+	1    13400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 2000 13400 1850
+$Comp
+L LEDWallSign-rescue:R-Device R107
+U 1 1 5E172C03
+P 13650 1700
+F 0 "R107" H 13650 1850 50  0000 L CNN
+F 1 "1k" H 13700 1750 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13580 1700 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13650 1700 50  0001 C CNN
+	1    13650 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 2000 13650 1850
+Wire Wire Line
+	13650 1550 13650 1400
+Wire Wire Line
+	12100 1550 12100 1400
+Connection ~ 12100 1400
+Wire Wire Line
+	12100 1400 12350 1400
+Wire Wire Line
+	12350 1550 12350 1400
+Connection ~ 12350 1400
+Wire Wire Line
+	12850 1400 12850 1550
+Connection ~ 12850 1400
+Wire Wire Line
+	12850 1400 13150 1400
+Wire Wire Line
+	13150 1550 13150 1400
+Connection ~ 13150 1400
+Wire Wire Line
+	13150 1400 13400 1400
+Wire Wire Line
+	13400 1550 13400 1400
+Wire Wire Line
+	12600 1400 12750 1400
+Wire Wire Line
+	12350 1400 12600 1400
+Connection ~ 13400 1400
+Wire Wire Line
+	13400 1400 13650 1400
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0165
+U 1 1 5E4CA450
+P 12700 3650
+F 0 "#PWR0165" H 12700 3500 50  0001 C CNN
+F 1 "+5V" H 12715 3823 50  0000 C CNN
+F 2 "" H 12700 3650 50  0001 C CNN
+F 3 "" H 12700 3650 50  0001 C CNN
+	1    12700 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 3850 11750 3700
+Wire Wire Line
+	12700 3700 12700 3650
+Connection ~ 12700 3700
+Wire Wire Line
+	11750 3700 12050 3700
+Wire Wire Line
+	12700 3700 12800 3700
+Wire Wire Line
+	13600 3850 13600 3700
+Wire Wire Line
+	12050 3850 12050 3700
+Connection ~ 12050 3700
+Wire Wire Line
+	12050 3700 12300 3700
+Wire Wire Line
+	12300 3850 12300 3700
+Connection ~ 12300 3700
+Wire Wire Line
+	12800 3700 12800 3850
+Connection ~ 12800 3700
+Wire Wire Line
+	12800 3700 13100 3700
+Wire Wire Line
+	13100 3850 13100 3700
+Connection ~ 13100 3700
+Wire Wire Line
+	13100 3700 13350 3700
+Wire Wire Line
+	13350 3850 13350 3700
+Wire Wire Line
+	12550 3700 12700 3700
+Wire Wire Line
+	12300 3700 12550 3700
+Connection ~ 13350 3700
+Wire Wire Line
+	13350 3700 13600 3700
+Wire Wire Line
+	12550 3850 12550 3700
+Connection ~ 12550 3700
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0166
+U 1 1 5E67A2FB
+P 12650 5900
+F 0 "#PWR0166" H 12650 5750 50  0001 C CNN
+F 1 "+5V" H 12665 6073 50  0000 C CNN
+F 2 "" H 12650 5900 50  0001 C CNN
+F 3 "" H 12650 5900 50  0001 C CNN
+	1    12650 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 6100 11700 5950
+Wire Wire Line
+	12650 5950 12650 5900
+Connection ~ 12650 5950
+Wire Wire Line
+	11700 5950 12000 5950
+Wire Wire Line
+	12650 5950 12750 5950
+Wire Wire Line
+	13550 6100 13550 5950
+Wire Wire Line
+	12000 6100 12000 5950
+Connection ~ 12000 5950
+Wire Wire Line
+	12000 5950 12250 5950
+Wire Wire Line
+	12250 6100 12250 5950
+Connection ~ 12250 5950
+Wire Wire Line
+	12750 5950 12750 6100
+Connection ~ 12750 5950
+Wire Wire Line
+	12750 5950 13050 5950
+Wire Wire Line
+	13050 6100 13050 5950
+Connection ~ 13050 5950
+Wire Wire Line
+	13050 5950 13300 5950
+Wire Wire Line
+	13300 6100 13300 5950
+Wire Wire Line
+	12500 5950 12650 5950
+Wire Wire Line
+	12250 5950 12500 5950
+Connection ~ 13300 5950
+Wire Wire Line
+	13300 5950 13550 5950
+Wire Wire Line
+	12500 6100 12500 5950
+Connection ~ 12500 5950
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0167
+U 1 1 5E82F567
+P 12650 8050
+F 0 "#PWR0167" H 12650 7900 50  0001 C CNN
+F 1 "+5V" H 12665 8223 50  0000 C CNN
+F 2 "" H 12650 8050 50  0001 C CNN
+F 3 "" H 12650 8050 50  0001 C CNN
+	1    12650 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 8100 12650 8050
+Connection ~ 12650 8100
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0168
+U 1 1 5E9E8348
+P 21250 1500
+F 0 "#PWR0168" H 21250 1350 50  0001 C CNN
+F 1 "+5V" H 21265 1673 50  0000 C CNN
+F 2 "" H 21250 1500 50  0001 C CNN
+F 3 "" H 21250 1500 50  0001 C CNN
+	1    21250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 1700 20300 1550
+Wire Wire Line
+	21250 1550 21250 1500
+Connection ~ 21250 1550
+Wire Wire Line
+	20300 1550 20600 1550
+Wire Wire Line
+	21250 1550 21350 1550
+Wire Wire Line
+	22150 1700 22150 1550
+Wire Wire Line
+	20600 1700 20600 1550
+Connection ~ 20600 1550
+Wire Wire Line
+	20600 1550 20850 1550
+Wire Wire Line
+	20850 1700 20850 1550
+Connection ~ 20850 1550
+Wire Wire Line
+	21350 1550 21350 1700
+Connection ~ 21350 1550
+Wire Wire Line
+	21350 1550 21650 1550
+Wire Wire Line
+	21650 1700 21650 1550
+Connection ~ 21650 1550
+Wire Wire Line
+	21650 1550 21900 1550
+Wire Wire Line
+	21900 1700 21900 1550
+Wire Wire Line
+	21100 1550 21250 1550
+Wire Wire Line
+	20850 1550 21100 1550
+Connection ~ 21900 1550
+Wire Wire Line
+	21900 1550 22150 1550
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0169
+U 1 1 5EB20FCE
+P 21200 3800
+F 0 "#PWR0169" H 21200 3650 50  0001 C CNN
+F 1 "+5V" H 21215 3973 50  0000 C CNN
+F 2 "" H 21200 3800 50  0001 C CNN
+F 3 "" H 21200 3800 50  0001 C CNN
+	1    21200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20250 4000 20250 3850
+Wire Wire Line
+	21200 3850 21200 3800
+Connection ~ 21200 3850
+Wire Wire Line
+	20250 3850 20550 3850
+Wire Wire Line
+	21200 3850 21300 3850
+Wire Wire Line
+	22100 4000 22100 3850
+Wire Wire Line
+	20550 4000 20550 3850
+Connection ~ 20550 3850
+Wire Wire Line
+	20550 3850 20800 3850
+Wire Wire Line
+	20800 4000 20800 3850
+Connection ~ 20800 3850
+Wire Wire Line
+	21300 3850 21300 4000
+Connection ~ 21300 3850
+Wire Wire Line
+	21300 3850 21600 3850
+Wire Wire Line
+	21600 4000 21600 3850
+Connection ~ 21600 3850
+Wire Wire Line
+	21600 3850 21850 3850
+Wire Wire Line
+	21850 4000 21850 3850
+Wire Wire Line
+	21050 3850 21200 3850
+Wire Wire Line
+	20800 3850 21050 3850
+Connection ~ 21850 3850
+Wire Wire Line
+	21850 3850 22100 3850
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0170
+U 1 1 5EC4ECBD
+P 21150 6050
+F 0 "#PWR0170" H 21150 5900 50  0001 C CNN
+F 1 "+5V" H 21165 6223 50  0000 C CNN
+F 2 "" H 21150 6050 50  0001 C CNN
+F 3 "" H 21150 6050 50  0001 C CNN
+	1    21150 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20200 6250 20200 6100
+Wire Wire Line
+	21150 6100 21150 6050
+Connection ~ 21150 6100
+Wire Wire Line
+	20200 6100 20500 6100
+Wire Wire Line
+	21150 6100 21250 6100
+Wire Wire Line
+	22050 6250 22050 6100
+Wire Wire Line
+	20500 6250 20500 6100
+Connection ~ 20500 6100
+Wire Wire Line
+	20500 6100 20750 6100
+Wire Wire Line
+	20750 6250 20750 6100
+Connection ~ 20750 6100
+Wire Wire Line
+	21250 6100 21250 6250
+Connection ~ 21250 6100
+Wire Wire Line
+	21250 6100 21550 6100
+Wire Wire Line
+	21550 6250 21550 6100
+Connection ~ 21550 6100
+Wire Wire Line
+	21550 6100 21800 6100
+Wire Wire Line
+	21800 6250 21800 6100
+Wire Wire Line
+	21000 6100 21150 6100
+Wire Wire Line
+	20750 6100 21000 6100
+Connection ~ 21800 6100
+Wire Wire Line
+	21800 6100 22050 6100
+$Comp
+L LEDWallSign-rescue:+5V-power #PWR0171
+U 1 1 5ED73A6A
+P 21150 8200
+F 0 "#PWR0171" H 21150 8050 50  0001 C CNN
+F 1 "+5V" H 21165 8373 50  0000 C CNN
+F 2 "" H 21150 8200 50  0001 C CNN
+F 3 "" H 21150 8200 50  0001 C CNN
+	1    21150 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20200 8400 20200 8250
+Wire Wire Line
+	21150 8250 21150 8200
+Connection ~ 21150 8250
+Wire Wire Line
+	20200 8250 20500 8250
+Wire Wire Line
+	21150 8250 21250 8250
+Wire Wire Line
+	22050 8400 22050 8250
+Wire Wire Line
+	20500 8400 20500 8250
+Connection ~ 20500 8250
+Wire Wire Line
+	20500 8250 20750 8250
+Wire Wire Line
+	20750 8400 20750 8250
+Connection ~ 20750 8250
+Wire Wire Line
+	21250 8250 21250 8400
+Connection ~ 21250 8250
+Wire Wire Line
+	21250 8250 21550 8250
+Wire Wire Line
+	21550 8400 21550 8250
+Connection ~ 21550 8250
+Wire Wire Line
+	21550 8250 21800 8250
+Wire Wire Line
+	21800 8400 21800 8250
+Wire Wire Line
+	21000 8250 21150 8250
+Wire Wire Line
+	20750 8250 21000 8250
+Connection ~ 21800 8250
+Wire Wire Line
+	21800 8250 22050 8250
+Wire Wire Line
+	21000 8400 21000 8250
+Connection ~ 21000 8250
+Wire Wire Line
+	21000 6250 21000 6100
+Connection ~ 21000 6100
+Wire Wire Line
+	21050 4000 21050 3850
+Connection ~ 21050 3850
+Wire Wire Line
+	21100 1700 21100 1550
+Connection ~ 21100 1550
+$Comp
+L LEDWallSign-rescue:R-Device R5
+U 1 1 5EF86459
+P 3700 9500
+F 0 "R5" H 3770 9546 50  0000 L CNN
+F 1 "1k" H 3770 9455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 9500 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 3700 9500 50  0001 C CNN
+	1    3700 9500
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D2
+U 1 1 5EF86460
+P 3700 9950
+F 0 "D2" V 3900 9900 50  0000 R CNN
+F 1 "LED" V 3800 9900 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3700 9950 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 3700 9950 50  0001 C CNN
+	1    3700 9950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3700 9800 3700 9650
+Wire Wire Line
+	3700 9350 3700 9200
+$Comp
+L LEDWallSign-rescue:C_Small-Device C9
+U 1 1 5F0C6FA0
+P 2300 9800
+F 0 "C9" H 2392 9846 50  0000 L CNN
+F 1 "18pF" H 2392 9755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2300 9800 50  0001 C CNN
+F 3 "490-9716-1-ND" H 2300 9800 50  0001 C CNN
+	1    2300 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C7
+U 1 1 5F0CC1E8
+P 4000 8150
+F 0 "C7" H 4092 8196 50  0000 L CNN
+F 1 "100nF" H 4092 8105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4000 8150 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 4000 8150 50  0001 C CNN
+	1    4000 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 8450 4000 8250
+Connection ~ 4000 8450
+Wire Wire Line
+	4000 8050 4000 7900
+Wire Wire Line
+	4000 7900 3350 7900
+Connection ~ 3350 7900
+Wire Wire Line
+	3350 7900 3350 7850
+$Comp
+L LEDWallSign-rescue:R-Device R4
+U 1 1 5F19E436
+P 3350 8100
+F 0 "R4" H 3420 8146 50  0000 L CNN
+F 1 "10k" H 3420 8055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3280 8100 50  0001 C CNN
+F 3 "RNCP0603FTD10K0CT-ND" H 3350 8100 50  0001 C CNN
+	1    3350 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2700 1450 2850
+Wire Wire Line
+	1450 3050 1450 3200
+$Comp
+L LEDWallSign-rescue:C_Small-Device C5
+U 1 1 5F2BDCA0
+P 2600 2900
+F 0 "C5" H 2692 2946 50  0000 L CNN
+F 1 "100nF" H 2692 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2600 2900 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 2600 2900 50  0001 C CNN
+	1    2600 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C4
+U 1 1 5F2BFEE2
+P 1850 2950
+F 0 "C4" H 1942 2996 50  0000 L CNN
+F 1 "100nF" H 1942 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1850 2950 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 1850 2950 50  0001 C CNN
+	1    1850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C3
+U 1 1 5F2C143B
+P 1450 2950
+F 0 "C3" H 1542 2996 50  0000 L CNN
+F 1 "1uF" H 1542 2905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1450 2950 50  0001 C CNN
+F 3 "1276-1182-1-ND" H 1450 2950 50  0001 C CNN
+	1    1450 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4450 1350 4450
+Wire Wire Line
+	1350 4450 1350 4300
+$Comp
+L LEDWallSign-rescue:+5VA-power #PWR0172
+U 1 1 5F333C5F
+P 1350 4300
+F 0 "#PWR0172" H 1350 4150 50  0001 C CNN
+F 1 "+5VA" H 1400 4450 50  0000 C CNN
+F 2 "" H 1350 4300 50  0001 C CNN
+F 3 "" H 1350 4300 50  0001 C CNN
+	1    1350 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LEDWallSign-rescue:C_Small-Device C2
+U 1 1 5F33D8D8
+P 4050 1350
+F 0 "C2" H 4142 1396 50  0000 L CNN
+F 1 "100nF" H 4142 1305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4050 1350 50  0001 C CNN
+F 3 "1276-CL10B104KB8NNNLCT-ND" H 4050 1350 50  0001 C CNN
+	1    4050 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1450 4050 1850
+Wire Wire Line
+	4050 900  4050 1250
+$Comp
+L LEDWallSign-rescue:R-Device R3
+U 1 1 5F4154D3
+P 4550 1550
+F 0 "R3" H 4620 1596 50  0000 L CNN
+F 1 "1k" H 4620 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4480 1550 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 4550 1550 50  0001 C CNN
+	1    4550 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D1
+U 1 1 5F4154DA
+P 4550 1100
+F 0 "D1" V 4750 1050 50  0000 R CNN
+F 1 "LED" V 4650 1050 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4550 1100 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 4550 1100 50  0001 C CNN
+	1    4550 1100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 1250 4550 1400
+Wire Wire Line
+	4550 1700 4550 1850
+Wire Wire Line
+	4050 900  4550 900 
+Wire Wire Line
+	4050 1850 4550 1850
+Connection ~ 4550 1850
+Wire Wire Line
+	4550 1850 4750 1850
+Wire Wire Line
+	4550 950  4550 900 
+Connection ~ 4550 900 
+Wire Wire Line
+	4550 900  4750 900 
+Wire Wire Line
+	12600 1550 12600 1400
+Connection ~ 12600 1400
+$Comp
+L LEDWallSign-rescue:R-Device R208
+U 1 1 5F86F9CE
+P 11750 4000
+F 0 "R208" H 11750 4150 50  0000 L CNN
+F 1 "1k" H 11800 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11680 4000 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 11750 4000 50  0001 C CNN
+	1    11750 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11750 4300 11750 4150
+$Comp
+L LEDWallSign-rescue:R-Device R209
+U 1 1 5F86F9DD
+P 12050 4000
+F 0 "R209" H 12050 4150 50  0000 L CNN
+F 1 "1k" H 12100 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11980 4000 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12050 4000 50  0001 C CNN
+	1    12050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12050 4300 12050 4150
+$Comp
+L LEDWallSign-rescue:R-Device R210
+U 1 1 5F86F9EC
+P 12300 4000
+F 0 "R210" H 12300 4150 50  0000 L CNN
+F 1 "1k" H 12350 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12230 4000 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12300 4000 50  0001 C CNN
+	1    12300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 4300 12300 4150
+$Comp
+L LEDWallSign-rescue:R-Device R211
+U 1 1 5F86F9FB
+P 12550 4000
+F 0 "R211" H 12550 4150 50  0000 L CNN
+F 1 "1k" H 12600 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12480 4000 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12550 4000 50  0001 C CNN
+	1    12550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12550 4300 12550 4150
+$Comp
+L LEDWallSign-rescue:R-Device R212
+U 1 1 5F86FA0A
+P 12800 4000
+F 0 "R212" H 12800 4150 50  0000 L CNN
+F 1 "1k" H 12850 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12730 4000 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12800 4000 50  0001 C CNN
+	1    12800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12800 4300 12800 4150
+$Comp
+L LEDWallSign-rescue:R-Device R213
+U 1 1 5F86FA19
+P 13100 4000
+F 0 "R213" H 13100 4150 50  0000 L CNN
+F 1 "1k" H 13150 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13030 4000 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13100 4000 50  0001 C CNN
+	1    13100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 4300 13100 4150
+$Comp
+L LEDWallSign-rescue:R-Device R214
+U 1 1 5F86FA28
+P 13350 4000
+F 0 "R214" H 13350 4150 50  0000 L CNN
+F 1 "1k" H 13400 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13280 4000 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13350 4000 50  0001 C CNN
+	1    13350 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13350 4300 13350 4150
+$Comp
+L LEDWallSign-rescue:R-Device R215
+U 1 1 5F86FA37
+P 13600 4000
+F 0 "R215" H 13600 4150 50  0000 L CNN
+F 1 "1k" H 13650 4050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13530 4000 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13600 4000 50  0001 C CNN
+	1    13600 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13600 4300 13600 4150
+$Comp
+L LEDWallSign-rescue:R-Device R316
+U 1 1 5F946394
+P 11700 6250
+F 0 "R316" H 11700 6400 50  0000 L CNN
+F 1 "1k" H 11750 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11630 6250 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 11700 6250 50  0001 C CNN
+	1    11700 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 6550 11700 6400
+$Comp
+L LEDWallSign-rescue:R-Device R317
+U 1 1 5F9463A3
+P 12000 6250
+F 0 "R317" H 12000 6400 50  0000 L CNN
+F 1 "1k" H 12050 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11930 6250 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12000 6250 50  0001 C CNN
+	1    12000 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 6550 12000 6400
+$Comp
+L LEDWallSign-rescue:R-Device R318
+U 1 1 5F9463B2
+P 12250 6250
+F 0 "R318" H 12250 6400 50  0000 L CNN
+F 1 "1k" H 12300 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12180 6250 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12250 6250 50  0001 C CNN
+	1    12250 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12250 6550 12250 6400
+$Comp
+L LEDWallSign-rescue:R-Device R319
+U 1 1 5F9463C1
+P 12500 6250
+F 0 "R319" H 12500 6400 50  0000 L CNN
+F 1 "1k" H 12550 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12430 6250 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12500 6250 50  0001 C CNN
+	1    12500 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12500 6550 12500 6400
+$Comp
+L LEDWallSign-rescue:R-Device R320
+U 1 1 5F9463D0
+P 12750 6250
+F 0 "R320" H 12750 6400 50  0000 L CNN
+F 1 "1k" H 12800 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12680 6250 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12750 6250 50  0001 C CNN
+	1    12750 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 6550 12750 6400
+$Comp
+L LEDWallSign-rescue:R-Device R321
+U 1 1 5F9463DF
+P 13050 6250
+F 0 "R321" H 13050 6400 50  0000 L CNN
+F 1 "1k" H 13100 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12980 6250 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13050 6250 50  0001 C CNN
+	1    13050 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 6550 13050 6400
+$Comp
+L LEDWallSign-rescue:R-Device R322
+U 1 1 5F9463EE
+P 13300 6250
+F 0 "R322" H 13300 6400 50  0000 L CNN
+F 1 "1k" H 13350 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13230 6250 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13300 6250 50  0001 C CNN
+	1    13300 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 6550 13300 6400
+$Comp
+L LEDWallSign-rescue:R-Device R323
+U 1 1 5F9463FD
+P 13550 6250
+F 0 "R323" H 13550 6400 50  0000 L CNN
+F 1 "1k" H 13600 6300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13480 6250 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13550 6250 50  0001 C CNN
+	1    13550 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 6550 13550 6400
+Wire Wire Line
+	12500 8100 12650 8100
+Connection ~ 12500 8100
+Wire Wire Line
+	12500 8250 12500 8100
+Wire Wire Line
+	13300 8100 13550 8100
+Connection ~ 13300 8100
+Wire Wire Line
+	13300 8250 13300 8100
+Wire Wire Line
+	13050 8100 13300 8100
+Connection ~ 13050 8100
+Wire Wire Line
+	13050 8250 13050 8100
+Wire Wire Line
+	12750 8100 13050 8100
+Wire Wire Line
+	12650 8100 12750 8100
+Connection ~ 12750 8100
+Wire Wire Line
+	12750 8100 12750 8250
+Wire Wire Line
+	12250 8100 12500 8100
+Connection ~ 12250 8100
+Wire Wire Line
+	12250 8250 12250 8100
+Wire Wire Line
+	12000 8100 12250 8100
+Wire Wire Line
+	11700 8100 12000 8100
+Connection ~ 12000 8100
+Wire Wire Line
+	12000 8250 12000 8100
+Wire Wire Line
+	13550 8250 13550 8100
+Wire Wire Line
+	11700 8250 11700 8100
+$Comp
+L LEDWallSign-rescue:R-Device R424
+U 1 1 5FA828DE
+P 11700 8400
+F 0 "R424" H 11700 8550 50  0000 L CNN
+F 1 "1k" H 11750 8450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11630 8400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 11700 8400 50  0001 C CNN
+	1    11700 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 8700 11700 8550
+$Comp
+L LEDWallSign-rescue:R-Device R425
+U 1 1 5FA828ED
+P 12000 8400
+F 0 "R425" H 12000 8550 50  0000 L CNN
+F 1 "1k" H 12050 8450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 11930 8400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12000 8400 50  0001 C CNN
+	1    12000 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 8700 12000 8550
+$Comp
+L LEDWallSign-rescue:R-Device R426
+U 1 1 5FA828FC
+P 12250 8400
+F 0 "R426" H 12250 8550 50  0000 L CNN
+F 1 "1k" H 12300 8450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12180 8400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12250 8400 50  0001 C CNN
+	1    12250 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12250 8700 12250 8550
+$Comp
+L LEDWallSign-rescue:R-Device R427
+U 1 1 5FA8290B
+P 12500 8400
+F 0 "R427" H 12500 8550 50  0000 L CNN
+F 1 "1k" H 12550 8450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12430 8400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12500 8400 50  0001 C CNN
+	1    12500 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12500 8700 12500 8550
+$Comp
+L LEDWallSign-rescue:R-Device R428
+U 1 1 5FA8291A
+P 12750 8400
+F 0 "R428" H 12750 8550 50  0000 L CNN
+F 1 "1k" H 12800 8450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12680 8400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 12750 8400 50  0001 C CNN
+	1    12750 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12750 8700 12750 8550
+$Comp
+L LEDWallSign-rescue:R-Device R429
+U 1 1 5FA82929
+P 13050 8400
+F 0 "R429" H 13050 8550 50  0000 L CNN
+F 1 "1k" H 13100 8450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12980 8400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13050 8400 50  0001 C CNN
+	1    13050 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 8700 13050 8550
+$Comp
+L LEDWallSign-rescue:R-Device R430
+U 1 1 5FA82938
+P 13300 8400
+F 0 "R430" H 13300 8550 50  0000 L CNN
+F 1 "1k" H 13350 8450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13230 8400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13300 8400 50  0001 C CNN
+	1    13300 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 8700 13300 8550
+$Comp
+L LEDWallSign-rescue:R-Device R431
+U 1 1 5FA82947
+P 13550 8400
+F 0 "R431" H 13550 8550 50  0000 L CNN
+F 1 "1k" H 13600 8450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13480 8400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 13550 8400 50  0001 C CNN
+	1    13550 8400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 8700 13550 8550
+$Comp
+L LEDWallSign-rescue:R-Device R532
+U 1 1 5FB678D4
+P 20300 1850
+F 0 "R532" H 20300 2000 50  0000 L CNN
+F 1 "1k" H 20350 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20230 1850 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20300 1850 50  0001 C CNN
+	1    20300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20300 2150 20300 2000
+$Comp
+L LEDWallSign-rescue:R-Device R533
+U 1 1 5FB678E3
+P 20600 1850
+F 0 "R533" H 20600 2000 50  0000 L CNN
+F 1 "1k" H 20650 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20530 1850 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20600 1850 50  0001 C CNN
+	1    20600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20600 2150 20600 2000
+$Comp
+L LEDWallSign-rescue:R-Device R534
+U 1 1 5FB678F2
+P 20850 1850
+F 0 "R534" H 20850 2000 50  0000 L CNN
+F 1 "1k" H 20900 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20780 1850 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20850 1850 50  0001 C CNN
+	1    20850 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20850 2150 20850 2000
+$Comp
+L LEDWallSign-rescue:R-Device R535
+U 1 1 5FB67901
+P 21100 1850
+F 0 "R535" H 21100 2000 50  0000 L CNN
+F 1 "1k" H 21150 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21030 1850 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21100 1850 50  0001 C CNN
+	1    21100 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21100 2150 21100 2000
+$Comp
+L LEDWallSign-rescue:R-Device R536
+U 1 1 5FB67910
+P 21350 1850
+F 0 "R536" H 21350 2000 50  0000 L CNN
+F 1 "1k" H 21400 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21280 1850 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21350 1850 50  0001 C CNN
+	1    21350 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21350 2150 21350 2000
+$Comp
+L LEDWallSign-rescue:R-Device R537
+U 1 1 5FB6791F
+P 21650 1850
+F 0 "R537" H 21650 2000 50  0000 L CNN
+F 1 "1k" H 21700 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21580 1850 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21650 1850 50  0001 C CNN
+	1    21650 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21650 2150 21650 2000
+$Comp
+L LEDWallSign-rescue:R-Device R538
+U 1 1 5FB6792E
+P 21900 1850
+F 0 "R538" H 21900 2000 50  0000 L CNN
+F 1 "1k" H 21950 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21830 1850 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21900 1850 50  0001 C CNN
+	1    21900 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21900 2150 21900 2000
+$Comp
+L LEDWallSign-rescue:R-Device R539
+U 1 1 5FB6793D
+P 22150 1850
+F 0 "R539" H 22150 2000 50  0000 L CNN
+F 1 "1k" H 22200 1900 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 22080 1850 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 22150 1850 50  0001 C CNN
+	1    22150 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22150 2150 22150 2000
+$Comp
+L LEDWallSign-rescue:R-Device R640
+U 1 1 5FC42B1D
+P 20250 4150
+F 0 "R640" H 20250 4300 50  0000 L CNN
+F 1 "1k" H 20300 4200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20180 4150 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20250 4150 50  0001 C CNN
+	1    20250 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20250 4450 20250 4300
+$Comp
+L LEDWallSign-rescue:R-Device R641
+U 1 1 5FC42B2C
+P 20550 4150
+F 0 "R641" H 20550 4300 50  0000 L CNN
+F 1 "1k" H 20600 4200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20480 4150 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20550 4150 50  0001 C CNN
+	1    20550 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20550 4450 20550 4300
+$Comp
+L LEDWallSign-rescue:R-Device R642
+U 1 1 5FC42B3B
+P 20800 4150
+F 0 "R642" H 20800 4300 50  0000 L CNN
+F 1 "1k" H 20850 4200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20730 4150 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20800 4150 50  0001 C CNN
+	1    20800 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20800 4450 20800 4300
+$Comp
+L LEDWallSign-rescue:R-Device R643
+U 1 1 5FC42B4A
+P 21050 4150
+F 0 "R643" H 21050 4300 50  0000 L CNN
+F 1 "1k" H 21100 4200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20980 4150 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21050 4150 50  0001 C CNN
+	1    21050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21050 4450 21050 4300
+$Comp
+L LEDWallSign-rescue:R-Device R644
+U 1 1 5FC42B59
+P 21300 4150
+F 0 "R644" H 21300 4300 50  0000 L CNN
+F 1 "1k" H 21350 4200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21230 4150 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21300 4150 50  0001 C CNN
+	1    21300 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21300 4450 21300 4300
+$Comp
+L LEDWallSign-rescue:R-Device R645
+U 1 1 5FC42B68
+P 21600 4150
+F 0 "R645" H 21600 4300 50  0000 L CNN
+F 1 "1k" H 21650 4200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21530 4150 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21600 4150 50  0001 C CNN
+	1    21600 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21600 4450 21600 4300
+$Comp
+L LEDWallSign-rescue:R-Device R646
+U 1 1 5FC42B77
+P 21850 4150
+F 0 "R646" H 21850 4300 50  0000 L CNN
+F 1 "1k" H 21900 4200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21780 4150 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21850 4150 50  0001 C CNN
+	1    21850 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21850 4450 21850 4300
+$Comp
+L LEDWallSign-rescue:R-Device R647
+U 1 1 5FC42B86
+P 22100 4150
+F 0 "R647" H 22100 4300 50  0000 L CNN
+F 1 "1k" H 22150 4200 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 22030 4150 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 22100 4150 50  0001 C CNN
+	1    22100 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22100 4450 22100 4300
+$Comp
+L LEDWallSign-rescue:R-Device R748
+U 1 1 5FD1E2EB
+P 20200 6400
+F 0 "R748" H 20200 6550 50  0000 L CNN
+F 1 "1k" H 20250 6450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20130 6400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20200 6400 50  0001 C CNN
+	1    20200 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20200 6700 20200 6550
+$Comp
+L LEDWallSign-rescue:R-Device R749
+U 1 1 5FD1E2FA
+P 20500 6400
+F 0 "R749" H 20500 6550 50  0000 L CNN
+F 1 "1k" H 20550 6450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20430 6400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20500 6400 50  0001 C CNN
+	1    20500 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20500 6700 20500 6550
+$Comp
+L LEDWallSign-rescue:R-Device R750
+U 1 1 5FD1E309
+P 20750 6400
+F 0 "R750" H 20750 6550 50  0000 L CNN
+F 1 "1k" H 20800 6450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20680 6400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20750 6400 50  0001 C CNN
+	1    20750 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20750 6700 20750 6550
+$Comp
+L LEDWallSign-rescue:R-Device R751
+U 1 1 5FD1E318
+P 21000 6400
+F 0 "R751" H 21000 6550 50  0000 L CNN
+F 1 "1k" H 21050 6450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20930 6400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21000 6400 50  0001 C CNN
+	1    21000 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21000 6700 21000 6550
+$Comp
+L LEDWallSign-rescue:R-Device R752
+U 1 1 5FD1E327
+P 21250 6400
+F 0 "R752" H 21250 6550 50  0000 L CNN
+F 1 "1k" H 21300 6450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21180 6400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21250 6400 50  0001 C CNN
+	1    21250 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21250 6700 21250 6550
+$Comp
+L LEDWallSign-rescue:R-Device R753
+U 1 1 5FD1E336
+P 21550 6400
+F 0 "R753" H 21550 6550 50  0000 L CNN
+F 1 "1k" H 21600 6450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21480 6400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21550 6400 50  0001 C CNN
+	1    21550 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21550 6700 21550 6550
+$Comp
+L LEDWallSign-rescue:R-Device R754
+U 1 1 5FD1E345
+P 21800 6400
+F 0 "R754" H 21800 6550 50  0000 L CNN
+F 1 "1k" H 21850 6450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21730 6400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21800 6400 50  0001 C CNN
+	1    21800 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21800 6700 21800 6550
+$Comp
+L LEDWallSign-rescue:R-Device R755
+U 1 1 5FD1E354
+P 22050 6400
+F 0 "R755" H 22050 6550 50  0000 L CNN
+F 1 "1k" H 22100 6450 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21980 6400 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 22050 6400 50  0001 C CNN
+	1    22050 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22050 6700 22050 6550
+$Comp
+L LEDWallSign-rescue:R-Device R856
+U 1 1 5FDF70A4
+P 20200 8550
+F 0 "R856" H 20200 8700 50  0000 L CNN
+F 1 "1k" H 20250 8600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20130 8550 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20200 8550 50  0001 C CNN
+	1    20200 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20200 8850 20200 8700
+$Comp
+L LEDWallSign-rescue:R-Device R857
+U 1 1 5FDF70B3
+P 20500 8550
+F 0 "R857" H 20500 8700 50  0000 L CNN
+F 1 "1k" H 20550 8600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20430 8550 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20500 8550 50  0001 C CNN
+	1    20500 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20500 8850 20500 8700
+$Comp
+L LEDWallSign-rescue:R-Device R858
+U 1 1 5FDF70C2
+P 20750 8550
+F 0 "R858" H 20750 8700 50  0000 L CNN
+F 1 "1k" H 20800 8600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20680 8550 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 20750 8550 50  0001 C CNN
+	1    20750 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20750 8850 20750 8700
+$Comp
+L LEDWallSign-rescue:R-Device R859
+U 1 1 5FDF70D1
+P 21000 8550
+F 0 "R859" H 21000 8700 50  0000 L CNN
+F 1 "1k" H 21050 8600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 20930 8550 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21000 8550 50  0001 C CNN
+	1    21000 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21000 8850 21000 8700
+$Comp
+L LEDWallSign-rescue:R-Device R860
+U 1 1 5FDF70E0
+P 21250 8550
+F 0 "R860" H 21250 8700 50  0000 L CNN
+F 1 "1k" H 21300 8600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21180 8550 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21250 8550 50  0001 C CNN
+	1    21250 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21250 8850 21250 8700
+$Comp
+L LEDWallSign-rescue:R-Device R861
+U 1 1 5FDF70EF
+P 21550 8550
+F 0 "R861" H 21550 8700 50  0000 L CNN
+F 1 "1k" H 21600 8600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21480 8550 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21550 8550 50  0001 C CNN
+	1    21550 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21550 8850 21550 8700
+$Comp
+L LEDWallSign-rescue:R-Device R862
+U 1 1 5FDF70FE
+P 21800 8550
+F 0 "R862" H 21800 8700 50  0000 L CNN
+F 1 "1k" H 21850 8600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21730 8550 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 21800 8550 50  0001 C CNN
+	1    21800 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21800 8850 21800 8700
+$Comp
+L LEDWallSign-rescue:R-Device R863
+U 1 1 5FDF710D
+P 22050 8550
+F 0 "R863" H 22050 8700 50  0000 L CNN
+F 1 "1k" H 22100 8600 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 21980 8550 50  0001 C CNN
+F 3 "RHM1.00KAECT-ND" H 22050 8550 50  0001 C CNN
+	1    22050 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	22050 8850 22050 8700
+$Comp
+L LEDWallSign-rescue:LED-Device D102
+U 1 1 5D557BEA
+P 12350 2150
+F 0 "D102" V 12550 2150 50  0000 R CNN
+F 1 "LED" V 12450 2150 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12350 2150 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12350 2150 50  0001 C CNN
+	1    12350 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D103
+U 1 1 5D557BF1
+P 12600 2150
+F 0 "D103" V 12800 2150 50  0000 R CNN
+F 1 "LED" V 12700 2150 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12600 2150 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12600 2150 50  0001 C CNN
+	1    12600 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D104
+U 1 1 5D5C32F1
+P 12850 2150
+F 0 "D104" V 13050 2150 50  0000 R CNN
+F 1 "LED" V 12950 2150 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12850 2150 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12850 2150 50  0001 C CNN
+	1    12850 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D105
+U 1 1 5D5C32F8
+P 13150 2150
+F 0 "D105" V 13350 2150 50  0000 R CNN
+F 1 "LED" V 13250 2150 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13150 2150 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13150 2150 50  0001 C CNN
+	1    13150 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D106
+U 1 1 5D62E793
+P 13400 2150
+F 0 "D106" V 13600 2150 50  0000 R CNN
+F 1 "LED" V 13500 2150 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13400 2150 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13400 2150 50  0001 C CNN
+	1    13400 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D107
+U 1 1 5D62E79A
+P 13650 2150
+F 0 "D107" V 13850 2150 50  0000 R CNN
+F 1 "LED" V 13750 2150 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13650 2150 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13650 2150 50  0001 C CNN
+	1    13650 2150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D208
+U 1 1 5D771DE8
+P 11750 4450
+F 0 "D208" V 11950 4450 50  0000 R CNN
+F 1 "LED" V 11850 4450 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 11750 4450 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 11750 4450 50  0001 C CNN
+	1    11750 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D209
+U 1 1 5D771DEF
+P 12050 4450
+F 0 "D209" V 12250 4450 50  0000 R CNN
+F 1 "LED" V 12150 4450 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12050 4450 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12050 4450 50  0001 C CNN
+	1    12050 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D210
+U 1 1 5D771DF6
+P 12300 4450
+F 0 "D210" V 12500 4450 50  0000 R CNN
+F 1 "LED" V 12400 4450 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12300 4450 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12300 4450 50  0001 C CNN
+	1    12300 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D211
+U 1 1 5D771DFD
+P 12550 4450
+F 0 "D211" V 12750 4450 50  0000 R CNN
+F 1 "LED" V 12650 4450 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12550 4450 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12550 4450 50  0001 C CNN
+	1    12550 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D212
+U 1 1 5D771E04
+P 12800 4450
+F 0 "D212" V 13000 4450 50  0000 R CNN
+F 1 "LED" V 12900 4450 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12800 4450 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12800 4450 50  0001 C CNN
+	1    12800 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D213
+U 1 1 5D771E0B
+P 13100 4450
+F 0 "D213" V 13300 4450 50  0000 R CNN
+F 1 "LED" V 13200 4450 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13100 4450 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13100 4450 50  0001 C CNN
+	1    13100 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D214
+U 1 1 5D771E12
+P 13350 4450
+F 0 "D214" V 13550 4450 50  0000 R CNN
+F 1 "LED" V 13450 4450 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13350 4450 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13350 4450 50  0001 C CNN
+	1    13350 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D215
+U 1 1 5D771E19
+P 13600 4450
+F 0 "D215" V 13800 4450 50  0000 R CNN
+F 1 "LED" V 13700 4450 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13600 4450 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13600 4450 50  0001 C CNN
+	1    13600 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D316
+U 1 1 5D92190E
+P 11700 6700
+F 0 "D316" V 11900 6700 50  0000 R CNN
+F 1 "LED" V 11800 6700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 11700 6700 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 11700 6700 50  0001 C CNN
+	1    11700 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D317
+U 1 1 5D921915
+P 12000 6700
+F 0 "D317" V 12200 6700 50  0000 R CNN
+F 1 "LED" V 12100 6700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12000 6700 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12000 6700 50  0001 C CNN
+	1    12000 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D318
+U 1 1 5D92191C
+P 12250 6700
+F 0 "D318" V 12450 6700 50  0000 R CNN
+F 1 "LED" V 12350 6700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12250 6700 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12250 6700 50  0001 C CNN
+	1    12250 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D319
+U 1 1 5D921923
+P 12500 6700
+F 0 "D319" V 12700 6700 50  0000 R CNN
+F 1 "LED" V 12600 6700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12500 6700 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12500 6700 50  0001 C CNN
+	1    12500 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D320
+U 1 1 5D92192A
+P 12750 6700
+F 0 "D320" V 12950 6700 50  0000 R CNN
+F 1 "LED" V 12850 6700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12750 6700 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12750 6700 50  0001 C CNN
+	1    12750 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D321
+U 1 1 5D921931
+P 13050 6700
+F 0 "D321" V 13250 6700 50  0000 R CNN
+F 1 "LED" V 13150 6700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13050 6700 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13050 6700 50  0001 C CNN
+	1    13050 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D322
+U 1 1 5D921938
+P 13300 6700
+F 0 "D322" V 13500 6700 50  0000 R CNN
+F 1 "LED" V 13400 6700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13300 6700 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13300 6700 50  0001 C CNN
+	1    13300 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D323
+U 1 1 5D92193F
+P 13550 6700
+F 0 "D323" V 13750 6700 50  0000 R CNN
+F 1 "LED" V 13650 6700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13550 6700 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13550 6700 50  0001 C CNN
+	1    13550 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D424
+U 1 1 5D9F9C2A
+P 11700 8850
+F 0 "D424" V 11900 8850 50  0000 R CNN
+F 1 "LED" V 11800 8850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 11700 8850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 11700 8850 50  0001 C CNN
+	1    11700 8850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D425
+U 1 1 5D9F9C31
+P 12000 8850
+F 0 "D425" V 12200 8850 50  0000 R CNN
+F 1 "LED" V 12100 8850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12000 8850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12000 8850 50  0001 C CNN
+	1    12000 8850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D426
+U 1 1 5D9F9C38
+P 12250 8850
+F 0 "D426" V 12450 8850 50  0000 R CNN
+F 1 "LED" V 12350 8850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12250 8850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12250 8850 50  0001 C CNN
+	1    12250 8850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D427
+U 1 1 5D9F9C3F
+P 12500 8850
+F 0 "D427" V 12700 8850 50  0000 R CNN
+F 1 "LED" V 12600 8850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12500 8850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12500 8850 50  0001 C CNN
+	1    12500 8850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D428
+U 1 1 5D9F9C46
+P 12750 8850
+F 0 "D428" V 12950 8850 50  0000 R CNN
+F 1 "LED" V 12850 8850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12750 8850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 12750 8850 50  0001 C CNN
+	1    12750 8850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D429
+U 1 1 5D9F9C4D
+P 13050 8850
+F 0 "D429" V 13250 8850 50  0000 R CNN
+F 1 "LED" V 13150 8850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13050 8850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13050 8850 50  0001 C CNN
+	1    13050 8850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D430
+U 1 1 5D9F9C54
+P 13300 8850
+F 0 "D430" V 13500 8850 50  0000 R CNN
+F 1 "LED" V 13400 8850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13300 8850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13300 8850 50  0001 C CNN
+	1    13300 8850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D431
+U 1 1 5D9F9C5B
+P 13550 8850
+F 0 "D431" V 13750 8850 50  0000 R CNN
+F 1 "LED" V 13650 8850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13550 8850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 13550 8850 50  0001 C CNN
+	1    13550 8850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D532
+U 1 1 5DAD2C6E
+P 20300 2300
+F 0 "D532" V 20500 2300 50  0000 R CNN
+F 1 "LED" V 20400 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20300 2300 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20300 2300 50  0001 C CNN
+	1    20300 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D533
+U 1 1 5DAD2C75
+P 20600 2300
+F 0 "D533" V 20800 2300 50  0000 R CNN
+F 1 "LED" V 20700 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20600 2300 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20600 2300 50  0001 C CNN
+	1    20600 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D534
+U 1 1 5DAD2C7C
+P 20850 2300
+F 0 "D534" V 21050 2300 50  0000 R CNN
+F 1 "LED" V 20950 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20850 2300 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20850 2300 50  0001 C CNN
+	1    20850 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D535
+U 1 1 5DAD2C83
+P 21100 2300
+F 0 "D535" V 21300 2300 50  0000 R CNN
+F 1 "LED" V 21200 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21100 2300 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21100 2300 50  0001 C CNN
+	1    21100 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D536
+U 1 1 5DAD2C8A
+P 21350 2300
+F 0 "D536" V 21550 2300 50  0000 R CNN
+F 1 "LED" V 21450 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21350 2300 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21350 2300 50  0001 C CNN
+	1    21350 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D537
+U 1 1 5DAD2C91
+P 21650 2300
+F 0 "D537" V 21850 2300 50  0000 R CNN
+F 1 "LED" V 21750 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21650 2300 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21650 2300 50  0001 C CNN
+	1    21650 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D538
+U 1 1 5DAD2C98
+P 21900 2300
+F 0 "D538" V 22100 2300 50  0000 R CNN
+F 1 "LED" V 22000 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21900 2300 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21900 2300 50  0001 C CNN
+	1    21900 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D539
+U 1 1 5DAD2C9F
+P 22150 2300
+F 0 "D539" V 22350 2300 50  0000 R CNN
+F 1 "LED" V 22250 2300 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 22150 2300 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 22150 2300 50  0001 C CNN
+	1    22150 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D640
+U 1 1 5DBABC28
+P 20250 4600
+F 0 "D640" V 20450 4600 50  0000 R CNN
+F 1 "LED" V 20350 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20250 4600 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20250 4600 50  0001 C CNN
+	1    20250 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D641
+U 1 1 5DBABC2F
+P 20550 4600
+F 0 "D641" V 20750 4600 50  0000 R CNN
+F 1 "LED" V 20650 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20550 4600 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20550 4600 50  0001 C CNN
+	1    20550 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D642
+U 1 1 5DBABC36
+P 20800 4600
+F 0 "D642" V 21000 4600 50  0000 R CNN
+F 1 "LED" V 20900 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20800 4600 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20800 4600 50  0001 C CNN
+	1    20800 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D643
+U 1 1 5DBABC3D
+P 21050 4600
+F 0 "D643" V 21250 4600 50  0000 R CNN
+F 1 "LED" V 21150 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21050 4600 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21050 4600 50  0001 C CNN
+	1    21050 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D644
+U 1 1 5DBABC44
+P 21300 4600
+F 0 "D644" V 21500 4600 50  0000 R CNN
+F 1 "LED" V 21400 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21300 4600 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21300 4600 50  0001 C CNN
+	1    21300 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D645
+U 1 1 5DBABC4B
+P 21600 4600
+F 0 "D645" V 21800 4600 50  0000 R CNN
+F 1 "LED" V 21700 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21600 4600 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21600 4600 50  0001 C CNN
+	1    21600 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D646
+U 1 1 5DBABC52
+P 21850 4600
+F 0 "D646" V 22050 4600 50  0000 R CNN
+F 1 "LED" V 21950 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21850 4600 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21850 4600 50  0001 C CNN
+	1    21850 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D647
+U 1 1 5DBABC59
+P 22100 4600
+F 0 "D647" V 22300 4600 50  0000 R CNN
+F 1 "LED" V 22200 4600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 22100 4600 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 22100 4600 50  0001 C CNN
+	1    22100 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D748
+U 1 1 5DC838AC
+P 20200 6850
+F 0 "D748" V 20400 6850 50  0000 R CNN
+F 1 "LED" V 20300 6850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20200 6850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20200 6850 50  0001 C CNN
+	1    20200 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D749
+U 1 1 5DC838B3
+P 20500 6850
+F 0 "D749" V 20700 6850 50  0000 R CNN
+F 1 "LED" V 20600 6850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20500 6850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20500 6850 50  0001 C CNN
+	1    20500 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D750
+U 1 1 5DC838BA
+P 20750 6850
+F 0 "D750" V 20950 6850 50  0000 R CNN
+F 1 "LED" V 20850 6850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20750 6850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20750 6850 50  0001 C CNN
+	1    20750 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D751
+U 1 1 5DC838C1
+P 21000 6850
+F 0 "D751" V 21200 6850 50  0000 R CNN
+F 1 "LED" V 21100 6850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21000 6850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21000 6850 50  0001 C CNN
+	1    21000 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D752
+U 1 1 5DC838C8
+P 21250 6850
+F 0 "D752" V 21450 6850 50  0000 R CNN
+F 1 "LED" V 21350 6850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21250 6850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21250 6850 50  0001 C CNN
+	1    21250 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D753
+U 1 1 5DC838CF
+P 21550 6850
+F 0 "D753" V 21750 6850 50  0000 R CNN
+F 1 "LED" V 21650 6850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21550 6850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21550 6850 50  0001 C CNN
+	1    21550 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D754
+U 1 1 5DC838D6
+P 21800 6850
+F 0 "D754" V 22000 6850 50  0000 R CNN
+F 1 "LED" V 21900 6850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21800 6850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21800 6850 50  0001 C CNN
+	1    21800 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D755
+U 1 1 5DC838DD
+P 22050 6850
+F 0 "D755" V 22250 6850 50  0000 R CNN
+F 1 "LED" V 22150 6850 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 22050 6850 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 22050 6850 50  0001 C CNN
+	1    22050 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D856
+U 1 1 5DD5C1C9
+P 20200 9000
+F 0 "D856" V 20400 9000 50  0000 R CNN
+F 1 "LED" V 20300 9000 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20200 9000 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20200 9000 50  0001 C CNN
+	1    20200 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D857
+U 1 1 5DD5C1D0
+P 20500 9000
+F 0 "D857" V 20700 9000 50  0000 R CNN
+F 1 "LED" V 20600 9000 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20500 9000 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20500 9000 50  0001 C CNN
+	1    20500 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D858
+U 1 1 5DD5C1D7
+P 20750 9000
+F 0 "D858" V 20950 9000 50  0000 R CNN
+F 1 "LED" V 20850 9000 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 20750 9000 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 20750 9000 50  0001 C CNN
+	1    20750 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D859
+U 1 1 5DD5C1DE
+P 21000 9000
+F 0 "D859" V 21200 9000 50  0000 R CNN
+F 1 "LED" V 21100 9000 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21000 9000 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21000 9000 50  0001 C CNN
+	1    21000 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D860
+U 1 1 5DD5C1E5
+P 21250 9000
+F 0 "D860" V 21450 9000 50  0000 R CNN
+F 1 "LED" V 21350 9000 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21250 9000 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21250 9000 50  0001 C CNN
+	1    21250 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D861
+U 1 1 5DD5C1EC
+P 21550 9000
+F 0 "D861" V 21750 9000 50  0000 R CNN
+F 1 "LED" V 21650 9000 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21550 9000 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21550 9000 50  0001 C CNN
+	1    21550 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D862
+U 1 1 5DD5C1F3
+P 21800 9000
+F 0 "D862" V 22000 9000 50  0000 R CNN
+F 1 "LED" V 21900 9000 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 21800 9000 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 21800 9000 50  0001 C CNN
+	1    21800 9000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LEDWallSign-rescue:LED-Device D863
+U 1 1 5DD5C1FA
+P 22050 9000
+F 0 "D863" V 22250 9000 50  0000 R CNN
+F 1 "LED" V 22150 9000 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 22050 9000 50  0001 C CNN
+F 3 "SML-D12U1WT86CT-ND" H 22050 9000 50  0001 C CNN
+	1    22050 9000
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
