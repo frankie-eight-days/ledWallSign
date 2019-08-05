@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name ledWallSign)(type Legacy)(uri "C:/Users/Frank Walsh/Desktop/LED Wall Sign/LEDWallSign/ledWallSign.lib")(options "")(descr ""))
+  (lib (name LEDWallSign-rescue)(type Legacy)(uri ${KIPRJMOD}/LEDWallSign-rescue.lib)(options "")(descr ""))
 )
