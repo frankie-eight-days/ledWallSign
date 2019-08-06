@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:LEDWallSign-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
@@ -26,7 +26,7 @@ F 3 "ATMEGA328-AU-ND" H 2250 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J1
+L LEDWallSign-rescue:Conn_02x03_Odd_Even-Connector_Generic J1
 U 1 1 5D462027
 P 2100 8500
 F 0 "J1" H 2150 8817 50  0000 C CNN
@@ -41,7 +41,7 @@ Wire Wire Line
 Wire Wire Line
 	2650 8400 2650 8250
 $Comp
-L power:+5V #PWR0101
+L LEDWallSign-rescue:+5V-power #PWR0101
 U 1 1 5D4620E5
 P 2650 8250
 F 0 "#PWR0101" H 2650 8100 50  0001 C CNN
@@ -52,7 +52,7 @@ F 3 "" H 2650 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L LEDWallSign-rescue:GND-power #PWR0102
 U 1 1 5D462120
 P 2650 8800
 F 0 "#PWR0102" H 2650 8550 50  0001 C CNN
@@ -83,7 +83,7 @@ SCK
 Text Label 1600 8600 0    50   ~ 0
 ~RESET
 $Comp
-L Device:Crystal Y1
+L LEDWallSign-rescue:Crystal-Device Y1
 U 1 1 5D462314
 P 2050 9600
 F 0 "Y1" H 2050 9868 50  0000 C CNN
@@ -98,7 +98,7 @@ Wire Wire Line
 Wire Wire Line
 	2200 9600 2300 9600
 $Comp
-L Device:C_Small C8
+L LEDWallSign-rescue:C_Small-Device C8
 U 1 1 5D462477
 P 1750 9800
 F 0 "C8" H 1842 9846 50  0000 L CNN
@@ -119,7 +119,7 @@ Wire Wire Line
 Wire Wire Line
 	2300 9700 2300 9600
 $Comp
-L power:GND #PWR0103
+L LEDWallSign-rescue:GND-power #PWR0103
 U 1 1 5D4627F9
 P 2050 10050
 F 0 "#PWR0103" H 2050 9800 50  0001 C CNN
@@ -145,7 +145,7 @@ XTAL_IN
 Text Label 2550 9600 2    50   ~ 0
 XTAL_OUT
 $Comp
-L power:GND #PWR0104
+L LEDWallSign-rescue:GND-power #PWR0104
 U 1 1 5D462D7A
 P 2250 7300
 F 0 "#PWR0104" H 2250 7050 50  0001 C CNN
@@ -172,7 +172,7 @@ MOSI
 Text Label 3150 5950 2    50   ~ 0
 ~RESET
 $Comp
-L Switch:SW_SPST SW1
+L LEDWallSign-rescue:SW_SPST-Switch SW1
 U 1 1 5D463E1F
 P 3650 8450
 F 0 "SW1" H 3650 8685 50  0000 C CNN
@@ -194,7 +194,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 8450 4000 8750
 $Comp
-L power:GND #PWR0105
+L LEDWallSign-rescue:GND-power #PWR0105
 U 1 1 5D46482C
 P 4000 8750
 F 0 "#PWR0105" H 4000 8500 50  0001 C CNN
@@ -207,7 +207,7 @@ $EndComp
 Wire Wire Line
 	3350 7950 3350 7900
 $Comp
-L power:+5V #PWR0106
+L LEDWallSign-rescue:+5V-power #PWR0106
 U 1 1 5D464B8A
 P 3350 7850
 F 0 "#PWR0106" H 3350 7700 50  0001 C CNN
@@ -228,7 +228,7 @@ XTAL_IN
 Text Label 3250 5150 2    50   ~ 0
 XTAL_OUT
 $Comp
-L power:GND #PWR0107
+L LEDWallSign-rescue:GND-power #PWR0107
 U 1 1 5D466CF6
 P 3700 10200
 F 0 "#PWR0107" H 3700 9950 50  0001 C CNN
@@ -296,7 +296,7 @@ latch1
 Wire Wire Line
 	8950 2500 8950 2400
 $Comp
-L power:GND #PWR0108
+L LEDWallSign-rescue:GND-power #PWR0108
 U 1 1 5D47008C
 P 8950 2950
 F 0 "#PWR0108" H 8950 2700 50  0001 C CNN
@@ -311,7 +311,7 @@ Wire Wire Line
 Wire Wire Line
 	8700 2500 8700 2300
 $Comp
-L power:GND #PWR0109
+L LEDWallSign-rescue:GND-power #PWR0109
 U 1 1 5D471421
 P 8700 2950
 F 0 "#PWR0109" H 8700 2700 50  0001 C CNN
@@ -324,7 +324,7 @@ $EndComp
 Wire Wire Line
 	8700 2950 8700 2800
 $Comp
-L power:+5V #PWR0110
+L LEDWallSign-rescue:+5V-power #PWR0110
 U 1 1 5D472A23
 P 8700 1350
 F 0 "#PWR0110" H 8700 1200 50  0001 C CNN
@@ -343,7 +343,7 @@ Wire Wire Line
 Wire Wire Line
 	11050 1350 11050 1400
 $Comp
-L power:GND #PWR0111
+L LEDWallSign-rescue:GND-power #PWR0111
 U 1 1 5D4736C6
 P 11050 1400
 F 0 "#PWR0111" H 11050 1150 50  0001 C CNN
@@ -371,7 +371,7 @@ Connection ~ 8950 1700
 Wire Wire Line
 	8950 1700 9550 1700
 $Comp
-L Device:R R190
+L LEDWallSign-rescue:R-Device R190
 U 1 1 5D47B3F4
 P 8700 1900
 F 0 "R190" H 8450 1900 50  0000 L CNN
@@ -388,7 +388,7 @@ Wire Wire Line
 	8700 1750 8700 1700
 Connection ~ 8700 1700
 $Comp
-L power:+5V #PWR0112
+L LEDWallSign-rescue:+5V-power #PWR0112
 U 1 1 5D47DB5F
 P 12750 1350
 F 0 "#PWR0112" H 12750 1200 50  0001 C CNN
@@ -399,7 +399,7 @@ F 3 "" H 12750 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R100
+L LEDWallSign-rescue:R-Device R100
 U 1 1 5D4850F4
 P 11800 1700
 F 0 "R100" H 11800 1850 50  0000 L CNN
@@ -410,7 +410,7 @@ F 3 "RHM1.00KAECT-ND" H 11800 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D100
+L LEDWallSign-rescue:LED-Device D100
 U 1 1 5D4850FB
 P 11800 2150
 F 0 "D100" V 12000 2150 50  0000 R CNN
@@ -494,7 +494,7 @@ led6
 Text Label 11000 1900 2    50   ~ 0
 led7
 $Comp
-L Device:C_Small C191
+L LEDWallSign-rescue:C_Small-Device C191
 U 1 1 5D4B87A0
 P 8300 1600
 F 0 "C191" H 8392 1646 50  0000 L CNN
@@ -505,7 +505,7 @@ F 3 "1276-CL10B104KB8NNNLCT-ND" H 8300 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C190
+L LEDWallSign-rescue:C_Small-Device C190
 U 1 1 5D4B8886
 P 7950 1600
 F 0 "C190" H 8042 1646 50  0000 L CNN
@@ -528,7 +528,7 @@ Connection ~ 8300 1400
 Wire Wire Line
 	8300 1400 8700 1400
 $Comp
-L power:GND #PWR0113
+L LEDWallSign-rescue:GND-power #PWR0113
 U 1 1 5D4BFCA6
 P 7950 1800
 F 0 "#PWR0113" H 7950 1550 50  0001 C CNN
@@ -539,7 +539,7 @@ F 3 "" H 7950 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0114
+L LEDWallSign-rescue:GND-power #PWR0114
 U 1 1 5D4BFCF8
 P 8300 1800
 F 0 "#PWR0114" H 8300 1550 50  0001 C CNN
@@ -572,7 +572,7 @@ Wire Wire Line
 Wire Wire Line
 	11000 3650 11000 3700
 $Comp
-L power:GND #PWR0115
+L LEDWallSign-rescue:GND-power #PWR0115
 U 1 1 5D4C69E7
 P 11000 3700
 F 0 "#PWR0115" H 11000 3450 50  0001 C CNN
@@ -668,7 +668,7 @@ Wire Wire Line
 Wire Wire Line
 	10950 5900 10950 5950
 $Comp
-L power:GND #PWR0116
+L LEDWallSign-rescue:GND-power #PWR0116
 U 1 1 5D4F7846
 P 10950 5950
 F 0 "#PWR0116" H 10950 5700 50  0001 C CNN
@@ -764,7 +764,7 @@ Wire Wire Line
 Wire Wire Line
 	10950 8050 10950 8100
 $Comp
-L power:GND #PWR0117
+L LEDWallSign-rescue:GND-power #PWR0117
 U 1 1 5D516EC5
 P 10950 8100
 F 0 "#PWR0117" H 10950 7850 50  0001 C CNN
@@ -860,7 +860,7 @@ Wire Wire Line
 Wire Wire Line
 	19550 1500 19550 1550
 $Comp
-L power:GND #PWR0118
+L LEDWallSign-rescue:GND-power #PWR0118
 U 1 1 5D532CC2
 P 19550 1550
 F 0 "#PWR0118" H 19550 1300 50  0001 C CNN
@@ -956,7 +956,7 @@ Wire Wire Line
 Wire Wire Line
 	19500 3800 19500 3850
 $Comp
-L power:GND #PWR0119
+L LEDWallSign-rescue:GND-power #PWR0119
 U 1 1 5D532DF2
 P 19500 3850
 F 0 "#PWR0119" H 19500 3600 50  0001 C CNN
@@ -1052,7 +1052,7 @@ Wire Wire Line
 Wire Wire Line
 	19450 6050 19450 6100
 $Comp
-L power:GND #PWR0120
+L LEDWallSign-rescue:GND-power #PWR0120
 U 1 1 5D532F22
 P 19450 6100
 F 0 "#PWR0120" H 19450 5850 50  0001 C CNN
@@ -1148,7 +1148,7 @@ Wire Wire Line
 Wire Wire Line
 	19450 8200 19450 8250
 $Comp
-L power:GND #PWR0121
+L LEDWallSign-rescue:GND-power #PWR0121
 U 1 1 5D533052
 P 19450 8250
 F 0 "#PWR0121" H 19450 8000 50  0001 C CNN
@@ -1253,7 +1253,7 @@ F 3 "945-3121-5-ND" H 2400 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_WallPlug P1
+L LEDWallSign-rescue:Conn_WallPlug-Connector P1
 U 1 1 5D969E55
 P 1150 1250
 F 0 "P1" H 1165 1575 50  0000 C CNN
@@ -1278,7 +1278,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 1250 3650 900 
 $Comp
-L power:GND #PWR0122
+L LEDWallSign-rescue:GND-power #PWR0122
 U 1 1 5DA65058
 P 4750 1100
 F 0 "#PWR0122" H 4750 850 50  0001 C CNN
@@ -1295,7 +1295,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 1850 4750 1650
 $Comp
-L power:+5V #PWR0123
+L LEDWallSign-rescue:+5V-power #PWR0123
 U 1 1 5DB119D2
 P 4750 1650
 F 0 "#PWR0123" H 4750 1500 50  0001 C CNN
@@ -1306,7 +1306,7 @@ F 3 "" H 4750 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R1
+L LEDWallSign-rescue:R-Device R1
 U 1 1 5DB69345
 P 3200 1250
 F 0 "R1" V 3200 1200 50  0000 C CNN
@@ -1317,7 +1317,7 @@ F 3 "RMCF2512ZT0R00CT-ND" H 3200 1250 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R2
+L LEDWallSign-rescue:R-Device R2
 U 1 1 5DB695E4
 P 3200 1400
 F 0 "R2" V 3200 1350 50  0000 C CNN
@@ -1332,7 +1332,7 @@ Wire Wire Line
 Wire Wire Line
 	3350 1400 3650 1400
 $Comp
-L Device:CP1 C1
+L LEDWallSign-rescue:CP1-Device C1
 U 1 1 5DC1BFC5
 P 3800 1350
 F 0 "C1" H 3750 1150 50  0000 R CNN
@@ -1361,7 +1361,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 5950 3150 5950
 $Comp
-L Device:Ferrite_Bead L1
+L LEDWallSign-rescue:Ferrite_Bead-Device L1
 U 1 1 5E5BA3F3
 P 2250 2700
 F 0 "L1" V 1976 2700 50  0000 C CNN
@@ -1372,7 +1372,7 @@ F 3 "732-1593-1-ND" H 2250 2700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C6
+L LEDWallSign-rescue:C_Small-Device C6
 U 1 1 5E5BA8A3
 P 3000 2900
 F 0 "C6" H 3092 2946 50  0000 L CNN
@@ -1383,7 +1383,7 @@ F 3 "311-1069-1-ND" H 3000 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0124
+L LEDWallSign-rescue:GND-power #PWR0124
 U 1 1 5E6D2694
 P 1650 3250
 F 0 "#PWR0124" H 1650 3000 50  0001 C CNN
@@ -1419,7 +1419,7 @@ Wire Wire Line
 	1850 3200 1650 3200
 Connection ~ 1650 3200
 $Comp
-L power:GND #PWR0125
+L LEDWallSign-rescue:GND-power #PWR0125
 U 1 1 5E90D8A2
 P 2800 3250
 F 0 "#PWR0125" H 2800 3000 50  0001 C CNN
@@ -1442,7 +1442,7 @@ Wire Wire Line
 	1250 2700 1250 2600
 Connection ~ 1450 2700
 $Comp
-L power:+5V #PWR0126
+L LEDWallSign-rescue:+5V-power #PWR0126
 U 1 1 5EB6B1B1
 P 1250 2600
 F 0 "#PWR0126" H 1250 2450 50  0001 C CNN
@@ -1458,7 +1458,7 @@ Wire Wire Line
 	3200 2700 3200 2550
 Connection ~ 3000 2700
 $Comp
-L power:+5VA #PWR0127
+L LEDWallSign-rescue:+5VA-power #PWR0127
 U 1 1 5EBD211A
 P 3200 2550
 F 0 "#PWR0127" H 3200 2400 50  0001 C CNN
@@ -1477,7 +1477,7 @@ Wire Wire Line
 Wire Wire Line
 	2350 4150 2350 3950
 $Comp
-L power:+5V #PWR0128
+L LEDWallSign-rescue:+5V-power #PWR0128
 U 1 1 5EF081A9
 P 2250 3950
 F 0 "#PWR0128" H 2250 3800 50  0001 C CNN
@@ -1488,7 +1488,7 @@ F 3 "" H 2250 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5VA #PWR0129
+L LEDWallSign-rescue:+5VA-power #PWR0129
 U 1 1 5EF08398
 P 2350 3950
 F 0 "#PWR0129" H 2350 3800 50  0001 C CNN
@@ -1592,7 +1592,7 @@ F 3 "296-36199-1-ND" H 18300 8900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R193
+L LEDWallSign-rescue:R-Device R193
 U 1 1 5D564D2C
 P 8950 2650
 F 0 "R193" H 9020 2696 50  0000 L CNN
@@ -1603,7 +1603,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 8950 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R191
+L LEDWallSign-rescue:R-Device R191
 U 1 1 5D5652A5
 P 8950 1950
 F 0 "R191" H 9020 1996 50  0000 L CNN
@@ -1614,7 +1614,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 8950 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R192
+L LEDWallSign-rescue:R-Device R192
 U 1 1 5D565614
 P 8700 2650
 F 0 "R192" H 8450 2650 50  0000 L CNN
@@ -1627,7 +1627,7 @@ $EndComp
 Wire Wire Line
 	8900 4800 8900 4700
 $Comp
-L power:GND #PWR0130
+L LEDWallSign-rescue:GND-power #PWR0130
 U 1 1 5D568206
 P 8900 5250
 F 0 "#PWR0130" H 8900 5000 50  0001 C CNN
@@ -1642,7 +1642,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 4800 8650 4600
 $Comp
-L power:GND #PWR0131
+L LEDWallSign-rescue:GND-power #PWR0131
 U 1 1 5D56820E
 P 8650 5250
 F 0 "#PWR0131" H 8650 5000 50  0001 C CNN
@@ -1655,7 +1655,7 @@ $EndComp
 Wire Wire Line
 	8650 5250 8650 5100
 $Comp
-L power:+5V #PWR0132
+L LEDWallSign-rescue:+5V-power #PWR0132
 U 1 1 5D568215
 P 8650 3650
 F 0 "#PWR0132" H 8650 3500 50  0001 C CNN
@@ -1682,7 +1682,7 @@ Connection ~ 8900 4000
 Wire Wire Line
 	8900 4000 9500 4000
 $Comp
-L Device:R R290
+L LEDWallSign-rescue:R-Device R290
 U 1 1 5D568224
 P 8650 4200
 F 0 "R290" H 8400 4250 50  0000 L CNN
@@ -1699,7 +1699,7 @@ Wire Wire Line
 	8650 4050 8650 4000
 Connection ~ 8650 4000
 $Comp
-L Device:C_Small C291
+L LEDWallSign-rescue:C_Small-Device C291
 U 1 1 5D56822F
 P 8250 3900
 F 0 "C291" H 8342 3946 50  0000 L CNN
@@ -1710,7 +1710,7 @@ F 3 "1276-CL10B104KB8NNNLCT-ND" H 8250 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C290
+L LEDWallSign-rescue:C_Small-Device C290
 U 1 1 5D568236
 P 7900 3900
 F 0 "C290" H 7992 3946 50  0000 L CNN
@@ -1733,7 +1733,7 @@ Connection ~ 8250 3700
 Wire Wire Line
 	8250 3700 8650 3700
 $Comp
-L power:GND #PWR0133
+L LEDWallSign-rescue:GND-power #PWR0133
 U 1 1 5D568244
 P 7900 4100
 F 0 "#PWR0133" H 7900 3850 50  0001 C CNN
@@ -1744,7 +1744,7 @@ F 3 "" H 7900 4100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0134
+L LEDWallSign-rescue:GND-power #PWR0134
 U 1 1 5D56824A
 P 8250 4100
 F 0 "#PWR0134" H 8250 3850 50  0001 C CNN
@@ -1759,7 +1759,7 @@ Wire Wire Line
 Wire Wire Line
 	8250 4100 8250 4000
 $Comp
-L Device:R R293
+L LEDWallSign-rescue:R-Device R293
 U 1 1 5D568252
 P 8900 4950
 F 0 "R293" H 8970 4996 50  0000 L CNN
@@ -1770,7 +1770,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 8900 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R291
+L LEDWallSign-rescue:R-Device R291
 U 1 1 5D568259
 P 8900 4250
 F 0 "R291" H 8970 4296 50  0000 L CNN
@@ -1781,7 +1781,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 8900 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R292
+L LEDWallSign-rescue:R-Device R292
 U 1 1 5D568260
 P 8650 4950
 F 0 "R292" H 8400 4950 50  0000 L CNN
@@ -1794,7 +1794,7 @@ $EndComp
 Wire Wire Line
 	8850 7050 8850 6950
 $Comp
-L power:GND #PWR0135
+L LEDWallSign-rescue:GND-power #PWR0135
 U 1 1 5D7E2C15
 P 8850 7500
 F 0 "#PWR0135" H 8850 7250 50  0001 C CNN
@@ -1809,7 +1809,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 7050 8600 6850
 $Comp
-L power:GND #PWR0136
+L LEDWallSign-rescue:GND-power #PWR0136
 U 1 1 5D7E2C1D
 P 8600 7500
 F 0 "#PWR0136" H 8600 7250 50  0001 C CNN
@@ -1822,7 +1822,7 @@ $EndComp
 Wire Wire Line
 	8600 7500 8600 7350
 $Comp
-L power:+5V #PWR0137
+L LEDWallSign-rescue:+5V-power #PWR0137
 U 1 1 5D7E2C24
 P 8600 5900
 F 0 "#PWR0137" H 8600 5750 50  0001 C CNN
@@ -1849,7 +1849,7 @@ Connection ~ 8850 6250
 Wire Wire Line
 	8850 6250 9450 6250
 $Comp
-L Device:R R390
+L LEDWallSign-rescue:R-Device R390
 U 1 1 5D7E2C33
 P 8600 6450
 F 0 "R390" H 8350 6500 50  0000 L CNN
@@ -1866,7 +1866,7 @@ Wire Wire Line
 	8600 6300 8600 6250
 Connection ~ 8600 6250
 $Comp
-L Device:C_Small C391
+L LEDWallSign-rescue:C_Small-Device C391
 U 1 1 5D7E2C3E
 P 8200 6150
 F 0 "C391" H 8292 6196 50  0000 L CNN
@@ -1877,7 +1877,7 @@ F 3 "1276-CL10B104KB8NNNLCT-ND" H 8200 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C390
+L LEDWallSign-rescue:C_Small-Device C390
 U 1 1 5D7E2C45
 P 7850 6150
 F 0 "C390" H 7942 6196 50  0000 L CNN
@@ -1900,7 +1900,7 @@ Connection ~ 8200 5950
 Wire Wire Line
 	8200 5950 8600 5950
 $Comp
-L power:GND #PWR0138
+L LEDWallSign-rescue:GND-power #PWR0138
 U 1 1 5D7E2C53
 P 7850 6350
 F 0 "#PWR0138" H 7850 6100 50  0001 C CNN
@@ -1911,7 +1911,7 @@ F 3 "" H 7850 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0139
+L LEDWallSign-rescue:GND-power #PWR0139
 U 1 1 5D7E2C59
 P 8200 6350
 F 0 "#PWR0139" H 8200 6100 50  0001 C CNN
@@ -1926,7 +1926,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 6350 8200 6250
 $Comp
-L Device:R R393
+L LEDWallSign-rescue:R-Device R393
 U 1 1 5D7E2C61
 P 8850 7200
 F 0 "R393" H 8920 7246 50  0000 L CNN
@@ -1937,7 +1937,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 8850 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R391
+L LEDWallSign-rescue:R-Device R391
 U 1 1 5D7E2C68
 P 8850 6500
 F 0 "R391" H 8920 6546 50  0000 L CNN
@@ -1948,7 +1948,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 8850 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R392
+L LEDWallSign-rescue:R-Device R392
 U 1 1 5D7E2C6F
 P 8600 7200
 F 0 "R392" H 8350 7200 50  0000 L CNN
@@ -1961,7 +1961,7 @@ $EndComp
 Wire Wire Line
 	8850 9200 8850 9100
 $Comp
-L power:GND #PWR0140
+L LEDWallSign-rescue:GND-power #PWR0140
 U 1 1 5D91B01B
 P 8850 9650
 F 0 "#PWR0140" H 8850 9400 50  0001 C CNN
@@ -1976,7 +1976,7 @@ Wire Wire Line
 Wire Wire Line
 	8600 9200 8600 9000
 $Comp
-L power:GND #PWR0141
+L LEDWallSign-rescue:GND-power #PWR0141
 U 1 1 5D91B023
 P 8600 9650
 F 0 "#PWR0141" H 8600 9400 50  0001 C CNN
@@ -1989,7 +1989,7 @@ $EndComp
 Wire Wire Line
 	8600 9650 8600 9500
 $Comp
-L power:+5V #PWR0142
+L LEDWallSign-rescue:+5V-power #PWR0142
 U 1 1 5D91B02A
 P 8600 8050
 F 0 "#PWR0142" H 8600 7900 50  0001 C CNN
@@ -2016,7 +2016,7 @@ Connection ~ 8850 8400
 Wire Wire Line
 	8850 8400 9450 8400
 $Comp
-L Device:R R490
+L LEDWallSign-rescue:R-Device R490
 U 1 1 5D91B039
 P 8600 8600
 F 0 "R490" H 8350 8650 50  0000 L CNN
@@ -2033,7 +2033,7 @@ Wire Wire Line
 	8600 8450 8600 8400
 Connection ~ 8600 8400
 $Comp
-L Device:C_Small C491
+L LEDWallSign-rescue:C_Small-Device C491
 U 1 1 5D91B044
 P 8200 8300
 F 0 "C491" H 8292 8346 50  0000 L CNN
@@ -2044,7 +2044,7 @@ F 3 "1276-CL10B104KB8NNNLCT-ND" H 8200 8300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C490
+L LEDWallSign-rescue:C_Small-Device C490
 U 1 1 5D91B04B
 P 7850 8300
 F 0 "C490" H 7942 8346 50  0000 L CNN
@@ -2067,7 +2067,7 @@ Connection ~ 8200 8100
 Wire Wire Line
 	8200 8100 8600 8100
 $Comp
-L power:GND #PWR0143
+L LEDWallSign-rescue:GND-power #PWR0143
 U 1 1 5D91B059
 P 7850 8500
 F 0 "#PWR0143" H 7850 8250 50  0001 C CNN
@@ -2078,7 +2078,7 @@ F 3 "" H 7850 8500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0144
+L LEDWallSign-rescue:GND-power #PWR0144
 U 1 1 5D91B05F
 P 8200 8500
 F 0 "#PWR0144" H 8200 8250 50  0001 C CNN
@@ -2093,7 +2093,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 8500 8200 8400
 $Comp
-L Device:R R493
+L LEDWallSign-rescue:R-Device R493
 U 1 1 5D91B067
 P 8850 9350
 F 0 "R493" H 8920 9396 50  0000 L CNN
@@ -2104,7 +2104,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 8850 9350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R491
+L LEDWallSign-rescue:R-Device R491
 U 1 1 5D91B06E
 P 8850 8650
 F 0 "R491" H 8920 8696 50  0000 L CNN
@@ -2115,7 +2115,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 8850 8650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R492
+L LEDWallSign-rescue:R-Device R492
 U 1 1 5D91B075
 P 8600 9350
 F 0 "R492" H 8350 9350 50  0000 L CNN
@@ -2128,7 +2128,7 @@ $EndComp
 Wire Wire Line
 	17450 2650 17450 2550
 $Comp
-L power:GND #PWR0145
+L LEDWallSign-rescue:GND-power #PWR0145
 U 1 1 5DA5B941
 P 17450 3100
 F 0 "#PWR0145" H 17450 2850 50  0001 C CNN
@@ -2143,7 +2143,7 @@ Wire Wire Line
 Wire Wire Line
 	17200 2650 17200 2450
 $Comp
-L power:GND #PWR0146
+L LEDWallSign-rescue:GND-power #PWR0146
 U 1 1 5DA5B949
 P 17200 3100
 F 0 "#PWR0146" H 17200 2850 50  0001 C CNN
@@ -2156,7 +2156,7 @@ $EndComp
 Wire Wire Line
 	17200 3100 17200 2950
 $Comp
-L power:+5V #PWR0147
+L LEDWallSign-rescue:+5V-power #PWR0147
 U 1 1 5DA5B950
 P 17200 1500
 F 0 "#PWR0147" H 17200 1350 50  0001 C CNN
@@ -2183,7 +2183,7 @@ Connection ~ 17450 1850
 Wire Wire Line
 	17450 1850 18050 1850
 $Comp
-L Device:R R590
+L LEDWallSign-rescue:R-Device R590
 U 1 1 5DA5B95F
 P 17200 2050
 F 0 "R590" H 16950 2100 50  0000 L CNN
@@ -2200,7 +2200,7 @@ Wire Wire Line
 	17200 1900 17200 1850
 Connection ~ 17200 1850
 $Comp
-L Device:C_Small C591
+L LEDWallSign-rescue:C_Small-Device C591
 U 1 1 5DA5B96A
 P 16800 1750
 F 0 "C591" H 16892 1796 50  0000 L CNN
@@ -2211,7 +2211,7 @@ F 3 "1276-CL10B104KB8NNNLCT-ND" H 16800 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C590
+L LEDWallSign-rescue:C_Small-Device C590
 U 1 1 5DA5B971
 P 16450 1750
 F 0 "C590" H 16542 1796 50  0000 L CNN
@@ -2234,7 +2234,7 @@ Connection ~ 16800 1550
 Wire Wire Line
 	16800 1550 17200 1550
 $Comp
-L power:GND #PWR0148
+L LEDWallSign-rescue:GND-power #PWR0148
 U 1 1 5DA5B97F
 P 16450 1950
 F 0 "#PWR0148" H 16450 1700 50  0001 C CNN
@@ -2245,7 +2245,7 @@ F 3 "" H 16450 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0149
+L LEDWallSign-rescue:GND-power #PWR0149
 U 1 1 5DA5B985
 P 16800 1950
 F 0 "#PWR0149" H 16800 1700 50  0001 C CNN
@@ -2260,7 +2260,7 @@ Wire Wire Line
 Wire Wire Line
 	16800 1950 16800 1850
 $Comp
-L Device:R R593
+L LEDWallSign-rescue:R-Device R593
 U 1 1 5DA5B98D
 P 17450 2800
 F 0 "R593" H 17520 2846 50  0000 L CNN
@@ -2271,7 +2271,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 17450 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R591
+L LEDWallSign-rescue:R-Device R591
 U 1 1 5DA5B994
 P 17450 2100
 F 0 "R591" H 17520 2146 50  0000 L CNN
@@ -2282,7 +2282,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 17450 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R592
+L LEDWallSign-rescue:R-Device R592
 U 1 1 5DA5B99B
 P 17200 2800
 F 0 "R592" H 16950 2800 50  0000 L CNN
@@ -2295,7 +2295,7 @@ $EndComp
 Wire Wire Line
 	17400 4950 17400 4850
 $Comp
-L power:GND #PWR0150
+L LEDWallSign-rescue:GND-power #PWR0150
 U 1 1 5DB9AFE2
 P 17400 5400
 F 0 "#PWR0150" H 17400 5150 50  0001 C CNN
@@ -2310,7 +2310,7 @@ Wire Wire Line
 Wire Wire Line
 	17150 4950 17150 4750
 $Comp
-L power:GND #PWR0151
+L LEDWallSign-rescue:GND-power #PWR0151
 U 1 1 5DB9AFEA
 P 17150 5400
 F 0 "#PWR0151" H 17150 5150 50  0001 C CNN
@@ -2323,7 +2323,7 @@ $EndComp
 Wire Wire Line
 	17150 5400 17150 5250
 $Comp
-L power:+5V #PWR0152
+L LEDWallSign-rescue:+5V-power #PWR0152
 U 1 1 5DB9AFF1
 P 17150 3800
 F 0 "#PWR0152" H 17150 3650 50  0001 C CNN
@@ -2350,7 +2350,7 @@ Connection ~ 17400 4150
 Wire Wire Line
 	17400 4150 18000 4150
 $Comp
-L Device:R R690
+L LEDWallSign-rescue:R-Device R690
 U 1 1 5DB9B000
 P 17150 4350
 F 0 "R690" H 16900 4400 50  0000 L CNN
@@ -2367,7 +2367,7 @@ Wire Wire Line
 	17150 4200 17150 4150
 Connection ~ 17150 4150
 $Comp
-L Device:C_Small C691
+L LEDWallSign-rescue:C_Small-Device C691
 U 1 1 5DB9B00B
 P 16750 4050
 F 0 "C691" H 16842 4096 50  0000 L CNN
@@ -2378,7 +2378,7 @@ F 3 "1276-CL10B104KB8NNNLCT-ND" H 16750 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C690
+L LEDWallSign-rescue:C_Small-Device C690
 U 1 1 5DB9B012
 P 16400 4050
 F 0 "C690" H 16492 4096 50  0000 L CNN
@@ -2401,7 +2401,7 @@ Connection ~ 16750 3850
 Wire Wire Line
 	16750 3850 17150 3850
 $Comp
-L power:GND #PWR0153
+L LEDWallSign-rescue:GND-power #PWR0153
 U 1 1 5DB9B020
 P 16400 4250
 F 0 "#PWR0153" H 16400 4000 50  0001 C CNN
@@ -2412,7 +2412,7 @@ F 3 "" H 16400 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0154
+L LEDWallSign-rescue:GND-power #PWR0154
 U 1 1 5DB9B026
 P 16750 4250
 F 0 "#PWR0154" H 16750 4000 50  0001 C CNN
@@ -2427,7 +2427,7 @@ Wire Wire Line
 Wire Wire Line
 	16750 4250 16750 4150
 $Comp
-L Device:R R693
+L LEDWallSign-rescue:R-Device R693
 U 1 1 5DB9B02E
 P 17400 5100
 F 0 "R693" H 17470 5146 50  0000 L CNN
@@ -2438,7 +2438,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 17400 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R691
+L LEDWallSign-rescue:R-Device R691
 U 1 1 5DB9B035
 P 17400 4400
 F 0 "R691" H 17470 4446 50  0000 L CNN
@@ -2449,7 +2449,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 17400 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R692
+L LEDWallSign-rescue:R-Device R692
 U 1 1 5DB9B03C
 P 17150 5100
 F 0 "R692" H 16900 5100 50  0000 L CNN
@@ -2462,7 +2462,7 @@ $EndComp
 Wire Wire Line
 	17350 7200 17350 7100
 $Comp
-L power:GND #PWR0155
+L LEDWallSign-rescue:GND-power #PWR0155
 U 1 1 5DCDA240
 P 17350 7650
 F 0 "#PWR0155" H 17350 7400 50  0001 C CNN
@@ -2477,7 +2477,7 @@ Wire Wire Line
 Wire Wire Line
 	17100 7200 17100 7000
 $Comp
-L power:GND #PWR0156
+L LEDWallSign-rescue:GND-power #PWR0156
 U 1 1 5DCDA248
 P 17100 7650
 F 0 "#PWR0156" H 17100 7400 50  0001 C CNN
@@ -2490,7 +2490,7 @@ $EndComp
 Wire Wire Line
 	17100 7650 17100 7500
 $Comp
-L power:+5V #PWR0157
+L LEDWallSign-rescue:+5V-power #PWR0157
 U 1 1 5DCDA24F
 P 17100 6050
 F 0 "#PWR0157" H 17100 5900 50  0001 C CNN
@@ -2517,7 +2517,7 @@ Connection ~ 17350 6400
 Wire Wire Line
 	17350 6400 17950 6400
 $Comp
-L Device:R R790
+L LEDWallSign-rescue:R-Device R790
 U 1 1 5DCDA25E
 P 17100 6600
 F 0 "R790" H 16850 6650 50  0000 L CNN
@@ -2534,7 +2534,7 @@ Wire Wire Line
 	17100 6450 17100 6400
 Connection ~ 17100 6400
 $Comp
-L Device:C_Small C791
+L LEDWallSign-rescue:C_Small-Device C791
 U 1 1 5DCDA269
 P 16700 6300
 F 0 "C791" H 16792 6346 50  0000 L CNN
@@ -2545,7 +2545,7 @@ F 3 "1276-CL10B104KB8NNNLCT-ND" H 16700 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C790
+L LEDWallSign-rescue:C_Small-Device C790
 U 1 1 5DCDA270
 P 16350 6300
 F 0 "C790" H 16442 6346 50  0000 L CNN
@@ -2568,7 +2568,7 @@ Connection ~ 16700 6100
 Wire Wire Line
 	16700 6100 17100 6100
 $Comp
-L power:GND #PWR0158
+L LEDWallSign-rescue:GND-power #PWR0158
 U 1 1 5DCDA27E
 P 16350 6500
 F 0 "#PWR0158" H 16350 6250 50  0001 C CNN
@@ -2579,7 +2579,7 @@ F 3 "" H 16350 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0159
+L LEDWallSign-rescue:GND-power #PWR0159
 U 1 1 5DCDA284
 P 16700 6500
 F 0 "#PWR0159" H 16700 6250 50  0001 C CNN
@@ -2594,7 +2594,7 @@ Wire Wire Line
 Wire Wire Line
 	16700 6500 16700 6400
 $Comp
-L Device:R R793
+L LEDWallSign-rescue:R-Device R793
 U 1 1 5DCDA28C
 P 17350 7350
 F 0 "R793" H 17420 7396 50  0000 L CNN
@@ -2605,7 +2605,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 17350 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R791
+L LEDWallSign-rescue:R-Device R791
 U 1 1 5DCDA293
 P 17350 6650
 F 0 "R791" H 17420 6696 50  0000 L CNN
@@ -2616,7 +2616,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 17350 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R792
+L LEDWallSign-rescue:R-Device R792
 U 1 1 5DCDA29A
 P 17100 7350
 F 0 "R792" H 16850 7350 50  0000 L CNN
@@ -2629,7 +2629,7 @@ $EndComp
 Wire Wire Line
 	17350 9350 17350 9250
 $Comp
-L power:GND #PWR0160
+L LEDWallSign-rescue:GND-power #PWR0160
 U 1 1 5DE17011
 P 17350 9800
 F 0 "#PWR0160" H 17350 9550 50  0001 C CNN
@@ -2644,7 +2644,7 @@ Wire Wire Line
 Wire Wire Line
 	17100 9350 17100 9150
 $Comp
-L power:GND #PWR0161
+L LEDWallSign-rescue:GND-power #PWR0161
 U 1 1 5DE17019
 P 17100 9800
 F 0 "#PWR0161" H 17100 9550 50  0001 C CNN
@@ -2657,7 +2657,7 @@ $EndComp
 Wire Wire Line
 	17100 9800 17100 9650
 $Comp
-L power:+5V #PWR0162
+L LEDWallSign-rescue:+5V-power #PWR0162
 U 1 1 5DE17020
 P 17100 8200
 F 0 "#PWR0162" H 17100 8050 50  0001 C CNN
@@ -2684,7 +2684,7 @@ Connection ~ 17350 8550
 Wire Wire Line
 	17350 8550 17950 8550
 $Comp
-L Device:R R890
+L LEDWallSign-rescue:R-Device R890
 U 1 1 5DE1702F
 P 17100 8750
 F 0 "R890" H 16850 8800 50  0000 L CNN
@@ -2701,7 +2701,7 @@ Wire Wire Line
 	17100 8600 17100 8550
 Connection ~ 17100 8550
 $Comp
-L Device:C_Small C891
+L LEDWallSign-rescue:C_Small-Device C891
 U 1 1 5DE1703A
 P 16700 8450
 F 0 "C891" H 16792 8496 50  0000 L CNN
@@ -2712,7 +2712,7 @@ F 3 "1276-CL10B104KB8NNNLCT-ND" H 16700 8450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C890
+L LEDWallSign-rescue:C_Small-Device C890
 U 1 1 5DE17041
 P 16350 8450
 F 0 "C890" H 16442 8496 50  0000 L CNN
@@ -2735,7 +2735,7 @@ Connection ~ 16700 8250
 Wire Wire Line
 	16700 8250 17100 8250
 $Comp
-L power:GND #PWR0163
+L LEDWallSign-rescue:GND-power #PWR0163
 U 1 1 5DE1704F
 P 16350 8650
 F 0 "#PWR0163" H 16350 8400 50  0001 C CNN
@@ -2746,7 +2746,7 @@ F 3 "" H 16350 8650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0164
+L LEDWallSign-rescue:GND-power #PWR0164
 U 1 1 5DE17055
 P 16700 8650
 F 0 "#PWR0164" H 16700 8400 50  0001 C CNN
@@ -2761,7 +2761,7 @@ Wire Wire Line
 Wire Wire Line
 	16700 8650 16700 8550
 $Comp
-L Device:R R893
+L LEDWallSign-rescue:R-Device R893
 U 1 1 5DE1705D
 P 17350 9500
 F 0 "R893" H 17420 9546 50  0000 L CNN
@@ -2772,7 +2772,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 17350 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R891
+L LEDWallSign-rescue:R-Device R891
 U 1 1 5DE17064
 P 17350 8800
 F 0 "R891" H 17420 8846 50  0000 L CNN
@@ -2783,7 +2783,7 @@ F 3 "RNCP0603FTD10K0CT-ND" H 17350 8800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R892
+L LEDWallSign-rescue:R-Device R892
 U 1 1 5DE1706B
 P 17100 9500
 F 0 "R892" H 16850 9500 50  0000 L CNN
@@ -2798,7 +2798,7 @@ Wire Wire Line
 Wire Wire Line
 	12750 1400 12850 1400
 $Comp
-L Device:R R101
+L LEDWallSign-rescue:R-Device R101
 U 1 1 5DEF7F3D
 P 12100 1700
 F 0 "R101" H 12100 1850 50  0000 L CNN
@@ -2809,7 +2809,7 @@ F 3 "RHM1.00KAECT-ND" H 12100 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D101
+L LEDWallSign-rescue:LED-Device D101
 U 1 1 5DEF7F44
 P 12100 2150
 F 0 "D101" V 12300 2150 50  0000 R CNN
@@ -2822,7 +2822,7 @@ $EndComp
 Wire Wire Line
 	12100 2000 12100 1850
 $Comp
-L Device:R R102
+L LEDWallSign-rescue:R-Device R102
 U 1 1 5DF5FAE1
 P 12350 1700
 F 0 "R102" H 12350 1850 50  0000 L CNN
@@ -2835,7 +2835,7 @@ $EndComp
 Wire Wire Line
 	12350 2000 12350 1850
 $Comp
-L Device:R R103
+L LEDWallSign-rescue:R-Device R103
 U 1 1 5DFC841F
 P 12600 1700
 F 0 "R103" H 12600 1850 50  0000 L CNN
@@ -2848,7 +2848,7 @@ $EndComp
 Wire Wire Line
 	12600 2000 12600 1850
 $Comp
-L Device:R R104
+L LEDWallSign-rescue:R-Device R104
 U 1 1 5E031AA7
 P 12850 1700
 F 0 "R104" H 12850 1850 50  0000 L CNN
@@ -2861,7 +2861,7 @@ $EndComp
 Wire Wire Line
 	12850 2000 12850 1850
 $Comp
-L Device:R R105
+L LEDWallSign-rescue:R-Device R105
 U 1 1 5E09BE3D
 P 13150 1700
 F 0 "R105" H 13150 1850 50  0000 L CNN
@@ -2874,7 +2874,7 @@ $EndComp
 Wire Wire Line
 	13150 2000 13150 1850
 $Comp
-L Device:R R106
+L LEDWallSign-rescue:R-Device R106
 U 1 1 5E106ECD
 P 13400 1700
 F 0 "R106" H 13400 1850 50  0000 L CNN
@@ -2887,7 +2887,7 @@ $EndComp
 Wire Wire Line
 	13400 2000 13400 1850
 $Comp
-L Device:R R107
+L LEDWallSign-rescue:R-Device R107
 U 1 1 5E172C03
 P 13650 1700
 F 0 "R107" H 13650 1850 50  0000 L CNN
@@ -2929,7 +2929,7 @@ Connection ~ 13400 1400
 Wire Wire Line
 	13400 1400 13650 1400
 $Comp
-L power:+5V #PWR0165
+L LEDWallSign-rescue:+5V-power #PWR0165
 U 1 1 5E4CA450
 P 12700 3650
 F 0 "#PWR0165" H 12700 3500 50  0001 C CNN
@@ -2981,7 +2981,7 @@ Wire Wire Line
 	12550 3850 12550 3700
 Connection ~ 12550 3700
 $Comp
-L power:+5V #PWR0166
+L LEDWallSign-rescue:+5V-power #PWR0166
 U 1 1 5E67A2FB
 P 12650 5900
 F 0 "#PWR0166" H 12650 5750 50  0001 C CNN
@@ -3033,7 +3033,7 @@ Wire Wire Line
 	12500 6100 12500 5950
 Connection ~ 12500 5950
 $Comp
-L power:+5V #PWR0167
+L LEDWallSign-rescue:+5V-power #PWR0167
 U 1 1 5E82F567
 P 12650 8050
 F 0 "#PWR0167" H 12650 7900 50  0001 C CNN
@@ -3047,7 +3047,7 @@ Wire Wire Line
 	12650 8100 12650 8050
 Connection ~ 12650 8100
 $Comp
-L power:+5V #PWR0168
+L LEDWallSign-rescue:+5V-power #PWR0168
 U 1 1 5E9E8348
 P 21250 1500
 F 0 "#PWR0168" H 21250 1350 50  0001 C CNN
@@ -3096,7 +3096,7 @@ Connection ~ 21900 1550
 Wire Wire Line
 	21900 1550 22150 1550
 $Comp
-L power:+5V #PWR0169
+L LEDWallSign-rescue:+5V-power #PWR0169
 U 1 1 5EB20FCE
 P 21200 3800
 F 0 "#PWR0169" H 21200 3650 50  0001 C CNN
@@ -3145,7 +3145,7 @@ Connection ~ 21850 3850
 Wire Wire Line
 	21850 3850 22100 3850
 $Comp
-L power:+5V #PWR0170
+L LEDWallSign-rescue:+5V-power #PWR0170
 U 1 1 5EC4ECBD
 P 21150 6050
 F 0 "#PWR0170" H 21150 5900 50  0001 C CNN
@@ -3194,7 +3194,7 @@ Connection ~ 21800 6100
 Wire Wire Line
 	21800 6100 22050 6100
 $Comp
-L power:+5V #PWR0171
+L LEDWallSign-rescue:+5V-power #PWR0171
 U 1 1 5ED73A6A
 P 21150 8200
 F 0 "#PWR0171" H 21150 8050 50  0001 C CNN
@@ -3255,7 +3255,7 @@ Wire Wire Line
 	21100 1700 21100 1550
 Connection ~ 21100 1550
 $Comp
-L Device:R R5
+L LEDWallSign-rescue:R-Device R5
 U 1 1 5EF86459
 P 3700 9500
 F 0 "R5" H 3770 9546 50  0000 L CNN
@@ -3266,7 +3266,7 @@ F 3 "RHM1.00KAECT-ND" H 3700 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D2
+L LEDWallSign-rescue:LED-Device D2
 U 1 1 5EF86460
 P 3700 9950
 F 0 "D2" V 3900 9900 50  0000 R CNN
@@ -3281,7 +3281,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 9350 3700 9200
 $Comp
-L Device:C_Small C9
+L LEDWallSign-rescue:C_Small-Device C9
 U 1 1 5F0C6FA0
 P 2300 9800
 F 0 "C9" H 2392 9846 50  0000 L CNN
@@ -3292,7 +3292,7 @@ F 3 "490-9716-1-ND" H 2300 9800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C7
+L LEDWallSign-rescue:C_Small-Device C7
 U 1 1 5F0CC1E8
 P 4000 8150
 F 0 "C7" H 4092 8196 50  0000 L CNN
@@ -3313,7 +3313,7 @@ Connection ~ 3350 7900
 Wire Wire Line
 	3350 7900 3350 7850
 $Comp
-L Device:R R4
+L LEDWallSign-rescue:R-Device R4
 U 1 1 5F19E436
 P 3350 8100
 F 0 "R4" H 3420 8146 50  0000 L CNN
@@ -3328,7 +3328,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 3050 1450 3200
 $Comp
-L Device:C_Small C5
+L LEDWallSign-rescue:C_Small-Device C5
 U 1 1 5F2BDCA0
 P 2600 2900
 F 0 "C5" H 2692 2946 50  0000 L CNN
@@ -3339,7 +3339,7 @@ F 3 "1276-CL10B104KB8NNNLCT-ND" H 2600 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C4
+L LEDWallSign-rescue:C_Small-Device C4
 U 1 1 5F2BFEE2
 P 1850 2950
 F 0 "C4" H 1942 2996 50  0000 L CNN
@@ -3350,7 +3350,7 @@ F 3 "1276-CL10B104KB8NNNLCT-ND" H 1850 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C3
+L LEDWallSign-rescue:C_Small-Device C3
 U 1 1 5F2C143B
 P 1450 2950
 F 0 "C3" H 1542 2996 50  0000 L CNN
@@ -3365,7 +3365,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 4450 1350 4300
 $Comp
-L power:+5VA #PWR0172
+L LEDWallSign-rescue:+5VA-power #PWR0172
 U 1 1 5F333C5F
 P 1350 4300
 F 0 "#PWR0172" H 1350 4150 50  0001 C CNN
@@ -3376,7 +3376,7 @@ F 3 "" H 1350 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C2
+L LEDWallSign-rescue:C_Small-Device C2
 U 1 1 5F33D8D8
 P 4050 1350
 F 0 "C2" H 4142 1396 50  0000 L CNN
@@ -3391,7 +3391,7 @@ Wire Wire Line
 Wire Wire Line
 	4050 900  4050 1250
 $Comp
-L Device:R R3
+L LEDWallSign-rescue:R-Device R3
 U 1 1 5F4154D3
 P 4550 1550
 F 0 "R3" H 4620 1596 50  0000 L CNN
@@ -3402,7 +3402,7 @@ F 3 "RHM1.00KAECT-ND" H 4550 1550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D1
+L LEDWallSign-rescue:LED-Device D1
 U 1 1 5F4154DA
 P 4550 1100
 F 0 "D1" V 4750 1050 50  0000 R CNN
@@ -3432,7 +3432,7 @@ Wire Wire Line
 	12600 1550 12600 1400
 Connection ~ 12600 1400
 $Comp
-L Device:R R208
+L LEDWallSign-rescue:R-Device R208
 U 1 1 5F86F9CE
 P 11750 4000
 F 0 "R208" H 11750 4150 50  0000 L CNN
@@ -3445,7 +3445,7 @@ $EndComp
 Wire Wire Line
 	11750 4300 11750 4150
 $Comp
-L Device:R R209
+L LEDWallSign-rescue:R-Device R209
 U 1 1 5F86F9DD
 P 12050 4000
 F 0 "R209" H 12050 4150 50  0000 L CNN
@@ -3458,7 +3458,7 @@ $EndComp
 Wire Wire Line
 	12050 4300 12050 4150
 $Comp
-L Device:R R210
+L LEDWallSign-rescue:R-Device R210
 U 1 1 5F86F9EC
 P 12300 4000
 F 0 "R210" H 12300 4150 50  0000 L CNN
@@ -3471,7 +3471,7 @@ $EndComp
 Wire Wire Line
 	12300 4300 12300 4150
 $Comp
-L Device:R R211
+L LEDWallSign-rescue:R-Device R211
 U 1 1 5F86F9FB
 P 12550 4000
 F 0 "R211" H 12550 4150 50  0000 L CNN
@@ -3484,7 +3484,7 @@ $EndComp
 Wire Wire Line
 	12550 4300 12550 4150
 $Comp
-L Device:R R212
+L LEDWallSign-rescue:R-Device R212
 U 1 1 5F86FA0A
 P 12800 4000
 F 0 "R212" H 12800 4150 50  0000 L CNN
@@ -3497,7 +3497,7 @@ $EndComp
 Wire Wire Line
 	12800 4300 12800 4150
 $Comp
-L Device:R R213
+L LEDWallSign-rescue:R-Device R213
 U 1 1 5F86FA19
 P 13100 4000
 F 0 "R213" H 13100 4150 50  0000 L CNN
@@ -3510,7 +3510,7 @@ $EndComp
 Wire Wire Line
 	13100 4300 13100 4150
 $Comp
-L Device:R R214
+L LEDWallSign-rescue:R-Device R214
 U 1 1 5F86FA28
 P 13350 4000
 F 0 "R214" H 13350 4150 50  0000 L CNN
@@ -3523,7 +3523,7 @@ $EndComp
 Wire Wire Line
 	13350 4300 13350 4150
 $Comp
-L Device:R R215
+L LEDWallSign-rescue:R-Device R215
 U 1 1 5F86FA37
 P 13600 4000
 F 0 "R215" H 13600 4150 50  0000 L CNN
@@ -3536,7 +3536,7 @@ $EndComp
 Wire Wire Line
 	13600 4300 13600 4150
 $Comp
-L Device:R R316
+L LEDWallSign-rescue:R-Device R316
 U 1 1 5F946394
 P 11700 6250
 F 0 "R316" H 11700 6400 50  0000 L CNN
@@ -3549,7 +3549,7 @@ $EndComp
 Wire Wire Line
 	11700 6550 11700 6400
 $Comp
-L Device:R R317
+L LEDWallSign-rescue:R-Device R317
 U 1 1 5F9463A3
 P 12000 6250
 F 0 "R317" H 12000 6400 50  0000 L CNN
@@ -3562,7 +3562,7 @@ $EndComp
 Wire Wire Line
 	12000 6550 12000 6400
 $Comp
-L Device:R R318
+L LEDWallSign-rescue:R-Device R318
 U 1 1 5F9463B2
 P 12250 6250
 F 0 "R318" H 12250 6400 50  0000 L CNN
@@ -3575,7 +3575,7 @@ $EndComp
 Wire Wire Line
 	12250 6550 12250 6400
 $Comp
-L Device:R R319
+L LEDWallSign-rescue:R-Device R319
 U 1 1 5F9463C1
 P 12500 6250
 F 0 "R319" H 12500 6400 50  0000 L CNN
@@ -3588,7 +3588,7 @@ $EndComp
 Wire Wire Line
 	12500 6550 12500 6400
 $Comp
-L Device:R R320
+L LEDWallSign-rescue:R-Device R320
 U 1 1 5F9463D0
 P 12750 6250
 F 0 "R320" H 12750 6400 50  0000 L CNN
@@ -3601,7 +3601,7 @@ $EndComp
 Wire Wire Line
 	12750 6550 12750 6400
 $Comp
-L Device:R R321
+L LEDWallSign-rescue:R-Device R321
 U 1 1 5F9463DF
 P 13050 6250
 F 0 "R321" H 13050 6400 50  0000 L CNN
@@ -3614,7 +3614,7 @@ $EndComp
 Wire Wire Line
 	13050 6550 13050 6400
 $Comp
-L Device:R R322
+L LEDWallSign-rescue:R-Device R322
 U 1 1 5F9463EE
 P 13300 6250
 F 0 "R322" H 13300 6400 50  0000 L CNN
@@ -3627,7 +3627,7 @@ $EndComp
 Wire Wire Line
 	13300 6550 13300 6400
 $Comp
-L Device:R R323
+L LEDWallSign-rescue:R-Device R323
 U 1 1 5F9463FD
 P 13550 6250
 F 0 "R323" H 13550 6400 50  0000 L CNN
@@ -3678,7 +3678,7 @@ Wire Wire Line
 Wire Wire Line
 	11700 8250 11700 8100
 $Comp
-L Device:R R424
+L LEDWallSign-rescue:R-Device R424
 U 1 1 5FA828DE
 P 11700 8400
 F 0 "R424" H 11700 8550 50  0000 L CNN
@@ -3691,7 +3691,7 @@ $EndComp
 Wire Wire Line
 	11700 8700 11700 8550
 $Comp
-L Device:R R425
+L LEDWallSign-rescue:R-Device R425
 U 1 1 5FA828ED
 P 12000 8400
 F 0 "R425" H 12000 8550 50  0000 L CNN
@@ -3704,7 +3704,7 @@ $EndComp
 Wire Wire Line
 	12000 8700 12000 8550
 $Comp
-L Device:R R426
+L LEDWallSign-rescue:R-Device R426
 U 1 1 5FA828FC
 P 12250 8400
 F 0 "R426" H 12250 8550 50  0000 L CNN
@@ -3717,7 +3717,7 @@ $EndComp
 Wire Wire Line
 	12250 8700 12250 8550
 $Comp
-L Device:R R427
+L LEDWallSign-rescue:R-Device R427
 U 1 1 5FA8290B
 P 12500 8400
 F 0 "R427" H 12500 8550 50  0000 L CNN
@@ -3730,7 +3730,7 @@ $EndComp
 Wire Wire Line
 	12500 8700 12500 8550
 $Comp
-L Device:R R428
+L LEDWallSign-rescue:R-Device R428
 U 1 1 5FA8291A
 P 12750 8400
 F 0 "R428" H 12750 8550 50  0000 L CNN
@@ -3743,7 +3743,7 @@ $EndComp
 Wire Wire Line
 	12750 8700 12750 8550
 $Comp
-L Device:R R429
+L LEDWallSign-rescue:R-Device R429
 U 1 1 5FA82929
 P 13050 8400
 F 0 "R429" H 13050 8550 50  0000 L CNN
@@ -3756,7 +3756,7 @@ $EndComp
 Wire Wire Line
 	13050 8700 13050 8550
 $Comp
-L Device:R R430
+L LEDWallSign-rescue:R-Device R430
 U 1 1 5FA82938
 P 13300 8400
 F 0 "R430" H 13300 8550 50  0000 L CNN
@@ -3769,7 +3769,7 @@ $EndComp
 Wire Wire Line
 	13300 8700 13300 8550
 $Comp
-L Device:R R431
+L LEDWallSign-rescue:R-Device R431
 U 1 1 5FA82947
 P 13550 8400
 F 0 "R431" H 13550 8550 50  0000 L CNN
@@ -3782,7 +3782,7 @@ $EndComp
 Wire Wire Line
 	13550 8700 13550 8550
 $Comp
-L Device:R R532
+L LEDWallSign-rescue:R-Device R532
 U 1 1 5FB678D4
 P 20300 1850
 F 0 "R532" H 20300 2000 50  0000 L CNN
@@ -3795,7 +3795,7 @@ $EndComp
 Wire Wire Line
 	20300 2150 20300 2000
 $Comp
-L Device:R R533
+L LEDWallSign-rescue:R-Device R533
 U 1 1 5FB678E3
 P 20600 1850
 F 0 "R533" H 20600 2000 50  0000 L CNN
@@ -3808,7 +3808,7 @@ $EndComp
 Wire Wire Line
 	20600 2150 20600 2000
 $Comp
-L Device:R R534
+L LEDWallSign-rescue:R-Device R534
 U 1 1 5FB678F2
 P 20850 1850
 F 0 "R534" H 20850 2000 50  0000 L CNN
@@ -3821,7 +3821,7 @@ $EndComp
 Wire Wire Line
 	20850 2150 20850 2000
 $Comp
-L Device:R R535
+L LEDWallSign-rescue:R-Device R535
 U 1 1 5FB67901
 P 21100 1850
 F 0 "R535" H 21100 2000 50  0000 L CNN
@@ -3834,7 +3834,7 @@ $EndComp
 Wire Wire Line
 	21100 2150 21100 2000
 $Comp
-L Device:R R536
+L LEDWallSign-rescue:R-Device R536
 U 1 1 5FB67910
 P 21350 1850
 F 0 "R536" H 21350 2000 50  0000 L CNN
@@ -3847,7 +3847,7 @@ $EndComp
 Wire Wire Line
 	21350 2150 21350 2000
 $Comp
-L Device:R R537
+L LEDWallSign-rescue:R-Device R537
 U 1 1 5FB6791F
 P 21650 1850
 F 0 "R537" H 21650 2000 50  0000 L CNN
@@ -3860,7 +3860,7 @@ $EndComp
 Wire Wire Line
 	21650 2150 21650 2000
 $Comp
-L Device:R R538
+L LEDWallSign-rescue:R-Device R538
 U 1 1 5FB6792E
 P 21900 1850
 F 0 "R538" H 21900 2000 50  0000 L CNN
@@ -3873,7 +3873,7 @@ $EndComp
 Wire Wire Line
 	21900 2150 21900 2000
 $Comp
-L Device:R R539
+L LEDWallSign-rescue:R-Device R539
 U 1 1 5FB6793D
 P 22150 1850
 F 0 "R539" H 22150 2000 50  0000 L CNN
@@ -3886,7 +3886,7 @@ $EndComp
 Wire Wire Line
 	22150 2150 22150 2000
 $Comp
-L Device:R R640
+L LEDWallSign-rescue:R-Device R640
 U 1 1 5FC42B1D
 P 20250 4150
 F 0 "R640" H 20250 4300 50  0000 L CNN
@@ -3899,7 +3899,7 @@ $EndComp
 Wire Wire Line
 	20250 4450 20250 4300
 $Comp
-L Device:R R641
+L LEDWallSign-rescue:R-Device R641
 U 1 1 5FC42B2C
 P 20550 4150
 F 0 "R641" H 20550 4300 50  0000 L CNN
@@ -3912,7 +3912,7 @@ $EndComp
 Wire Wire Line
 	20550 4450 20550 4300
 $Comp
-L Device:R R642
+L LEDWallSign-rescue:R-Device R642
 U 1 1 5FC42B3B
 P 20800 4150
 F 0 "R642" H 20800 4300 50  0000 L CNN
@@ -3925,7 +3925,7 @@ $EndComp
 Wire Wire Line
 	20800 4450 20800 4300
 $Comp
-L Device:R R643
+L LEDWallSign-rescue:R-Device R643
 U 1 1 5FC42B4A
 P 21050 4150
 F 0 "R643" H 21050 4300 50  0000 L CNN
@@ -3938,7 +3938,7 @@ $EndComp
 Wire Wire Line
 	21050 4450 21050 4300
 $Comp
-L Device:R R644
+L LEDWallSign-rescue:R-Device R644
 U 1 1 5FC42B59
 P 21300 4150
 F 0 "R644" H 21300 4300 50  0000 L CNN
@@ -3951,7 +3951,7 @@ $EndComp
 Wire Wire Line
 	21300 4450 21300 4300
 $Comp
-L Device:R R645
+L LEDWallSign-rescue:R-Device R645
 U 1 1 5FC42B68
 P 21600 4150
 F 0 "R645" H 21600 4300 50  0000 L CNN
@@ -3964,7 +3964,7 @@ $EndComp
 Wire Wire Line
 	21600 4450 21600 4300
 $Comp
-L Device:R R646
+L LEDWallSign-rescue:R-Device R646
 U 1 1 5FC42B77
 P 21850 4150
 F 0 "R646" H 21850 4300 50  0000 L CNN
@@ -3977,7 +3977,7 @@ $EndComp
 Wire Wire Line
 	21850 4450 21850 4300
 $Comp
-L Device:R R647
+L LEDWallSign-rescue:R-Device R647
 U 1 1 5FC42B86
 P 22100 4150
 F 0 "R647" H 22100 4300 50  0000 L CNN
@@ -3990,7 +3990,7 @@ $EndComp
 Wire Wire Line
 	22100 4450 22100 4300
 $Comp
-L Device:R R748
+L LEDWallSign-rescue:R-Device R748
 U 1 1 5FD1E2EB
 P 20200 6400
 F 0 "R748" H 20200 6550 50  0000 L CNN
@@ -4003,7 +4003,7 @@ $EndComp
 Wire Wire Line
 	20200 6700 20200 6550
 $Comp
-L Device:R R749
+L LEDWallSign-rescue:R-Device R749
 U 1 1 5FD1E2FA
 P 20500 6400
 F 0 "R749" H 20500 6550 50  0000 L CNN
@@ -4016,7 +4016,7 @@ $EndComp
 Wire Wire Line
 	20500 6700 20500 6550
 $Comp
-L Device:R R750
+L LEDWallSign-rescue:R-Device R750
 U 1 1 5FD1E309
 P 20750 6400
 F 0 "R750" H 20750 6550 50  0000 L CNN
@@ -4029,7 +4029,7 @@ $EndComp
 Wire Wire Line
 	20750 6700 20750 6550
 $Comp
-L Device:R R751
+L LEDWallSign-rescue:R-Device R751
 U 1 1 5FD1E318
 P 21000 6400
 F 0 "R751" H 21000 6550 50  0000 L CNN
@@ -4042,7 +4042,7 @@ $EndComp
 Wire Wire Line
 	21000 6700 21000 6550
 $Comp
-L Device:R R752
+L LEDWallSign-rescue:R-Device R752
 U 1 1 5FD1E327
 P 21250 6400
 F 0 "R752" H 21250 6550 50  0000 L CNN
@@ -4055,7 +4055,7 @@ $EndComp
 Wire Wire Line
 	21250 6700 21250 6550
 $Comp
-L Device:R R753
+L LEDWallSign-rescue:R-Device R753
 U 1 1 5FD1E336
 P 21550 6400
 F 0 "R753" H 21550 6550 50  0000 L CNN
@@ -4068,7 +4068,7 @@ $EndComp
 Wire Wire Line
 	21550 6700 21550 6550
 $Comp
-L Device:R R754
+L LEDWallSign-rescue:R-Device R754
 U 1 1 5FD1E345
 P 21800 6400
 F 0 "R754" H 21800 6550 50  0000 L CNN
@@ -4081,7 +4081,7 @@ $EndComp
 Wire Wire Line
 	21800 6700 21800 6550
 $Comp
-L Device:R R755
+L LEDWallSign-rescue:R-Device R755
 U 1 1 5FD1E354
 P 22050 6400
 F 0 "R755" H 22050 6550 50  0000 L CNN
@@ -4094,7 +4094,7 @@ $EndComp
 Wire Wire Line
 	22050 6700 22050 6550
 $Comp
-L Device:R R856
+L LEDWallSign-rescue:R-Device R856
 U 1 1 5FDF70A4
 P 20200 8550
 F 0 "R856" H 20200 8700 50  0000 L CNN
@@ -4107,7 +4107,7 @@ $EndComp
 Wire Wire Line
 	20200 8850 20200 8700
 $Comp
-L Device:R R857
+L LEDWallSign-rescue:R-Device R857
 U 1 1 5FDF70B3
 P 20500 8550
 F 0 "R857" H 20500 8700 50  0000 L CNN
@@ -4120,7 +4120,7 @@ $EndComp
 Wire Wire Line
 	20500 8850 20500 8700
 $Comp
-L Device:R R858
+L LEDWallSign-rescue:R-Device R858
 U 1 1 5FDF70C2
 P 20750 8550
 F 0 "R858" H 20750 8700 50  0000 L CNN
@@ -4133,7 +4133,7 @@ $EndComp
 Wire Wire Line
 	20750 8850 20750 8700
 $Comp
-L Device:R R859
+L LEDWallSign-rescue:R-Device R859
 U 1 1 5FDF70D1
 P 21000 8550
 F 0 "R859" H 21000 8700 50  0000 L CNN
@@ -4146,7 +4146,7 @@ $EndComp
 Wire Wire Line
 	21000 8850 21000 8700
 $Comp
-L Device:R R860
+L LEDWallSign-rescue:R-Device R860
 U 1 1 5FDF70E0
 P 21250 8550
 F 0 "R860" H 21250 8700 50  0000 L CNN
@@ -4159,7 +4159,7 @@ $EndComp
 Wire Wire Line
 	21250 8850 21250 8700
 $Comp
-L Device:R R861
+L LEDWallSign-rescue:R-Device R861
 U 1 1 5FDF70EF
 P 21550 8550
 F 0 "R861" H 21550 8700 50  0000 L CNN
@@ -4172,7 +4172,7 @@ $EndComp
 Wire Wire Line
 	21550 8850 21550 8700
 $Comp
-L Device:R R862
+L LEDWallSign-rescue:R-Device R862
 U 1 1 5FDF70FE
 P 21800 8550
 F 0 "R862" H 21800 8700 50  0000 L CNN
@@ -4185,7 +4185,7 @@ $EndComp
 Wire Wire Line
 	21800 8850 21800 8700
 $Comp
-L Device:R R863
+L LEDWallSign-rescue:R-Device R863
 U 1 1 5FDF710D
 P 22050 8550
 F 0 "R863" H 22050 8700 50  0000 L CNN
@@ -4198,7 +4198,7 @@ $EndComp
 Wire Wire Line
 	22050 8850 22050 8700
 $Comp
-L Device:LED D102
+L LEDWallSign-rescue:LED-Device D102
 U 1 1 5D557BEA
 P 12350 2150
 F 0 "D102" V 12550 2150 50  0000 R CNN
@@ -4209,7 +4209,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12350 2150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D103
+L LEDWallSign-rescue:LED-Device D103
 U 1 1 5D557BF1
 P 12600 2150
 F 0 "D103" V 12800 2150 50  0000 R CNN
@@ -4220,7 +4220,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12600 2150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D104
+L LEDWallSign-rescue:LED-Device D104
 U 1 1 5D5C32F1
 P 12850 2150
 F 0 "D104" V 13050 2150 50  0000 R CNN
@@ -4231,7 +4231,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12850 2150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D105
+L LEDWallSign-rescue:LED-Device D105
 U 1 1 5D5C32F8
 P 13150 2150
 F 0 "D105" V 13350 2150 50  0000 R CNN
@@ -4242,7 +4242,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13150 2150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D106
+L LEDWallSign-rescue:LED-Device D106
 U 1 1 5D62E793
 P 13400 2150
 F 0 "D106" V 13600 2150 50  0000 R CNN
@@ -4253,7 +4253,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13400 2150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D107
+L LEDWallSign-rescue:LED-Device D107
 U 1 1 5D62E79A
 P 13650 2150
 F 0 "D107" V 13850 2150 50  0000 R CNN
@@ -4264,7 +4264,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13650 2150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D208
+L LEDWallSign-rescue:LED-Device D208
 U 1 1 5D771DE8
 P 11750 4450
 F 0 "D208" V 11950 4450 50  0000 R CNN
@@ -4275,7 +4275,7 @@ F 3 "SML-D12U1WT86CT-ND" H 11750 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D209
+L LEDWallSign-rescue:LED-Device D209
 U 1 1 5D771DEF
 P 12050 4450
 F 0 "D209" V 12250 4450 50  0000 R CNN
@@ -4286,7 +4286,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12050 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D210
+L LEDWallSign-rescue:LED-Device D210
 U 1 1 5D771DF6
 P 12300 4450
 F 0 "D210" V 12500 4450 50  0000 R CNN
@@ -4297,7 +4297,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12300 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D211
+L LEDWallSign-rescue:LED-Device D211
 U 1 1 5D771DFD
 P 12550 4450
 F 0 "D211" V 12750 4450 50  0000 R CNN
@@ -4308,7 +4308,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12550 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D212
+L LEDWallSign-rescue:LED-Device D212
 U 1 1 5D771E04
 P 12800 4450
 F 0 "D212" V 13000 4450 50  0000 R CNN
@@ -4319,7 +4319,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12800 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D213
+L LEDWallSign-rescue:LED-Device D213
 U 1 1 5D771E0B
 P 13100 4450
 F 0 "D213" V 13300 4450 50  0000 R CNN
@@ -4330,7 +4330,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13100 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D214
+L LEDWallSign-rescue:LED-Device D214
 U 1 1 5D771E12
 P 13350 4450
 F 0 "D214" V 13550 4450 50  0000 R CNN
@@ -4341,7 +4341,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13350 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D215
+L LEDWallSign-rescue:LED-Device D215
 U 1 1 5D771E19
 P 13600 4450
 F 0 "D215" V 13800 4450 50  0000 R CNN
@@ -4352,7 +4352,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13600 4450 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D316
+L LEDWallSign-rescue:LED-Device D316
 U 1 1 5D92190E
 P 11700 6700
 F 0 "D316" V 11900 6700 50  0000 R CNN
@@ -4363,7 +4363,7 @@ F 3 "SML-D12U1WT86CT-ND" H 11700 6700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D317
+L LEDWallSign-rescue:LED-Device D317
 U 1 1 5D921915
 P 12000 6700
 F 0 "D317" V 12200 6700 50  0000 R CNN
@@ -4374,7 +4374,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12000 6700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D318
+L LEDWallSign-rescue:LED-Device D318
 U 1 1 5D92191C
 P 12250 6700
 F 0 "D318" V 12450 6700 50  0000 R CNN
@@ -4385,7 +4385,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12250 6700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D319
+L LEDWallSign-rescue:LED-Device D319
 U 1 1 5D921923
 P 12500 6700
 F 0 "D319" V 12700 6700 50  0000 R CNN
@@ -4396,7 +4396,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12500 6700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D320
+L LEDWallSign-rescue:LED-Device D320
 U 1 1 5D92192A
 P 12750 6700
 F 0 "D320" V 12950 6700 50  0000 R CNN
@@ -4407,7 +4407,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12750 6700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D321
+L LEDWallSign-rescue:LED-Device D321
 U 1 1 5D921931
 P 13050 6700
 F 0 "D321" V 13250 6700 50  0000 R CNN
@@ -4418,7 +4418,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13050 6700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D322
+L LEDWallSign-rescue:LED-Device D322
 U 1 1 5D921938
 P 13300 6700
 F 0 "D322" V 13500 6700 50  0000 R CNN
@@ -4429,7 +4429,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13300 6700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D323
+L LEDWallSign-rescue:LED-Device D323
 U 1 1 5D92193F
 P 13550 6700
 F 0 "D323" V 13750 6700 50  0000 R CNN
@@ -4440,7 +4440,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13550 6700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D424
+L LEDWallSign-rescue:LED-Device D424
 U 1 1 5D9F9C2A
 P 11700 8850
 F 0 "D424" V 11900 8850 50  0000 R CNN
@@ -4451,7 +4451,7 @@ F 3 "SML-D12U1WT86CT-ND" H 11700 8850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D425
+L LEDWallSign-rescue:LED-Device D425
 U 1 1 5D9F9C31
 P 12000 8850
 F 0 "D425" V 12200 8850 50  0000 R CNN
@@ -4462,7 +4462,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12000 8850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D426
+L LEDWallSign-rescue:LED-Device D426
 U 1 1 5D9F9C38
 P 12250 8850
 F 0 "D426" V 12450 8850 50  0000 R CNN
@@ -4473,7 +4473,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12250 8850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D427
+L LEDWallSign-rescue:LED-Device D427
 U 1 1 5D9F9C3F
 P 12500 8850
 F 0 "D427" V 12700 8850 50  0000 R CNN
@@ -4484,7 +4484,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12500 8850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D428
+L LEDWallSign-rescue:LED-Device D428
 U 1 1 5D9F9C46
 P 12750 8850
 F 0 "D428" V 12950 8850 50  0000 R CNN
@@ -4495,7 +4495,7 @@ F 3 "SML-D12U1WT86CT-ND" H 12750 8850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D429
+L LEDWallSign-rescue:LED-Device D429
 U 1 1 5D9F9C4D
 P 13050 8850
 F 0 "D429" V 13250 8850 50  0000 R CNN
@@ -4506,7 +4506,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13050 8850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D430
+L LEDWallSign-rescue:LED-Device D430
 U 1 1 5D9F9C54
 P 13300 8850
 F 0 "D430" V 13500 8850 50  0000 R CNN
@@ -4517,7 +4517,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13300 8850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D431
+L LEDWallSign-rescue:LED-Device D431
 U 1 1 5D9F9C5B
 P 13550 8850
 F 0 "D431" V 13750 8850 50  0000 R CNN
@@ -4528,7 +4528,7 @@ F 3 "SML-D12U1WT86CT-ND" H 13550 8850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D532
+L LEDWallSign-rescue:LED-Device D532
 U 1 1 5DAD2C6E
 P 20300 2300
 F 0 "D532" V 20500 2300 50  0000 R CNN
@@ -4539,7 +4539,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20300 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D533
+L LEDWallSign-rescue:LED-Device D533
 U 1 1 5DAD2C75
 P 20600 2300
 F 0 "D533" V 20800 2300 50  0000 R CNN
@@ -4550,7 +4550,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20600 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D534
+L LEDWallSign-rescue:LED-Device D534
 U 1 1 5DAD2C7C
 P 20850 2300
 F 0 "D534" V 21050 2300 50  0000 R CNN
@@ -4561,7 +4561,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20850 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D535
+L LEDWallSign-rescue:LED-Device D535
 U 1 1 5DAD2C83
 P 21100 2300
 F 0 "D535" V 21300 2300 50  0000 R CNN
@@ -4572,7 +4572,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21100 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D536
+L LEDWallSign-rescue:LED-Device D536
 U 1 1 5DAD2C8A
 P 21350 2300
 F 0 "D536" V 21550 2300 50  0000 R CNN
@@ -4583,7 +4583,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21350 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D537
+L LEDWallSign-rescue:LED-Device D537
 U 1 1 5DAD2C91
 P 21650 2300
 F 0 "D537" V 21850 2300 50  0000 R CNN
@@ -4594,7 +4594,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21650 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D538
+L LEDWallSign-rescue:LED-Device D538
 U 1 1 5DAD2C98
 P 21900 2300
 F 0 "D538" V 22100 2300 50  0000 R CNN
@@ -4605,7 +4605,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21900 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D539
+L LEDWallSign-rescue:LED-Device D539
 U 1 1 5DAD2C9F
 P 22150 2300
 F 0 "D539" V 22350 2300 50  0000 R CNN
@@ -4616,7 +4616,7 @@ F 3 "SML-D12U1WT86CT-ND" H 22150 2300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D640
+L LEDWallSign-rescue:LED-Device D640
 U 1 1 5DBABC28
 P 20250 4600
 F 0 "D640" V 20450 4600 50  0000 R CNN
@@ -4627,7 +4627,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20250 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D641
+L LEDWallSign-rescue:LED-Device D641
 U 1 1 5DBABC2F
 P 20550 4600
 F 0 "D641" V 20750 4600 50  0000 R CNN
@@ -4638,7 +4638,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20550 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D642
+L LEDWallSign-rescue:LED-Device D642
 U 1 1 5DBABC36
 P 20800 4600
 F 0 "D642" V 21000 4600 50  0000 R CNN
@@ -4649,7 +4649,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20800 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D643
+L LEDWallSign-rescue:LED-Device D643
 U 1 1 5DBABC3D
 P 21050 4600
 F 0 "D643" V 21250 4600 50  0000 R CNN
@@ -4660,7 +4660,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21050 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D644
+L LEDWallSign-rescue:LED-Device D644
 U 1 1 5DBABC44
 P 21300 4600
 F 0 "D644" V 21500 4600 50  0000 R CNN
@@ -4671,7 +4671,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21300 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D645
+L LEDWallSign-rescue:LED-Device D645
 U 1 1 5DBABC4B
 P 21600 4600
 F 0 "D645" V 21800 4600 50  0000 R CNN
@@ -4682,7 +4682,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21600 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D646
+L LEDWallSign-rescue:LED-Device D646
 U 1 1 5DBABC52
 P 21850 4600
 F 0 "D646" V 22050 4600 50  0000 R CNN
@@ -4693,7 +4693,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21850 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D647
+L LEDWallSign-rescue:LED-Device D647
 U 1 1 5DBABC59
 P 22100 4600
 F 0 "D647" V 22300 4600 50  0000 R CNN
@@ -4704,7 +4704,7 @@ F 3 "SML-D12U1WT86CT-ND" H 22100 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D748
+L LEDWallSign-rescue:LED-Device D748
 U 1 1 5DC838AC
 P 20200 6850
 F 0 "D748" V 20400 6850 50  0000 R CNN
@@ -4715,7 +4715,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20200 6850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D749
+L LEDWallSign-rescue:LED-Device D749
 U 1 1 5DC838B3
 P 20500 6850
 F 0 "D749" V 20700 6850 50  0000 R CNN
@@ -4726,7 +4726,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20500 6850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D750
+L LEDWallSign-rescue:LED-Device D750
 U 1 1 5DC838BA
 P 20750 6850
 F 0 "D750" V 20950 6850 50  0000 R CNN
@@ -4737,7 +4737,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20750 6850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D751
+L LEDWallSign-rescue:LED-Device D751
 U 1 1 5DC838C1
 P 21000 6850
 F 0 "D751" V 21200 6850 50  0000 R CNN
@@ -4748,7 +4748,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21000 6850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D752
+L LEDWallSign-rescue:LED-Device D752
 U 1 1 5DC838C8
 P 21250 6850
 F 0 "D752" V 21450 6850 50  0000 R CNN
@@ -4759,7 +4759,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21250 6850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D753
+L LEDWallSign-rescue:LED-Device D753
 U 1 1 5DC838CF
 P 21550 6850
 F 0 "D753" V 21750 6850 50  0000 R CNN
@@ -4770,7 +4770,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21550 6850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D754
+L LEDWallSign-rescue:LED-Device D754
 U 1 1 5DC838D6
 P 21800 6850
 F 0 "D754" V 22000 6850 50  0000 R CNN
@@ -4781,7 +4781,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21800 6850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D755
+L LEDWallSign-rescue:LED-Device D755
 U 1 1 5DC838DD
 P 22050 6850
 F 0 "D755" V 22250 6850 50  0000 R CNN
@@ -4792,7 +4792,7 @@ F 3 "SML-D12U1WT86CT-ND" H 22050 6850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D856
+L LEDWallSign-rescue:LED-Device D856
 U 1 1 5DD5C1C9
 P 20200 9000
 F 0 "D856" V 20400 9000 50  0000 R CNN
@@ -4803,7 +4803,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20200 9000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D857
+L LEDWallSign-rescue:LED-Device D857
 U 1 1 5DD5C1D0
 P 20500 9000
 F 0 "D857" V 20700 9000 50  0000 R CNN
@@ -4814,7 +4814,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20500 9000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D858
+L LEDWallSign-rescue:LED-Device D858
 U 1 1 5DD5C1D7
 P 20750 9000
 F 0 "D858" V 20950 9000 50  0000 R CNN
@@ -4825,7 +4825,7 @@ F 3 "SML-D12U1WT86CT-ND" H 20750 9000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D859
+L LEDWallSign-rescue:LED-Device D859
 U 1 1 5DD5C1DE
 P 21000 9000
 F 0 "D859" V 21200 9000 50  0000 R CNN
@@ -4836,7 +4836,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21000 9000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D860
+L LEDWallSign-rescue:LED-Device D860
 U 1 1 5DD5C1E5
 P 21250 9000
 F 0 "D860" V 21450 9000 50  0000 R CNN
@@ -4847,7 +4847,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21250 9000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D861
+L LEDWallSign-rescue:LED-Device D861
 U 1 1 5DD5C1EC
 P 21550 9000
 F 0 "D861" V 21750 9000 50  0000 R CNN
@@ -4858,7 +4858,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21550 9000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D862
+L LEDWallSign-rescue:LED-Device D862
 U 1 1 5DD5C1F3
 P 21800 9000
 F 0 "D862" V 22000 9000 50  0000 R CNN
@@ -4869,7 +4869,7 @@ F 3 "SML-D12U1WT86CT-ND" H 21800 9000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED D863
+L LEDWallSign-rescue:LED-Device D863
 U 1 1 5DD5C1FA
 P 22050 9000
 F 0 "D863" V 22250 9000 50  0000 R CNN
